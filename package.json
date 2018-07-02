@@ -38,7 +38,8 @@
   },
   "lint-staged": {
     "src/*.js": [
-      "npm run eslint"
+      "npm run eslint",
+      "git add"
     ]
   }
 }
