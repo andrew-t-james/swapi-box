@@ -1,0 +1,4 @@
+.main-container {
+  border: 1px solid goldenrod;
+  height: calc(100vh - 10rem);
+}

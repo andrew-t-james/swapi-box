@@ -1,0 +1,10 @@
+.header {
+  align-items: center;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: 2rem;
+}
