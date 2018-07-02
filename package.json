@@ -33,8 +33,7 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
-      "!src/index.js",
-      "!src/data/*.js"
+      "!src/index.js"
     ]
   },
   "lint-staged": {
