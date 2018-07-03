@@ -12,23 +12,25 @@ import './CardContainer.css';
 const CardContainer = () => {
   return (
     <section className="main-container">
-      <h1>CardContainer</h1>
-      <nav className="main-container__nav">
-        <NavLink to="/people">
-          <Button name={'People'}/>
-        </NavLink>
-        <NavLink to="/planets">
-          <Button name={'Planets'}/>
-        </NavLink>
-        <NavLink to="/vehicles">
-          <Button name={'Vehicles'}/>
-        </NavLink>
-      </nav>
+      <div className="card-container">
+        <h1>CardContainer</h1>
+        <nav className="card-container__nav">
+          <NavLink to="/people">
+            <Button name={'People'}/>
+          </NavLink>
+          <NavLink to="/planets">
+            <Button name={'Planets'}/>
+          </NavLink>
+          <NavLink to="/vehicles">
+            <Button name={'Vehicles'}/>
+          </NavLink>
+        </nav>
+      </div>
       <div>
-        <Route path="/people" component={People}/>
-        <Route path="/planets" component={Planets}/>
-        <Route path="/vehicles" component={Vehicles}/>
-        <Route path="/favorites" component={Favorites}/>
+        <Route path="/people" component={People} />
+        <Route path="/planets" component={Planets} />
+        <Route path="/vehicles" component={Vehicles} />
+        <Route path="/favorites" component={Favorites} />
       </div>
     </section>
   );

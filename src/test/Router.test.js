@@ -1,15 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Router from '../Router/Router';
+import { MemoryRouter } from 'react-router';
+import App from '../components/App/App';
 
 describe('Router', () => {
   let wrapper;
 
-  beforeEach(() => wrapper = shallow(<Router />));
+  beforeEach(() => wrapper = shallow(
+    <MemoryRouter initialEntries={['/']}>
+      <App/>
+    </MemoryRouter>
+  ));
 
   afterEach(() => wrapper.unmount());
 
-  test('should match snapshot', () => {
-    expect(wrapper).toMatchSnapshot();
+  test('should not redirect to 404', () => {
+    expect(wrapper.find(App)).toHaveLength(1);
   });
 });

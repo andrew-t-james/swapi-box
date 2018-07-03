@@ -18,40 +18,44 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
-          CardContainer
-</h1>,
-        <nav
-          className="main-container__nav"
+        <div
+          className="card-container"
 >
-          <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    to="/people"
+          <h1>
+                    CardContainer
+          </h1>
+          <nav
+                    className="card-container__nav"
           >
-                    <Button
-                              name="People"
-                    />
-          </NavLink>
-          <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    to="/planets"
-          >
-                    <Button
-                              name="Planets"
-                    />
-          </NavLink>
-          <NavLink
-                    activeClassName="active"
-                    aria-current="page"
-                    to="/vehicles"
-          >
-                    <Button
-                              name="Vehicles"
-                    />
-          </NavLink>
-</nav>,
+                    <NavLink
+                              activeClassName="active"
+                              aria-current="page"
+                              to="/people"
+                    >
+                              <Button
+                                        name="People"
+                              />
+                    </NavLink>
+                    <NavLink
+                              activeClassName="active"
+                              aria-current="page"
+                              to="/planets"
+                    >
+                              <Button
+                                        name="Planets"
+                              />
+                    </NavLink>
+                    <NavLink
+                              activeClassName="active"
+                              aria-current="page"
+                              to="/vehicles"
+                    >
+                              <Button
+                                        name="Vehicles"
+                              />
+                    </NavLink>
+          </nav>
+</div>,
         <div>
           <Route
                     component={[Function]}
@@ -80,130 +84,178 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "CardContainer",
-        },
-        "ref": null,
-        "rendered": "CardContainer",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
           "children": Array [
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              to="/people"
+            <h1>
+              CardContainer
+</h1>,
+            <nav
+              className="card-container__nav"
 >
-              <Button
-                            name="People"
-              />
-</NavLink>,
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              to="/planets"
->
-              <Button
-                            name="Planets"
-              />
-</NavLink>,
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              to="/vehicles"
->
-              <Button
-                            name="Vehicles"
-              />
-</NavLink>,
+              <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            to="/people"
+              >
+                            <Button
+                                          name="People"
+                            />
+              </NavLink>
+              <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            to="/planets"
+              >
+                            <Button
+                                          name="Planets"
+                            />
+              </NavLink>
+              <NavLink
+                            activeClassName="active"
+                            aria-current="page"
+                            to="/vehicles"
+              >
+                            <Button
+                                          name="Vehicles"
+                            />
+              </NavLink>
+</nav>,
           ],
-          "className": "main-container__nav",
+          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "activeClassName": "active",
-              "aria-current": "page",
-              "children": <Button
-                name="People"
-/>,
-              "to": "/people",
+              "children": "CardContainer",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "name": "People",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
+            "rendered": "CardContainer",
+            "type": "h1",
           },
           Object {
             "instance": null,
             "key": undefined,
-            "nodeType": "function",
+            "nodeType": "host",
             "props": Object {
-              "activeClassName": "active",
-              "aria-current": "page",
-              "children": <Button
-                name="Planets"
-/>,
-              "to": "/planets",
+              "children": Array [
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/people"
+>
+                  <Button
+                                    name="People"
+                  />
+</NavLink>,
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/planets"
+>
+                  <Button
+                                    name="Planets"
+                  />
+</NavLink>,
+                <NavLink
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/vehicles"
+>
+                  <Button
+                                    name="Vehicles"
+                  />
+</NavLink>,
+              ],
+              "className": "card-container__nav",
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "name": "Planets",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "aria-current": "page",
-              "children": <Button
-                name="Vehicles"
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "aria-current": "page",
+                  "children": <Button
+                    name="People"
 />,
-              "to": "/vehicles",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "name": "Vehicles",
+                  "to": "/people",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "People",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            "type": [Function],
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "aria-current": "page",
+                  "children": <Button
+                    name="Planets"
+/>,
+                  "to": "/planets",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "Planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "activeClassName": "active",
+                  "aria-current": "page",
+                  "children": <Button
+                    name="Vehicles"
+/>,
+                  "to": "/vehicles",
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "name": "Vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": "nav",
           },
         ],
-        "type": "nav",
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -292,40 +344,44 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="main-container__nav"
+          <div
+            className="card-container"
 >
-            <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        to="/people"
+            <h1>
+                        CardContainer
+            </h1>
+            <nav
+                        className="card-container__nav"
             >
-                        <Button
-                                    name="People"
-                        />
-            </NavLink>
-            <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        to="/planets"
-            >
-                        <Button
-                                    name="Planets"
-                        />
-            </NavLink>
-            <NavLink
-                        activeClassName="active"
-                        aria-current="page"
-                        to="/vehicles"
-            >
-                        <Button
-                                    name="Vehicles"
-                        />
-            </NavLink>
-</nav>,
+                        <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    to="/people"
+                        >
+                                    <Button
+                                                name="People"
+                                    />
+                        </NavLink>
+                        <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    to="/planets"
+                        >
+                                    <Button
+                                                name="Planets"
+                                    />
+                        </NavLink>
+                        <NavLink
+                                    activeClassName="active"
+                                    aria-current="page"
+                                    to="/vehicles"
+                        >
+                                    <Button
+                                                name="Vehicles"
+                                    />
+                        </NavLink>
+            </nav>
+</div>,
           <div>
             <Route
                         component={[Function]}
@@ -354,130 +410,178 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
             "children": Array [
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/people"
+              <h1>
+                CardContainer
+</h1>,
+              <nav
+                className="card-container__nav"
 >
-                <Button
-                                name="People"
-                />
-</NavLink>,
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/planets"
->
-                <Button
-                                name="Planets"
-                />
-</NavLink>,
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                to="/vehicles"
->
-                <Button
-                                name="Vehicles"
-                />
-</NavLink>,
+                <NavLink
+                                activeClassName="active"
+                                aria-current="page"
+                                to="/people"
+                >
+                                <Button
+                                                name="People"
+                                />
+                </NavLink>
+                <NavLink
+                                activeClassName="active"
+                                aria-current="page"
+                                to="/planets"
+                >
+                                <Button
+                                                name="Planets"
+                                />
+                </NavLink>
+                <NavLink
+                                activeClassName="active"
+                                aria-current="page"
+                                to="/vehicles"
+                >
+                                <Button
+                                                name="Vehicles"
+                                />
+                </NavLink>
+</nav>,
             ],
-            "className": "main-container__nav",
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "activeClassName": "active",
-                "aria-current": "page",
-                "children": <Button
-                  name="People"
-/>,
-                "to": "/people",
+                "children": "CardContainer",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "name": "People",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
+              "rendered": "CardContainer",
+              "type": "h1",
             },
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "function",
+              "nodeType": "host",
               "props": Object {
-                "activeClassName": "active",
-                "aria-current": "page",
-                "children": <Button
-                  name="Planets"
-/>,
-                "to": "/planets",
+                "children": Array [
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/people"
+>
+                    <Button
+                                        name="People"
+                    />
+</NavLink>,
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/planets"
+>
+                    <Button
+                                        name="Planets"
+                    />
+</NavLink>,
+                  <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/vehicles"
+>
+                    <Button
+                                        name="Vehicles"
+                    />
+</NavLink>,
+                ],
+                "className": "card-container__nav",
               },
               "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "name": "Planets",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "aria-current": "page",
-                "children": <Button
-                  name="Vehicles"
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "active",
+                    "aria-current": "page",
+                    "children": <Button
+                      name="People"
 />,
-                "to": "/vehicles",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "function",
-                "props": Object {
-                  "name": "Vehicles",
+                    "to": "/people",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "name": "People",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
                 },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "active",
+                    "aria-current": "page",
+                    "children": <Button
+                      name="Planets"
+/>,
+                    "to": "/planets",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "name": "Planets",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "activeClassName": "active",
+                    "aria-current": "page",
+                    "children": <Button
+                      name="Vehicles"
+/>,
+                    "to": "/vehicles",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "name": "Vehicles",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": "nav",
             },
           ],
-          "type": "nav",
+          "type": "div",
         },
         Object {
           "instance": null,
