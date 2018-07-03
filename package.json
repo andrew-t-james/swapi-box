@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "axios": "0.18.0",
     "eslint-plugin-react": "7.10.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -27,7 +26,6 @@
     "eslint-plugin-jest": "21.15.1",
     "husky": "0.14.3",
     "lint-staged": "7.1.2",
-    "moxios": "0.4.0",
     "react-scripts": "1.1.0"
   },
   "jest": {
