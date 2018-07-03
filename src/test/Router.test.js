@@ -1,6 +1,5 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { BrowerserRouter, Route} from 'react-router-dom';
 import Router from '../Router/Router';
 
 describe('Router', () => {
