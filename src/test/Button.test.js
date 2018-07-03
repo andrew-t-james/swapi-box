@@ -5,7 +5,7 @@ import Button from '../components/Button/Button';
 describe('Button', () => {
   let wrapper;
 
-  beforeEach(() => wrapper = shallow(<Button />));
+  beforeEach(() => wrapper = shallow(<Button name="button"/>));
 
   afterEach(() => wrapper.unmount());
 

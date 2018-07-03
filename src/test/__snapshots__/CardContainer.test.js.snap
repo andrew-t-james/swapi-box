@@ -17,38 +17,65 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h1>
-        CardContainer
+      "children": Array [
+        <h1>
+          CardContainer
 </h1>,
+        <nav
+          className="main-container__nav"
+>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/people"
+          >
+                    <Button
+                              name="People"
+                    />
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/planets"
+          >
+                    <Button
+                              name="Planets"
+                    />
+          </NavLink>
+          <NavLink
+                    activeClassName="active"
+                    aria-current="page"
+                    to="/vehicles"
+          >
+                    <Button
+                              name="Vehicles"
+                    />
+          </NavLink>
+</nav>,
+        <div>
+          <Route
+                    component={[Function]}
+                    path="/people"
+          />
+          <Route
+                    component={[Function]}
+                    path="/planets"
+          />
+          <Route
+                    component={[Function]}
+                    path="/vehicles"
+          />
+          <Route
+                    component={[Function]}
+                    path="/favorites"
+          />
+</div>,
+      ],
       "className": "main-container",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "CardContainer",
-      },
-      "ref": null,
-      "rendered": "CardContainer",
-      "type": "h1",
-    },
-    "type": "section",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <h1>
-          CardContainer
-</h1>,
-        "className": "main-container",
-      },
-      "ref": null,
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
@@ -59,6 +86,477 @@ ShallowWrapper {
         "rendered": "CardContainer",
         "type": "h1",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/people"
+>
+              <Button
+                            name="People"
+              />
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/planets"
+>
+              <Button
+                            name="Planets"
+              />
+</NavLink>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              to="/vehicles"
+>
+              <Button
+                            name="Vehicles"
+              />
+</NavLink>,
+          ],
+          "className": "main-container__nav",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <Button
+                name="People"
+/>,
+              "to": "/people",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "name": "People",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <Button
+                name="Planets"
+/>,
+              "to": "/planets",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "name": "Planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <Button
+                name="Vehicles"
+/>,
+              "to": "/vehicles",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "name": "Vehicles",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "nav",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <Route
+              component={[Function]}
+              path="/people"
+/>,
+            <Route
+              component={[Function]}
+              path="/planets"
+/>,
+            <Route
+              component={[Function]}
+              path="/vehicles"
+/>,
+            <Route
+              component={[Function]}
+              path="/favorites"
+/>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/people",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/planets",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/vehicles",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "component": [Function],
+              "path": "/favorites",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            CardContainer
+</h1>,
+          <nav
+            className="main-container__nav"
+>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/people"
+            >
+                        <Button
+                                    name="People"
+                        />
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/planets"
+            >
+                        <Button
+                                    name="Planets"
+                        />
+            </NavLink>
+            <NavLink
+                        activeClassName="active"
+                        aria-current="page"
+                        to="/vehicles"
+            >
+                        <Button
+                                    name="Vehicles"
+                        />
+            </NavLink>
+</nav>,
+          <div>
+            <Route
+                        component={[Function]}
+                        path="/people"
+            />
+            <Route
+                        component={[Function]}
+                        path="/planets"
+            />
+            <Route
+                        component={[Function]}
+                        path="/vehicles"
+            />
+            <Route
+                        component={[Function]}
+                        path="/favorites"
+            />
+</div>,
+        ],
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CardContainer",
+          },
+          "ref": null,
+          "rendered": "CardContainer",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/people"
+>
+                <Button
+                                name="People"
+                />
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/planets"
+>
+                <Button
+                                name="Planets"
+                />
+</NavLink>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                to="/vehicles"
+>
+                <Button
+                                name="Vehicles"
+                />
+</NavLink>,
+            ],
+            "className": "main-container__nav",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <Button
+                  name="People"
+/>,
+                "to": "/people",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "People",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <Button
+                  name="Planets"
+/>,
+                "to": "/planets",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Planets",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <Button
+                  name="Vehicles"
+/>,
+                "to": "/vehicles",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Vehicles",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                path="/people"
+/>,
+              <Route
+                component={[Function]}
+                path="/planets"
+/>,
+              <Route
+                component={[Function]}
+                path="/vehicles"
+/>,
+              <Route
+                component={[Function]}
+                path="/favorites"
+/>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/people",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/vehicles",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "path": "/favorites",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+      ],
       "type": "section",
     },
   ],
