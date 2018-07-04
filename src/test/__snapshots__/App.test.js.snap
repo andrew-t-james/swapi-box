@@ -20,7 +20,10 @@ ShallowWrapper {
       "children": Array [
         <Header />,
         <SideBar />,
-        <CardContainer />,
+        <CardContainer
+          fetchPeopleData={[Function]}
+          people={Array []}
+/>,
       ],
       "className": "grid-container",
     },
@@ -48,7 +51,10 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "fetchPeopleData": [Function],
+          "people": Array [],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -65,7 +71,10 @@ ShallowWrapper {
         "children": Array [
           <Header />,
           <SideBar />,
-          <CardContainer />,
+          <CardContainer
+            fetchPeopleData={[Function]}
+            people={Array []}
+/>,
         ],
         "className": "grid-container",
       },
@@ -93,7 +102,10 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "fetchPeopleData": [Function],
+            "people": Array [],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],

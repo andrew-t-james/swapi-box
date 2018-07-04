@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import { Route, NavLink } from 'react-router-dom';
+import { Route, NavLink, Switch } from 'react-router-dom';
 import People from '../People/People';
 import Planets from '../Planets/Planets';
 import Vehicles from '../Vehicles/Vehicles';
@@ -9,7 +9,9 @@ import PropTypes from 'prop-types';
 
 import './CardContainer.css';
 
-const CardContainer = () => {
+const CardContainer = props => {
+  const { people, fetchPeopleData } = props;
+
   return (
     <section className="main-container">
       <div className="card-container">
@@ -26,18 +28,24 @@ const CardContainer = () => {
           </NavLink>
         </nav>
       </div>
-      <div>
-        <Route path="/people" component={People} />
+      <Switch>
+        <Route
+          path="/people"
+          render={
+            props => <People {...props} people={people} fetchPeopleData={fetchPeopleData}/>
+          }
+        />
         <Route path="/planets" component={Planets} />
         <Route path="/vehicles" component={Vehicles} />
         <Route path="/favorites" component={Favorites} />
-      </div>
+      </Switch>
     </section>
   );
 };
 
 CardContainer.propTypes = {
-
+  people: PropTypes.arrayOf(PropTypes.object),
+  fetchPeopleData: PropTypes.func
 };
 
 export default CardContainer;
