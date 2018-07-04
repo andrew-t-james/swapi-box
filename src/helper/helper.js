@@ -26,7 +26,7 @@ export const cleanHomeWord = async peopleList => {
 };
 
 export const cleanSpecies = async peopleList => {
-  const unresolvedPeople = await peopleList.map(async person => {
+  const unresolvedPeopleList = await peopleList.map(async person => {
     const species = await fetchHelper(person.species);
     const { homeworld, population, name } = person;
     return {
@@ -37,5 +37,5 @@ export const cleanSpecies = async peopleList => {
       favorite: false
     };
   });
-  return Promise.all(unresolvedPeople);
+  return Promise.all(unresolvedPeopleList);
 };
