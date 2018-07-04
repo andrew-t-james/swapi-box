@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import SideBar from '../SideBar/SideBar';
+import mockPersonCall from '../../mock-data/mock-person';
 
 import './App.css';
 
