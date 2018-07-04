@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import People from '../components/People/People';
+import PersonCard from '../components/PersonCard/PersonCard';
 
-describe('People', () => {
+describe('PersonCard', () => {
   let wrapper;
+  const mockFunc = jest.fn();
 
-  beforeEach(() => wrapper = shallow(<People />));
+  beforeEach(() => wrapper = shallow(<PersonCard fetchPeopleData={mockFunc}/>));
 
   afterEach(() => wrapper.unmount());
 
