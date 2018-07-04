@@ -16,13 +16,13 @@ const CardContainer = () => {
         <h1>CardContainer</h1>
         <nav className="card-container__nav">
           <NavLink to="/people">
-            <Button name={'People'}/>
+            <Button name={'People'} />
           </NavLink>
           <NavLink to="/planets">
-            <Button name={'Planets'}/>
+            <Button name={'Planets'} />
           </NavLink>
           <NavLink to="/vehicles">
-            <Button name={'Vehicles'}/>
+            <Button name={'Vehicles'} />
           </NavLink>
         </nav>
       </div>

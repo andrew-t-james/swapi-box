@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import { MemoryRouter } from 'react-router';
+import { StaticRouter } from 'react-router';
 import App from '../components/App/App';
 
 describe('Router', () => {
   let wrapper;
 
   beforeEach(() => wrapper = shallow(
-    <MemoryRouter initialEntries={['/']}>
+    <StaticRouter context={{ path: '/' }}>
       <App/>
-    </MemoryRouter>
+    </StaticRouter>
   ));
 
   afterEach(() => wrapper.unmount());
