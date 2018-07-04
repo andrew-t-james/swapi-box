@@ -1,19 +1,14 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import People from '../components/People/People';
+import PersonCard from '../components/PersonCard/PersonCard';
 
-describe('People', () => {
+describe('PersonCard', () => {
   let wrapper;
   const mockFunc = jest.fn();
 
-  beforeEach(() => wrapper = shallow(<People fetchPeopleData={mockFunc}/>));
+  beforeEach(() => wrapper = shallow(<PersonCard fetchPeopleData={mockFunc}/>));
 
   afterEach(() => wrapper.unmount());
-
-  test('should invoke fetchPeopleData on mount ', () => {
-    wrapper.instance().componentDidMount();
-    expect(mockFunc).toHaveBeenCalled();
-  });
 
   test('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();

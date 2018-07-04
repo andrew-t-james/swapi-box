@@ -16,7 +16,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    // this.fetchPeopleData();
+    // TODO fetch random movie scroll here
   }
 
   fetchPeopleData = async () => {
@@ -24,6 +24,7 @@ class App extends Component {
     try {
       const getPeople = await fetchHelper(url);
       const people = await getPersonData(getPeople.results);
+      // debugger;
       this.setState({ people });
     } catch (error) {
       console.error(error);
