@@ -9,6 +9,15 @@ describe('App', () => {
 
   afterEach(() => wrapper.unmount());
 
+  test('should have default state', async () => {
+    const mockState = {
+      people: [],
+      isLoading: false,
+      hasError: false
+    };
+    expect(wrapper.state()).toEqual(mockState);
+  });
+
   test('should return a people data', async () => {
     const apiEndPoint = 'https://swapi.co/api/people';
 
@@ -20,6 +29,17 @@ describe('App', () => {
     await wrapper.instance().fetchPeopleData();
     expect(fetchSpy).toHaveBeenCalledTimes(3);
     expect(fetchSpy).toHaveBeenCalledWith(apiEndPoint);
+  });
+
+  test('should handle errors when fetching data fails', async () => {
+    const apiEndPoint = 'https://swapi.co/api/people';
+
+    const fetchSpy = jest.spyOn(global, 'fetch')
+      .mockImplementation(() => Promise.reject({}));
+
+    await wrapper.instance().fetchPeopleData();
+    expect(fetchSpy).toHaveBeenCalledWith(apiEndPoint);
+    expect(wrapper.state('hasError')).toBe(true);
   });
 
   test('renders without crashing', () => {

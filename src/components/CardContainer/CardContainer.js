@@ -19,8 +19,8 @@ const CardContainer = props => {
         <h1>CardContainer</h1>
         <nav className="card-container__nav">
           <ul>
-            <li onClick={() => fetchPeopleData()}>
-              <Button name={'People'} />
+            <li className="card-container__nav--button" onClick={() => fetchPeopleData()}>
+              <Button name={'People'} className="people" />
             </li>
             <li>
               <Button name={'Planets'} />
