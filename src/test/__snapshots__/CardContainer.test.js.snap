@@ -1,12 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardContainer should match snapshot 1`] = `
+exports[`CardContainer should match shapshot when people array has been populated 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
-    fetchPeopleData={[Function]}
-    people={Array []}
+    people={
+        Array [
+            Object {
+              "homeworld": "Tatooine",
+              "name": "Luke Skywalker",
+              "population": "200000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "C-3PO",
+              "population": "200000",
+              "species": "Droid",
+            },
+            Object {
+              "homeworld": "Naboo",
+              "name": "R2-D2",
+              "population": "4500000000",
+              "species": "Droid",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "Darth Vader",
+              "population": "200000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Alderaan",
+              "name": "Leia Organa",
+              "population": "2000000000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "Owen Lars",
+              "population": "200000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "Beru Whitesun lars",
+              "population": "200000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "R5-D4",
+              "population": "200000",
+              "species": "Droid",
+            },
+            Object {
+              "homeworld": "Tatooine",
+              "name": "Biggs Darklighter",
+              "population": "200000",
+              "species": "Human",
+            },
+            Object {
+              "homeworld": "Stewjon",
+              "name": "Obi-Wan Kenobi",
+              "population": "unknown",
+              "species": "Human",
+            },
+          ]
+    }
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -31,9 +93,11 @@ ShallowWrapper {
         >
                 <ul>
                         <li
+                                className="card-container__nav--button"
                                 onClick={[Function]}
                         >
                                 <Button
+                                        className="people"
                                         name="People"
                                 />
                         </li>
@@ -50,7 +114,66 @@ ShallowWrapper {
                 </ul>
         </nav>
         <section>
-                
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="Luke Skywalker"
+                        population="200000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="C-3PO"
+                        population="200000"
+                        species="Droid"
+                />
+                <PersonCard
+                        homeworld="Naboo"
+                        name="R2-D2"
+                        population="4500000000"
+                        species="Droid"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="Darth Vader"
+                        population="200000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Alderaan"
+                        name="Leia Organa"
+                        population="2000000000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="Owen Lars"
+                        population="200000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="Beru Whitesun lars"
+                        population="200000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="R5-D4"
+                        population="200000"
+                        species="Droid"
+                />
+                <PersonCard
+                        homeworld="Tatooine"
+                        name="Biggs Darklighter"
+                        population="200000"
+                        species="Human"
+                />
+                <PersonCard
+                        homeworld="Stewjon"
+                        name="Obi-Wan Kenobi"
+                        population="unknown"
+                        species="Human"
+                />
         </section>
 </div>,
       "className": "main-container",
@@ -70,9 +193,11 @@ ShallowWrapper {
 >
             <ul>
                         <li
+                                    className="card-container__nav--button"
                                     onClick={[Function]}
                         >
                                     <Button
+                                                className="people"
                                                 name="People"
                                     />
                         </li>
@@ -89,7 +214,66 @@ ShallowWrapper {
             </ul>
 </nav>,
           <section>
-            
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="Luke Skywalker"
+                        population="200000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="C-3PO"
+                        population="200000"
+                        species="Droid"
+            />
+            <PersonCard
+                        homeworld="Naboo"
+                        name="R2-D2"
+                        population="4500000000"
+                        species="Droid"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="Darth Vader"
+                        population="200000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Alderaan"
+                        name="Leia Organa"
+                        population="2000000000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="Owen Lars"
+                        population="200000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="Beru Whitesun lars"
+                        population="200000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="R5-D4"
+                        population="200000"
+                        species="Droid"
+            />
+            <PersonCard
+                        homeworld="Tatooine"
+                        name="Biggs Darklighter"
+                        population="200000"
+                        species="Human"
+            />
+            <PersonCard
+                        homeworld="Stewjon"
+                        name="Obi-Wan Kenobi"
+                        population="unknown"
+                        species="Human"
+            />
 </section>,
         ],
         "className": "card-container",
@@ -114,9 +298,11 @@ ShallowWrapper {
           "props": Object {
             "children": <ul>
               <li
+                            className="card-container__nav--button"
                             onClick={[Function]}
               >
                             <Button
+                                          className="people"
                                           name="People"
                             />
               </li>
@@ -141,9 +327,11 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
+                  className="card-container__nav--button"
                   onClick={[Function]}
 >
                   <Button
+                                    className="people"
                                     name="People"
                   />
 </li>,
@@ -167,8 +355,10 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <Button
+                    className="people"
                     name="People"
 />,
+                  "className": "card-container__nav--button",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -177,6 +367,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
+                    "className": "people",
                     "name": "People",
                   },
                   "ref": null,
@@ -241,10 +432,212 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [],
+            "children": Array [
+              <PersonCard
+                homeworld="Tatooine"
+                name="Luke Skywalker"
+                population="200000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="C-3PO"
+                population="200000"
+                species="Droid"
+/>,
+              <PersonCard
+                homeworld="Naboo"
+                name="R2-D2"
+                population="4500000000"
+                species="Droid"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="Darth Vader"
+                population="200000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Alderaan"
+                name="Leia Organa"
+                population="2000000000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="Owen Lars"
+                population="200000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="Beru Whitesun lars"
+                population="200000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="R5-D4"
+                population="200000"
+                species="Droid"
+/>,
+              <PersonCard
+                homeworld="Tatooine"
+                name="Biggs Darklighter"
+                population="200000"
+                species="Human"
+/>,
+              <PersonCard
+                homeworld="Stewjon"
+                name="Obi-Wan Kenobi"
+                population="unknown"
+                species="Human"
+/>,
+            ],
           },
           "ref": null,
-          "rendered": Array [],
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "Luke Skywalker",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "Luke Skywalker",
+                "population": "200000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "C-3PO",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "C-3PO",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "R2-D2",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Naboo",
+                "name": "R2-D2",
+                "population": "4500000000",
+                "species": "Droid",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Darth Vader",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "Darth Vader",
+                "population": "200000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Leia Organa",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Alderaan",
+                "name": "Leia Organa",
+                "population": "2000000000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Owen Lars",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "Owen Lars",
+                "population": "200000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Beru Whitesun lars",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "Beru Whitesun lars",
+                "population": "200000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "R5-D4",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "R5-D4",
+                "population": "200000",
+                "species": "Droid",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Biggs Darklighter",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Tatooine",
+                "name": "Biggs Darklighter",
+                "population": "200000",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": "Obi-Wan Kenobi",
+              "nodeType": "function",
+              "props": Object {
+                "homeworld": "Stewjon",
+                "name": "Obi-Wan Kenobi",
+                "population": "unknown",
+                "species": "Human",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
           "type": "section",
         },
       ],
@@ -269,9 +662,11 @@ ShallowWrapper {
           >
                     <ul>
                               <li
+                                        className="card-container__nav--button"
                                         onClick={[Function]}
                               >
                                         <Button
+                                                  className="people"
                                                   name="People"
                                         />
                               </li>
@@ -288,7 +683,66 @@ ShallowWrapper {
                     </ul>
           </nav>
           <section>
-                    
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="Luke Skywalker"
+                              population="200000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="C-3PO"
+                              population="200000"
+                              species="Droid"
+                    />
+                    <PersonCard
+                              homeworld="Naboo"
+                              name="R2-D2"
+                              population="4500000000"
+                              species="Droid"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="Darth Vader"
+                              population="200000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Alderaan"
+                              name="Leia Organa"
+                              population="2000000000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="Owen Lars"
+                              population="200000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="Beru Whitesun lars"
+                              population="200000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="R5-D4"
+                              population="200000"
+                              species="Droid"
+                    />
+                    <PersonCard
+                              homeworld="Tatooine"
+                              name="Biggs Darklighter"
+                              population="200000"
+                              species="Human"
+                    />
+                    <PersonCard
+                              homeworld="Stewjon"
+                              name="Obi-Wan Kenobi"
+                              population="unknown"
+                              species="Human"
+                    />
           </section>
 </div>,
         "className": "main-container",
@@ -308,9 +762,11 @@ ShallowWrapper {
 >
               <ul>
                             <li
+                                          className="card-container__nav--button"
                                           onClick={[Function]}
                             >
                                           <Button
+                                                        className="people"
                                                         name="People"
                                           />
                             </li>
@@ -327,7 +783,66 @@ ShallowWrapper {
               </ul>
 </nav>,
             <section>
-              
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="Luke Skywalker"
+                            population="200000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="C-3PO"
+                            population="200000"
+                            species="Droid"
+              />
+              <PersonCard
+                            homeworld="Naboo"
+                            name="R2-D2"
+                            population="4500000000"
+                            species="Droid"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="Darth Vader"
+                            population="200000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Alderaan"
+                            name="Leia Organa"
+                            population="2000000000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="Owen Lars"
+                            population="200000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="Beru Whitesun lars"
+                            population="200000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="R5-D4"
+                            population="200000"
+                            species="Droid"
+              />
+              <PersonCard
+                            homeworld="Tatooine"
+                            name="Biggs Darklighter"
+                            population="200000"
+                            species="Human"
+              />
+              <PersonCard
+                            homeworld="Stewjon"
+                            name="Obi-Wan Kenobi"
+                            population="unknown"
+                            species="Human"
+              />
 </section>,
           ],
           "className": "card-container",
@@ -352,9 +867,11 @@ ShallowWrapper {
             "props": Object {
               "children": <ul>
                 <li
+                                className="card-container__nav--button"
                                 onClick={[Function]}
                 >
                                 <Button
+                                                className="people"
                                                 name="People"
                                 />
                 </li>
@@ -379,9 +896,11 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
+                    className="card-container__nav--button"
                     onClick={[Function]}
 >
                     <Button
+                                        className="people"
                                         name="People"
                     />
 </li>,
@@ -405,8 +924,10 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <Button
+                      className="people"
                       name="People"
 />,
+                    "className": "card-container__nav--button",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -415,6 +936,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
+                      "className": "people",
                       "name": "People",
                     },
                     "ref": null,
@@ -479,16 +1001,1116 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [],
+              "children": Array [
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="Luke Skywalker"
+                  population="200000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="C-3PO"
+                  population="200000"
+                  species="Droid"
+/>,
+                <PersonCard
+                  homeworld="Naboo"
+                  name="R2-D2"
+                  population="4500000000"
+                  species="Droid"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="Darth Vader"
+                  population="200000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Alderaan"
+                  name="Leia Organa"
+                  population="2000000000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="Owen Lars"
+                  population="200000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="Beru Whitesun lars"
+                  population="200000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="R5-D4"
+                  population="200000"
+                  species="Droid"
+/>,
+                <PersonCard
+                  homeworld="Tatooine"
+                  name="Biggs Darklighter"
+                  population="200000"
+                  species="Human"
+/>,
+                <PersonCard
+                  homeworld="Stewjon"
+                  name="Obi-Wan Kenobi"
+                  population="unknown"
+                  species="Human"
+/>,
+              ],
             },
             "ref": null,
-            "rendered": Array [],
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "Luke Skywalker",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "Luke Skywalker",
+                  "population": "200000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "C-3PO",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "C-3PO",
+                  "population": "200000",
+                  "species": "Droid",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "R2-D2",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Naboo",
+                  "name": "R2-D2",
+                  "population": "4500000000",
+                  "species": "Droid",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Darth Vader",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "Darth Vader",
+                  "population": "200000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Leia Organa",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Alderaan",
+                  "name": "Leia Organa",
+                  "population": "2000000000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Owen Lars",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "Owen Lars",
+                  "population": "200000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Beru Whitesun lars",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "Beru Whitesun lars",
+                  "population": "200000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "R5-D4",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "R5-D4",
+                  "population": "200000",
+                  "species": "Droid",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Biggs Darklighter",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Tatooine",
+                  "name": "Biggs Darklighter",
+                  "population": "200000",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": "Obi-Wan Kenobi",
+                "nodeType": "function",
+                "props": Object {
+                  "homeworld": "Stewjon",
+                  "name": "Obi-Wan Kenobi",
+                  "population": "unknown",
+                  "species": "Human",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
             "type": "section",
           },
         ],
         "type": "div",
       },
       "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match snapshot 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <CardContainer
+    fetchPeopleData={[Function]}
+    people={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "fetchPeopleData": [Function],
+      "people": Array [],
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <section
+        class="main-container"
+>
+        <div
+                class="card-container"
+        >
+                <h1>
+                        CardContainer
+                </h1>
+                <nav
+                        class="card-container__nav"
+                >
+                        <ul>
+                                <li
+                                        class="card-container__nav--button"
+                                >
+                                        <button>
+                                                People
+                                        </button>
+                                </li>
+                                <li>
+                                        <button>
+                                                Planets
+                                        </button>
+                                </li>
+                                <li>
+                                        <button>
+                                                Vehicles
+                                        </button>
+                                </li>
+                        </ul>
+                </nav>
+                <section />
+        </div>
+</section>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-container"
+>
+          <h1>
+                    CardContainer
+          </h1>
+          <nav
+                    className="card-container__nav"
+          >
+                    <ul>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="people"
+                                                  name="People"
+                                        />
+                              </li>
+                              <li>
+                                        <Button
+                                                  name="Planets"
+                                        />
+                              </li>
+                              <li>
+                                        <Button
+                                                  name="Vehicles"
+                                        />
+                              </li>
+                    </ul>
+          </nav>
+          <section>
+                    
+          </section>
+</div>,
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="card-container"
+>
+            <h1>
+                        CardContainer
+            </h1>
+            <nav
+                        class="card-container__nav"
+            >
+                        <ul>
+                                    <li
+                                                class="card-container__nav--button"
+                                    >
+                                                <button>
+                                                            People
+                                                </button>
+                                    </li>
+                                    <li>
+                                                <button>
+                                                            Planets
+                                                </button>
+                                    </li>
+                                    <li>
+                                                <button>
+                                                            Vehicles
+                                                </button>
+                                    </li>
+                        </ul>
+            </nav>
+            <section />
+</div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                CardContainer
+</h1>,
+              <nav
+                className="card-container__nav"
+>
+                <ul>
+                                <li
+                                                className="card-container__nav--button"
+                                                onClick={[Function]}
+                                >
+                                                <Button
+                                                                className="people"
+                                                                name="People"
+                                                />
+                                </li>
+                                <li>
+                                                <Button
+                                                                name="Planets"
+                                                />
+                                </li>
+                                <li>
+                                                <Button
+                                                                name="Vehicles"
+                                                />
+                                </li>
+                </ul>
+</nav>,
+              <section>
+                
+</section>,
+            ],
+            "className": "card-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <h1>
+                CardContainer
+</h1>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "CardContainer",
+              },
+              "ref": null,
+              "rendered": Array [
+                "CardContainer",
+              ],
+              "type": "h1",
+            },
+            Object {
+              "instance": <nav
+                class="card-container__nav"
+>
+                <ul>
+                                <li
+                                                class="card-container__nav--button"
+                                >
+                                                <button>
+                                                                People
+                                                </button>
+                                </li>
+                                <li>
+                                                <button>
+                                                                Planets
+                                                </button>
+                                </li>
+                                <li>
+                                                <button>
+                                                                Vehicles
+                                                </button>
+                                </li>
+                </ul>
+</nav>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul>
+                  <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                  >
+                                    <Button
+                                                      className="people"
+                                                      name="People"
+                                    />
+                  </li>
+                  <li>
+                                    <Button
+                                                      name="Planets"
+                                    />
+                  </li>
+                  <li>
+                                    <Button
+                                                      name="Vehicles"
+                                    />
+                  </li>
+</ul>,
+                "className": "card-container__nav",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": <ul>
+                    <li
+                                        class="card-container__nav--button"
+                    >
+                                        <button>
+                                                            People
+                                        </button>
+                    </li>
+                    <li>
+                                        <button>
+                                                            Planets
+                                        </button>
+                    </li>
+                    <li>
+                                        <button>
+                                                            Vehicles
+                                        </button>
+                    </li>
+</ul>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <li
+                        className="card-container__nav--button"
+                        onClick={[Function]}
+>
+                        <Button
+                                                className="people"
+                                                name="People"
+                        />
+</li>,
+                      <li>
+                        <Button
+                                                name="Planets"
+                        />
+</li>,
+                      <li>
+                        <Button
+                                                name="Vehicles"
+                        />
+</li>,
+                    ],
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <li
+                        class="card-container__nav--button"
+>
+                        <button>
+                                                People
+                        </button>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Button
+                          className="people"
+                          name="People"
+/>,
+                        "className": "card-container__nav--button",
+                        "onClick": [Function],
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "className": "people",
+                            "name": "People",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <button>
+                              People
+</button>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "People",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "People",
+                            ],
+                            "type": "button",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": <li>
+                        <button>
+                                                Planets
+                        </button>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Button
+                          name="Planets"
+/>,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "name": "Planets",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <button>
+                              Planets
+</button>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Planets",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Planets",
+                            ],
+                            "type": "button",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                    Object {
+                      "instance": <li>
+                        <button>
+                                                Vehicles
+                        </button>
+</li>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": <Button
+                          name="Vehicles"
+/>,
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "function",
+                          "props": Object {
+                            "name": "Vehicles",
+                          },
+                          "ref": null,
+                          "rendered": Object {
+                            "instance": <button>
+                              Vehicles
+</button>,
+                            "key": undefined,
+                            "nodeType": "host",
+                            "props": Object {
+                              "children": "Vehicles",
+                            },
+                            "ref": null,
+                            "rendered": Array [
+                              "Vehicles",
+                            ],
+                            "type": "button",
+                          },
+                          "type": [Function],
+                        },
+                      ],
+                      "type": "li",
+                    },
+                  ],
+                  "type": "ul",
+                },
+              ],
+              "type": "nav",
+            },
+            Object {
+              "instance": <section />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [],
+              },
+              "ref": null,
+              "rendered": Array [
+                Array [],
+              ],
+              "type": "section",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "section",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "fetchPeopleData": [Function],
+        "people": Array [],
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <section
+          class="main-container"
+>
+          <div
+                    class="card-container"
+          >
+                    <h1>
+                              CardContainer
+                    </h1>
+                    <nav
+                              class="card-container__nav"
+                    >
+                              <ul>
+                                        <li
+                                                  class="card-container__nav--button"
+                                        >
+                                                  <button>
+                                                            People
+                                                  </button>
+                                        </li>
+                                        <li>
+                                                  <button>
+                                                            Planets
+                                                  </button>
+                                        </li>
+                                        <li>
+                                                  <button>
+                                                            Vehicles
+                                                  </button>
+                                        </li>
+                              </ul>
+                    </nav>
+                    <section />
+          </div>
+</section>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="card-container"
+>
+            <h1>
+                        CardContainer
+            </h1>
+            <nav
+                        className="card-container__nav"
+            >
+                        <ul>
+                                    <li
+                                                className="card-container__nav--button"
+                                                onClick={[Function]}
+                                    >
+                                                <Button
+                                                            className="people"
+                                                            name="People"
+                                                />
+                                    </li>
+                                    <li>
+                                                <Button
+                                                            name="Planets"
+                                                />
+                                    </li>
+                                    <li>
+                                                <Button
+                                                            name="Vehicles"
+                                                />
+                                    </li>
+                        </ul>
+            </nav>
+            <section>
+                        
+            </section>
+</div>,
+          "className": "main-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="card-container"
+>
+              <h1>
+                            CardContainer
+              </h1>
+              <nav
+                            class="card-container__nav"
+              >
+                            <ul>
+                                          <li
+                                                        class="card-container__nav--button"
+                                          >
+                                                        <button>
+                                                                      People
+                                                        </button>
+                                          </li>
+                                          <li>
+                                                        <button>
+                                                                      Planets
+                                                        </button>
+                                          </li>
+                                          <li>
+                                                        <button>
+                                                                      Vehicles
+                                                        </button>
+                                          </li>
+                            </ul>
+              </nav>
+              <section />
+</div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  CardContainer
+</h1>,
+                <nav
+                  className="card-container__nav"
+>
+                  <ul>
+                                    <li
+                                                      className="card-container__nav--button"
+                                                      onClick={[Function]}
+                                    >
+                                                      <Button
+                                                                        className="people"
+                                                                        name="People"
+                                                      />
+                                    </li>
+                                    <li>
+                                                      <Button
+                                                                        name="Planets"
+                                                      />
+                                    </li>
+                                    <li>
+                                                      <Button
+                                                                        name="Vehicles"
+                                                      />
+                                    </li>
+                  </ul>
+</nav>,
+                <section>
+                  
+</section>,
+              ],
+              "className": "card-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <h1>
+                  CardContainer
+</h1>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "CardContainer",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "CardContainer",
+                ],
+                "type": "h1",
+              },
+              Object {
+                "instance": <nav
+                  class="card-container__nav"
+>
+                  <ul>
+                                    <li
+                                                      class="card-container__nav--button"
+                                    >
+                                                      <button>
+                                                                        People
+                                                      </button>
+                                    </li>
+                                    <li>
+                                                      <button>
+                                                                        Planets
+                                                      </button>
+                                    </li>
+                                    <li>
+                                                      <button>
+                                                                        Vehicles
+                                                      </button>
+                                    </li>
+                  </ul>
+</nav>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <ul>
+                    <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                    >
+                                        <Button
+                                                            className="people"
+                                                            name="People"
+                                        />
+                    </li>
+                    <li>
+                                        <Button
+                                                            name="Planets"
+                                        />
+                    </li>
+                    <li>
+                                        <Button
+                                                            name="Vehicles"
+                                        />
+                    </li>
+</ul>,
+                  "className": "card-container__nav",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": <ul>
+                      <li
+                                            class="card-container__nav--button"
+                      >
+                                            <button>
+                                                                  People
+                                            </button>
+                      </li>
+                      <li>
+                                            <button>
+                                                                  Planets
+                                            </button>
+                      </li>
+                      <li>
+                                            <button>
+                                                                  Vehicles
+                                            </button>
+                      </li>
+</ul>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <li
+                          className="card-container__nav--button"
+                          onClick={[Function]}
+>
+                          <Button
+                                                    className="people"
+                                                    name="People"
+                          />
+</li>,
+                        <li>
+                          <Button
+                                                    name="Planets"
+                          />
+</li>,
+                        <li>
+                          <Button
+                                                    name="Vehicles"
+                          />
+</li>,
+                      ],
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <li
+                          class="card-container__nav--button"
+>
+                          <button>
+                                                    People
+                          </button>
+</li>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Button
+                            className="people"
+                            name="People"
+/>,
+                          "className": "card-container__nav--button",
+                          "onClick": [Function],
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "className": "people",
+                              "name": "People",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <button>
+                                People
+</button>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "People",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "People",
+                              ],
+                              "type": "button",
+                            },
+                            "type": [Function],
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": <li>
+                          <button>
+                                                    Planets
+                          </button>
+</li>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Button
+                            name="Planets"
+/>,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "name": "Planets",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <button>
+                                Planets
+</button>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Planets",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Planets",
+                              ],
+                              "type": "button",
+                            },
+                            "type": [Function],
+                          },
+                        ],
+                        "type": "li",
+                      },
+                      Object {
+                        "instance": <li>
+                          <button>
+                                                    Vehicles
+                          </button>
+</li>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": <Button
+                            name="Vehicles"
+/>,
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          Object {
+                            "instance": null,
+                            "key": undefined,
+                            "nodeType": "function",
+                            "props": Object {
+                              "name": "Vehicles",
+                            },
+                            "ref": null,
+                            "rendered": Object {
+                              "instance": <button>
+                                Vehicles
+</button>,
+                              "key": undefined,
+                              "nodeType": "host",
+                              "props": Object {
+                                "children": "Vehicles",
+                              },
+                              "ref": null,
+                              "rendered": Array [
+                                "Vehicles",
+                              ],
+                              "type": "button",
+                            },
+                            "type": [Function],
+                          },
+                        ],
+                        "type": "li",
+                      },
+                    ],
+                    "type": "ul",
+                  },
+                ],
+                "type": "nav",
+              },
+              Object {
+                "instance": <section />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Array [],
+                ],
+                "type": "section",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "section",
+      },
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
