@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../Button/Button';
-import { Route, NavLink, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, NavLink, Switch } from 'react-router-dom';
 import People from '../People/People';
 import Planets from '../Planets/Planets';
 import Vehicles from '../Vehicles/Vehicles';
@@ -18,10 +18,10 @@ const CardContainer = props => {
         <h1>CardContainer</h1>
         <nav className="card-container__nav">
           <NavLink to="/people">
-            <Button name={'People'} />
+            <Button name={'People'} className="people"/>
           </NavLink>
           <NavLink to="/planets">
-            <Button name={'Planets'} />
+            <Button name={'Planets'} className="planets" />
           </NavLink>
           <NavLink to="/vehicles">
             <Button name={'Vehicles'} />
@@ -32,7 +32,7 @@ const CardContainer = props => {
         <Route
           path="/people"
           render={
-            props => <People {...props} people={people} fetchPeopleData={fetchPeopleData}/>
+            props => <People {...props} people={people} fetchPeopleData={fetchPeopleData} />
           }
         />
         <Route path="/planets" component={Planets} />

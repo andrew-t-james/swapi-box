@@ -14,7 +14,7 @@ describe('App', () => {
 
     const fetchSpy = jest.spyOn(global, 'fetch')
       .mockImplementation(() => Promise.resolve({
-        json: () => ({ results: [{species: ['api-endpoint']}] })
+        json: () => ({ results: [{species: ['mock-api-endpoint']}] })
       }));
 
     await wrapper.instance().fetchPeopleData();

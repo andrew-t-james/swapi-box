@@ -15,7 +15,6 @@ describe('People', () => {
     expect(mockFunc).toHaveBeenCalled();
   });
 
-
   test('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
