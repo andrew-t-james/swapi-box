@@ -31,7 +31,8 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!src/index.js",
-      "!src/mock-data/*"
+      "!src/mock-data/*",
+      "!src/router/*"
     ]
   },
   "lint-staged": {
