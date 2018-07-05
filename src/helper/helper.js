@@ -15,9 +15,9 @@ export const cleanHomeWord = async peopleList => {
   const unresolvedPeopleList = await peopleList.map(async person => {
     const homeworld = await fetchHelper(person.homeworld);
     const { name, population } = homeworld;
+    // console.log(homeworld);
     return {
       ...person,
-      homeworld:
       name,
       population
     };

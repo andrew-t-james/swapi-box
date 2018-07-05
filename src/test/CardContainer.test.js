@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow, mount } from 'enzyme';
 import CardContainer from '../components/CardContainer/CardContainer';
-import  cleanedPeople from '../mock-data/cleaned-people';
+import  { cleanedPeople } from '../mock-data/cleaned-data';
 
 describe('CardContainer', () => {
   let wrapper;
