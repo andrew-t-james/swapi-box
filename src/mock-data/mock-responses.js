@@ -1,32 +1,35 @@
 export const mockCleanHomeWorldResponse = [
-  { name: 'Tatooine',
-    height: '172',
-    mass: '77',
-    hair_color: 'blond',
-    skin_color: 'fair',
-    eye_color: 'blue',
-    birth_year: '19BBY',
-    gender: 'male',
-    homeworld: 'Tatooine',
-    films:[
-      'https://swapi.co/api/films/2/',
-      'https://swapi.co/api/films/6/',
-      'https://swapi.co/api/films/3/',
-      'https://swapi.co/api/films/1/',
-      'https://swapi.co/api/films/7/'
+  {
+    birth_year: "19BBY",
+    created: "2014-12-09T13:50:51.644000Z",
+    edited: "2014-12-20T21:17:56.891000Z",
+    eye_color: "blue",
+    films: [
+      "https://swapi.co/api/films/2/",
+      "https://swapi.co/api/films/6/",
+      "https://swapi.co/api/films/3/",
+      "https://swapi.co/api/films/1/",
+      "https://swapi.co/api/films/7/"
     ],
-    species: ['https://swapi.co/api/species/1/'],
-    vehicles:[
-      'https://swapi.co/api/vehicles/14/',
-      'https://swapi.co/api/vehicles/30/'
+    gender: "male",
+    hair_color: "blond",
+    height: "172",
+    homeworld: "Tatooine",
+    mass: "77",
+    name: "Luke Skywalker",
+    population: "200000",
+    skin_color: "fair",
+    species: [
+      "https://swapi.co/api/species/1/"
     ],
-    starships:[
-      'https://swapi.co/api/starships/12/',
-      'https://swapi.co/api/starships/22/'
+    starships: [
+      "https://swapi.co/api/starships/12/",
+      "https://swapi.co/api/starships/22/"
     ],
-    created: '2014-12-09T13:50:51.644000Z',
-    edited: '2014-12-20T21:17:56.891000Z',
-    url: 'https://swapi.co/api/people/1/',
-    population: '200000'
+    url: "https://swapi.co/api/people/1/",
+    vehicles: [
+      "https://swapi.co/api/vehicles/14/",
+      "https://swapi.co/api/vehicles/30/"
+    ]
   }
 ];

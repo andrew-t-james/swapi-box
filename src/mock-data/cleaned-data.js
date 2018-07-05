@@ -7,3 +7,15 @@ export const cleanedPeople = [
     favorite: false
   }
 ];
+
+export const peopleDataWithName = [
+  {
+    name: 'Luke Skywalker',
+    homeworld: undefined,
+    population: undefined,
+    species: undefined,
+    favorite: false
+  }
+];
+
+

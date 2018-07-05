@@ -22,9 +22,8 @@ class App extends Component {
   }
 
   fetchPeopleData = async () => {
-    const url = 'https://swapi.co/api/people';
     try {
-      const people = await getPeopleData(url);
+      const people = await getPeopleData();
       this.setState({ people });
     } catch (error) {
       this.setState({ hasError: true });
