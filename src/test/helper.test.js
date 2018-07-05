@@ -1,7 +1,7 @@
-import { getPeopleData, cleanHomeWord, cleanSpecies, fetchHelper } from '../helper/helper';
+import { getPeopleData, cleanHomeWord, cleanSpecies, fetchHelper, cleanMovieScroll } from '../helper/helper';
 import { mockPeople } from '../mock-data/mock-data';
-import { cleanedPeople, peopleDataWithName } from '../mock-data/cleaned-data';
-import { mockCleanHomeWorldResponse } from '../mock-data/mock-responses';
+import { cleanedPeople, peopleDataWithName, mockCleanedMovie } from '../mock-data/cleaned-data';
+import { mockCleanHomeWorldResponse, mockMovieFetchResponse } from '../mock-data/mock-responses';
 
 describe('Helpers', () => {
 
@@ -84,4 +84,18 @@ describe('Helpers', () => {
     });
   });
 
+  describe('MoveScroll', () => {
+    beforeEach(() => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve()
+        }));
+    });
+
+    test('should fetch a movie scroll and clean data when cleanMovieScroll is called', async () => {
+
+      await expect(cleanMovieScroll(mockMovieFetchResponse)).toEqual(mockCleanedMovie);
+    });
+  });
 });
