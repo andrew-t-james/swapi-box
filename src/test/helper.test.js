@@ -1,3 +1,4 @@
+import { mockPeople } from '../mock-data/mock-data';
 import {
   getPeopleData,
   cleanHomeWord,
@@ -6,9 +7,17 @@ import {
   cleanMovieScroll,
   getPlanetData
 } from '../helper/helper';
-import { mockPeople } from '../mock-data/mock-data';
-import { cleanedPeople, peopleDataWithName, mockCleanedMovie, mockCleanedPlanet } from '../mock-data/cleaned-data';
-import { mockCleanHomeWorldResponse, mockMovieFetchResponse, mockPlanetsResponse } from '../mock-data/mock-responses';
+import {
+  cleanedPeople,
+  peopleDataWithName,
+  mockCleanedMovie,
+  mockCleanedPlanet
+} from '../mock-data/cleaned-data';
+import {
+  mockCleanHomeWorldResponse,
+  mockMovieFetchResponse,
+  mockPlanetsResponse
+} from '../mock-data/mock-responses';
 
 describe('Helpers', () => {
 
@@ -62,7 +71,6 @@ describe('Helpers', () => {
   });
 
   describe('FetchHelper', () => {
-
     beforeEach(() => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
@@ -115,7 +123,7 @@ describe('Helpers', () => {
         }));
 
       const response = await getPlanetData();
-      expect(window.fetch).toHaveBeenCalledTimes(2);
+      expect(window.fetch).toHaveBeenCalledTimes(4);
       await expect(response).toEqual(mockCleanedPlanet);
     });
 

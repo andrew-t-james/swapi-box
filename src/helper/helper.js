@@ -63,22 +63,31 @@ export const getPlanetData = async () => {
   const url = 'https://swapi.co/api/planets';
   const getPlanetList = await fetchHelper(url);
   const cleanedPlanets = await cleanPlanet(getPlanetList.results);
+
   return cleanedPlanets;
 };
 
-const cleanPlanet = planetList => {
+export const cleanPlanet = planetList => {
   const unresolvedPeopleList = planetList.map(async planet => {
-    const resident = await fetchHelper(planet.residents);
-    const { name: residentName } = resident;
-    const { name, population, climate, terrain } = planet;
+    const { name, population, climate, terrain, residents } = planet;
+    const cleanedResidents = await cleanResidents(residents);
 
     return {
       planet: name,
       population,
       climate,
       terrain,
-      residentName
+      residents: cleanedResidents,
+      favorite: false
     };
   });
   return Promise.all(unresolvedPeopleList);
+};
+
+export const cleanResidents = async residents => {
+  const unresolvedResidents = await residents.map(async resident => {
+    const cleanedResident = await fetchHelper(resident);
+    return cleanedResident.name;
+  });
+  return Promise.all(unresolvedResidents);
 };
