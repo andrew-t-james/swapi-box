@@ -28,7 +28,7 @@ class App extends Component {
       const movie = await cleanMovieScroll();
       this.setState({ movie });
     } catch (error) {
-      this.setState({ hasError: true });
+      this.setState({ hasError: true, movie: {} });
     }
   }
 
@@ -42,12 +42,12 @@ class App extends Component {
   }
 
   render() {
-    const { people } = this.state;
+    const { people, movie } = this.state;
 
     return (
       <main className="grid-container">
         <Header />
-        <SideBar />
+        <SideBar movie={movie}/>
         <CardContainer
           fetchPeopleData={this.fetchPeopleData}
           people={people}/>

@@ -43,7 +43,7 @@ describe('App', () => {
       expect(window.fetch).toHaveBeenCalledTimes(1);
     });
 
-    test('should updated state', async () => {
+    test('should update state', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
