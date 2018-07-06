@@ -89,13 +89,13 @@ describe('Helpers', () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
-          json: () => Promise.resolve()
+          json: () => Promise.resolve(mockMovieFetchResponse)
         }));
     });
 
     test('should fetch a movie scroll and clean data when cleanMovieScroll is called', async () => {
-
-      await expect(cleanMovieScroll(mockMovieFetchResponse)).toEqual(mockCleanedMovie);
+      const result = await cleanMovieScroll(mockMovieFetchResponse);
+      expect(result).toEqual(mockCleanedMovie);
     });
   });
 });
