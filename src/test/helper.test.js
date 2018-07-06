@@ -1,7 +1,14 @@
-import { getPeopleData, cleanHomeWord, cleanSpecies, fetchHelper, cleanMovieScroll } from '../helper/helper';
+import {
+  getPeopleData,
+  cleanHomeWord,
+  cleanSpecies,
+  fetchHelper,
+  cleanMovieScroll,
+  getPlanetData
+} from '../helper/helper';
 import { mockPeople } from '../mock-data/mock-data';
-import { cleanedPeople, peopleDataWithName, mockCleanedMovie } from '../mock-data/cleaned-data';
-import { mockCleanHomeWorldResponse, mockMovieFetchResponse } from '../mock-data/mock-responses';
+import { cleanedPeople, peopleDataWithName, mockCleanedMovie, mockCleanedPlanet } from '../mock-data/cleaned-data';
+import { mockCleanHomeWorldResponse, mockMovieFetchResponse, mockPlanetsResponse } from '../mock-data/mock-responses';
 
 describe('Helpers', () => {
 
@@ -98,4 +105,20 @@ describe('Helpers', () => {
       expect(result).toEqual(mockCleanedMovie);
     });
   });
+
+  describe('GetPlanetData', () => {
+    test('should return data from vehicles endpoint', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockPlanetsResponse)
+        }));
+
+      const response = await getPlanetData();
+      expect(window.fetch).toHaveBeenCalledTimes(2);
+      await expect(response).toEqual(mockCleanedPlanet);
+    });
+
+  });
+
 });

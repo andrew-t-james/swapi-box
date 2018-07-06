@@ -58,3 +58,27 @@ export const cleanMovieScroll = async () => {
     releaseDate: movie.release_date
   };
 };
+
+export const getPlanetData = async () => {
+  const url = 'https://swapi.co/api/planets';
+  const getPlanetList = await fetchHelper(url);
+  const cleanedPlanets = await cleanPlanet(getPlanetList.results);
+  return cleanedPlanets;
+};
+
+const cleanPlanet = planetList => {
+  const unresolvedPeopleList = planetList.map(async planet => {
+    const resident = await fetchHelper(planet.residents);
+    const { name: residentName } = resident;
+    const { name, population, climate, terrain } = planet;
+
+    return {
+      planet: name,
+      population,
+      climate,
+      terrain,
+      residentName
+    };
+  });
+  return Promise.all(unresolvedPeopleList);
+};

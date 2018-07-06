@@ -93,3 +93,56 @@ export const mockMovieFetchResponse = {
   edited: '2015-04-11T09:46:52.774897Z',
   url: 'https://swapi.co/api/films/1/'
 };
+
+export const mockPlanetsResponse = {
+  count: 61,
+  next: 'https://swapi.co/api/planets/?page=2',
+  previous: null,
+  results: [
+    {
+      name: 'Alderaan',
+      rotation_period: '24',
+      orbital_period: '364',
+      diameter: '12500',
+      climate: 'temperate',
+      gravity: '1 standard',
+      terrain: 'grasslands, mountains',
+      surface_water: '40',
+      population: '2000000000',
+      residents: [
+        'https://swapi.co/api/people/5/',
+        'https://swapi.co/api/people/68/',
+        'https://swapi.co/api/people/81/'
+      ],
+      films: ['https://swapi.co/api/films/6/', 'https://swapi.co/api/films/1/'],
+      created: '2014-12-10T11:35:48.479000Z',
+      edited: '2014-12-20T20:58:18.420000Z',
+      url: 'https://swapi.co/api/planets/2/'
+    }
+  ]
+};
+
+export const mockResidentResponse = {
+  name: 'Leia Organa',
+  height: '150',
+  mass: '49',
+  hair_color: 'brown',
+  skin_color: 'light',
+  eye_color: 'brown',
+  birth_year: '19BBY',
+  gender: 'female',
+  homeworld: 'https://swapi.co/api/planets/2/',
+  films:[
+    'https://swapi.co/api/films/2/',
+    'https://swapi.co/api/films/6/',
+    'https://swapi.co/api/films/3/',
+    'https://swapi.co/api/films/1/',
+    'https://swapi.co/api/films/7/'
+  ],
+  species: ['https://swapi.co/api/species/1/'],
+  vehicles: ['https://swapi.co/api/vehicles/30/'],
+  starships: [],
+  created: '2014-12-10T15:20:09.791000Z',
+  edited: '2014-12-20T21:17:50.315000Z',
+  url: 'https://swapi.co/api/people/5/'
+};

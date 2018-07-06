@@ -24,3 +24,13 @@ export const mockCleanedMovie = {
   releaseDate: "1977-05-25",
   title: "A New Hope"
 };
+
+export const mockCleanedPlanet = [
+  {
+    planet: 'Alderaan',
+    population: '2000000000',
+    climate: 'temperate',
+    terrain: 'grasslands, mountains',
+    "residentName": undefined
+  }
+];

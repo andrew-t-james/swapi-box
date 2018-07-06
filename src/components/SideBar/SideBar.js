@@ -7,9 +7,7 @@ const SideBar = ({ movie }) => {
   const { title, releaseDate, episode, crawl } = movie;
   return (
     <aside className="side-bar">
-      { title &&
       <h2>{title}</h2>
-      }
       <p>{episode}</p>
       <p>{releaseDate}</p>
       <p>{crawl}</p>
