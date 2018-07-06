@@ -86,7 +86,7 @@ describe('Helpers', () => {
       expect(window.fetch).toHaveBeenCalledWith(url);
     });
 
-    test('should ', async () => {
+    test('should handle errors when fetch fails', async () => {
       const url = 'some-api-here';
 
       window.fetch = jest.fn().mockImplementation(() =>
