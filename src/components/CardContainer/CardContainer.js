@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 import PersonCard from '../PersonCard/PersonCard';
-import Planets from '../Planets/Planets';
+import PlanetCard from '../PlanetCard/PlanetCard';
 // import Vehicles from '../Vehicles/Vehicles';
 // import Favorites from '../Favorites/Favorites';
 import PropTypes from 'prop-types';
@@ -11,9 +11,8 @@ import './CardContainer.css';
 const CardContainer = props => {
   const { people, planets, selected, fetchPeopleData, fetchPlanetData } = props;
 
-
   const peopleCards = people.map(person => <PersonCard key={person.name} {...person}/>);
-  const planetsCards = planets.map(planet => <PersonCard key={planet.population} {...planet} />);
+  const planetsCards = planets.map(planet => <PlanetCard key={planet.population} {...planet} />);
 
   return (
     <section className="main-container">
