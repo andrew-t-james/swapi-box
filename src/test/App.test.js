@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from '../components/App/App';
-import { peopleDataWithName, mockCleanedMovie } from '../mock-data/cleaned-data';
-import { mockMovieFetchResponse } from '../mock-data/mock-responses';
+import { peopleDataWithName, mockCleanedMovie, mockCleanedPlanet } from '../mock-data/cleaned-data';
+import { mockMovieFetchResponse, mockPlanetsResponse } from '../mock-data/mock-responses';
 
 describe('App', () => {
   let wrapper;
@@ -11,6 +11,7 @@ describe('App', () => {
     mockState = {
       people: [],
       movie: {},
+      planets: [],
       isLoading: false,
       hasError: false
     };
@@ -103,6 +104,46 @@ describe('App', () => {
         }));
 
       await wrapper.instance().fetchPeopleData();
+      expect(window.fetch).toHaveBeenCalled();
+      expect(wrapper.state('hasError')).toBe(true);
+    });
+  });
+
+  describe('fetchPlanetData', () => {
+    test('should make a fetch call', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () =>
+            Promise.resolve({
+              ok: true
+            })
+        }));
+
+      await wrapper.instance().fetchPlanetData();
+
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+    });
+
+    test('should update state on successfully fetch completion', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () =>
+            Promise.resolve(mockPlanetsResponse)
+        }));
+
+      await wrapper.instance().fetchPlanetData();
+      expect(wrapper.state('planets')).toEqual(mockCleanedPlanet);
+    });
+
+    test('should handle errors when fetching data fails', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.reject({
+          ok: false
+        }));
+
+      await wrapper.instance().fetchPlanetData();
       expect(window.fetch).toHaveBeenCalled();
       expect(wrapper.state('hasError')).toBe(true);
     });

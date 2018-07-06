@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import SideBar from '../SideBar/SideBar';
 
-import { cleanMovieScroll, getPeopleData } from '../../helper/helper';
+import { cleanMovieScroll, getPeopleData, getPlanetData } from '../../helper/helper';
 
 import './App.css';
 
@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       people: [],
       movie: {},
+      planets: [],
       isLoading: false,
       hasError: false
     };
@@ -41,6 +42,14 @@ class App extends Component {
     }
   }
 
+  fetchPlanetData = async () => {
+    try {
+      const planets = await getPlanetData();
+      this.setState({ planets });
+    } catch (error) {
+      this.setState({ hasError: true });
+    }
+  }
   render() {
     const { people, movie } = this.state;
 
