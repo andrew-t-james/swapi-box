@@ -44,6 +44,7 @@ const CardContainer = props => {
 CardContainer.propTypes = {
   people: PropTypes.arrayOf(PropTypes.object),
   planets: PropTypes.arrayOf(PropTypes.object),
+  selected: PropTypes.string,
   fetchPeopleData: PropTypes.func,
   fetchPlanetData: PropTypes.func
 };
