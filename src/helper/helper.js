@@ -48,7 +48,9 @@ export const cleanSpecies = async peopleList => {
 };
 
 
-export const cleanMovieScroll = movie => {
+export const cleanMovieScroll = async () => {
+  const randomNum = Math.floor(Math.random() * 7) + 1;
+  const movie = await fetchHelper(`https://swapi.co/api/films/${randomNum}/`);
   return {
     title: movie.title,
     episode: movie.episode_id,

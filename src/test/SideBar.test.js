@@ -1,11 +1,12 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import SideBar from '../components/SideBar/SideBar';
+import { mockCleanedMovie } from '../mock-data/cleaned-data';
 
 describe('SideBar', () => {
   let wrapper;
-
-  beforeEach(() => wrapper = shallow(<SideBar />));
+  const mockMovie = mockCleanedMovie;
+  beforeEach(() => wrapper = shallow(<SideBar movie={mockMovie}/>));
 
   afterEach(() => wrapper.unmount());
 

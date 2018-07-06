@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import SideBar from '../SideBar/SideBar';
 
-import { getPeopleData } from '../../helper/helper';
+import { cleanMovieScroll, getPeopleData } from '../../helper/helper';
 
 import './App.css';
 
@@ -12,6 +12,7 @@ class App extends Component {
     super();
     this.state = {
       people: [],
+      movie: {},
       isLoading: false,
       hasError: false
     };
@@ -19,6 +20,16 @@ class App extends Component {
 
   componentDidMount = () => {
     // TODO fetch random movie scroll here
+    // this.fetchMovieScroll();
+  }
+
+  fetchMovieScroll = async () =>  {
+    try {
+      const movie = await cleanMovieScroll();
+      this.setState({ movie });
+    } catch (error) {
+      this.setState({ hasError: true, movie: {} });
+    }
   }
 
   fetchPeopleData = async () => {
@@ -31,12 +42,12 @@ class App extends Component {
   }
 
   render() {
-    const { people } = this.state;
+    const { people, movie } = this.state;
 
     return (
       <main className="grid-container">
         <Header />
-        <SideBar />
+        <SideBar movie={movie}/>
         <CardContainer
           fetchPeopleData={this.fetchPeopleData}
           people={people}/>

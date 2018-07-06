@@ -4,7 +4,16 @@ exports[`SideBar should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <SideBar />,
+  Symbol(enzyme.__unrendered__): <SideBar
+    movie={
+        Object {
+            "crawl": "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
+            "episode": 4,
+            "releaseDate": "1977-05-25",
+            "title": "A New Hope",
+          }
+    }
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -17,23 +26,69 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <h2>
-        Sidebar
+      "children": Array [
+        <h2>
+          A New Hope
 </h2>,
+        <p>
+          4
+</p>,
+        <p>
+          1977-05-25
+</p>,
+        <p>
+          It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy
+</p>,
+      ],
       "className": "side-bar",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": "Sidebar",
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "A New Hope",
+        },
+        "ref": null,
+        "rendered": "A New Hope",
+        "type": "h2",
       },
-      "ref": null,
-      "rendered": "Sidebar",
-      "type": "h2",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": 4,
+        },
+        "ref": null,
+        "rendered": 4,
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "1977-05-25",
+        },
+        "ref": null,
+        "rendered": "1977-05-25",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
+        },
+        "ref": null,
+        "rendered": "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
+        "type": "p",
+      },
+    ],
     "type": "aside",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -42,23 +97,69 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <h2>
-          Sidebar
+        "children": Array [
+          <h2>
+            A New Hope
 </h2>,
+          <p>
+            4
+</p>,
+          <p>
+            1977-05-25
+</p>,
+          <p>
+            It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy
+</p>,
+        ],
         "className": "side-bar",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Sidebar",
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "A New Hope",
+          },
+          "ref": null,
+          "rendered": "A New Hope",
+          "type": "h2",
         },
-        "ref": null,
-        "rendered": "Sidebar",
-        "type": "h2",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": 4,
+          },
+          "ref": null,
+          "rendered": 4,
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "1977-05-25",
+          },
+          "ref": null,
+          "rendered": "1977-05-25",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
+          },
+          "ref": null,
+          "rendered": "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
+          "type": "p",
+        },
+      ],
       "type": "aside",
     },
   ],

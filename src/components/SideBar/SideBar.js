@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 
 import './SideBar.css';
 
-const SideBar = () => {
+const SideBar = ({ movie }) => {
+  const { title, releaseDate, episode, crawl } = movie;
   return (
     <aside className="side-bar">
-      <h2>Sidebar</h2>
+      { title &&
+      <h2>{title}</h2>
+      }
+      <p>{episode}</p>
+      <p>{releaseDate}</p>
+      <p>{crawl}</p>
     </aside>
   );
 };
 
 SideBar.propTypes = {
-
+  movie: PropTypes.object
 };
 
 export default SideBar;
