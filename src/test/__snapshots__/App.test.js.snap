@@ -24,7 +24,10 @@ ShallowWrapper {
 />,
         <CardContainer
           fetchPeopleData={[Function]}
+          fetchPlanetData={[Function]}
           people={Array []}
+          planets={Array []}
+          selected={null}
 />,
       ],
       "className": "grid-container",
@@ -57,7 +60,10 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "fetchPeopleData": [Function],
+          "fetchPlanetData": [Function],
           "people": Array [],
+          "planets": Array [],
+          "selected": null,
         },
         "ref": null,
         "rendered": null,
@@ -79,7 +85,10 @@ ShallowWrapper {
 />,
           <CardContainer
             fetchPeopleData={[Function]}
+            fetchPlanetData={[Function]}
             people={Array []}
+            planets={Array []}
+            selected={null}
 />,
         ],
         "className": "grid-container",
@@ -112,7 +121,10 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "fetchPeopleData": [Function],
+            "fetchPlanetData": [Function],
             "people": Array [],
+            "planets": Array [],
+            "selected": null,
           },
           "ref": null,
           "rendered": null,

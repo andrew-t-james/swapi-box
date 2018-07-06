@@ -13,7 +13,8 @@ describe('App', () => {
       movie: {},
       planets: [],
       isLoading: false,
-      hasError: false
+      hasError: false,
+      selected: null
     };
 
     wrapper = shallow(<App />);

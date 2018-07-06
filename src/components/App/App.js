@@ -15,7 +15,8 @@ class App extends Component {
       movie: {},
       planets: [],
       isLoading: false,
-      hasError: false
+      hasError: false,
+      selected: null
     };
   }
 
@@ -35,7 +36,7 @@ class App extends Component {
   fetchPeopleData = async () => {
     try {
       const people = await getPeopleData();
-      this.setState({ people });
+      this.setState({ people, selected: 'people' });
     } catch (error) {
       this.setState({ hasError: true });
     }
@@ -44,21 +45,26 @@ class App extends Component {
   fetchPlanetData = async () => {
     try {
       const planets = await getPlanetData();
-      this.setState({ planets });
+      this.setState({ planets, selected: 'planets' });
     } catch (error) {
       this.setState({ hasError: true });
     }
   }
+
   render() {
-    const { people, movie } = this.state;
+    const { people, movie, planets, selected } = this.state;
 
     return (
       <main className="grid-container">
         <Header />
         <SideBar movie={movie}/>
         <CardContainer
+          people={people}
+          planets={planets}
+          selected={selected}
           fetchPeopleData={this.fetchPeopleData}
-          people={people}/>
+          fetchPlanetData={this.fetchPlanetData}
+        />
       </main>
     );
   }
