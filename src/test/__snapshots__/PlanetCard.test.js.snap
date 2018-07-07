@@ -48,7 +48,7 @@ ShallowWrapper {
           grasslands, mountains
 </p>,
         <span
-          className="person-card__favorite"
+          className="card__favorite"
           onClick={[Function]}
 >
           <Button
@@ -130,7 +130,7 @@ ShallowWrapper {
           "children": <Button
             name="⭐"
 />,
-          "className": "person-card__favorite",
+          "className": "card__favorite",
           "onClick": [Function],
         },
         "ref": null,
@@ -173,7 +173,7 @@ ShallowWrapper {
             grasslands, mountains
 </p>,
           <span
-            className="person-card__favorite"
+            className="card__favorite"
             onClick={[Function]}
 >
             <Button
@@ -255,7 +255,7 @@ ShallowWrapper {
             "children": <Button
               name="⭐"
 />,
-            "className": "person-card__favorite",
+            "className": "card__favorite",
             "onClick": [Function],
           },
           "ref": null,

@@ -18,7 +18,7 @@ const PersonCard = props => {
       <p>{species}</p>
       <p>{homeworld}</p>
       <p>{population}</p>
-      <span className="person-card__favorite" onClick={() => updateFavorites(person)}>
+      <span className="card__favorite" onClick={() => updateFavorites(person)}>
         <Button name="⭐" />
       </span>
     </div>

@@ -14,7 +14,7 @@ const PlanetCard = ({ climate, name, population, residents, terrain, updateFavor
       <p>{population}</p>
       <p>{residents}</p>
       <p>{terrain}</p>
-      <span className="person-card__favorite" onClick={() => updateFavorites(planet)}>
+      <span className="card__favorite" onClick={() => updateFavorites(planet)}>
         <Button name="⭐" />
       </span>
     </div>

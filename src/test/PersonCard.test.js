@@ -19,7 +19,7 @@ describe('PersonCard', () => {
   afterEach(() => wrapper.unmount());
 
   test('should call updateFavorites onClick', () => {
-    wrapper.find('.person-card__favorite').first().simulate('click');
+    wrapper.find('.card__favorite').first().simulate('click');
     expect(mockFunc).toHaveBeenCalled();
   });
 
