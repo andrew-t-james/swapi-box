@@ -8,6 +8,7 @@ describe('PersonCard', () => {
   const mockProps = {
     name: 'Wookie'
   };
+
   beforeEach(() => wrapper = shallow(
     <PersonCard
       props={{mockProps}}
@@ -17,7 +18,7 @@ describe('PersonCard', () => {
 
   afterEach(() => wrapper.unmount());
 
-  test('should call updateFavorites onClic', () => {
+  test('should call updateFavorites onClick', () => {
     wrapper.find('.person-card__favorite').first().simulate('click');
     expect(mockFunc).toHaveBeenCalled();
   });

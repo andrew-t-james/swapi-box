@@ -5,20 +5,19 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PlanetCard
-    0={
-        Object {
-            "climate": "temperate",
-            "favorite": false,
-            "name": "Alderaan",
-            "population": "2000000000",
-            "residents": Array [
-              undefined,
-              undefined,
-              undefined,
-            ],
-            "terrain": "grasslands, mountains",
-          }
+    climate="temperate"
+    favorite={false}
+    name="Alderaan"
+    population="2000000000"
+    residents={
+        Array [
+            undefined,
+            undefined,
+            undefined,
+          ]
     }
+    terrain="grasslands, mountains"
+    updateFavorites={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -33,12 +32,25 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2 />,
-        <p />,
-        <p />,
-        <p />,
-        <p />,
-        <span>
+        <h2>
+          Alderaan
+</h2>,
+        <p>
+          temperate
+</p>,
+        <p>
+          2000000000
+</p>,
+        <p>
+          
+</p>,
+        <p>
+          grasslands, mountains
+</p>,
+        <span
+          className="person-card__favorite"
+          onClick={[Function]}
+>
           <Button
                     name="⭐"
           />
@@ -52,10 +64,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "Alderaan",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Alderaan",
         "type": "h2",
       },
       Object {
@@ -63,10 +75,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "temperate",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "temperate",
         "type": "p",
       },
       Object {
@@ -74,10 +86,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "2000000000",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "2000000000",
         "type": "p",
       },
       Object {
@@ -85,10 +97,18 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            undefined,
+            undefined,
+            undefined,
+          ],
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          undefined,
+          undefined,
+          undefined,
+        ],
         "type": "p",
       },
       Object {
@@ -96,10 +116,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "grasslands, mountains",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "grasslands, mountains",
         "type": "p",
       },
       Object {
@@ -110,6 +130,8 @@ ShallowWrapper {
           "children": <Button
             name="⭐"
 />,
+          "className": "person-card__favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -135,12 +157,25 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2 />,
-          <p />,
-          <p />,
-          <p />,
-          <p />,
-          <span>
+          <h2>
+            Alderaan
+</h2>,
+          <p>
+            temperate
+</p>,
+          <p>
+            2000000000
+</p>,
+          <p>
+            
+</p>,
+          <p>
+            grasslands, mountains
+</p>,
+          <span
+            className="person-card__favorite"
+            onClick={[Function]}
+>
             <Button
                         name="⭐"
             />
@@ -154,10 +189,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "Alderaan",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Alderaan",
           "type": "h2",
         },
         Object {
@@ -165,10 +200,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "temperate",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "temperate",
           "type": "p",
         },
         Object {
@@ -176,10 +211,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "2000000000",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "2000000000",
           "type": "p",
         },
         Object {
@@ -187,10 +222,18 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              undefined,
+              undefined,
+              undefined,
+            ],
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            undefined,
+            undefined,
+            undefined,
+          ],
           "type": "p",
         },
         Object {
@@ -198,10 +241,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "grasslands, mountains",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "grasslands, mountains",
           "type": "p",
         },
         Object {
@@ -212,6 +255,8 @@ ShallowWrapper {
             "children": <Button
               name="⭐"
 />,
+            "className": "person-card__favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": Object {

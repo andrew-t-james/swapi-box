@@ -95,7 +95,8 @@ CardContainer.propTypes = {
   selected: PropTypes.string,
   fetchPeopleData: PropTypes.func,
   fetchVehicleData: PropTypes.func,
-  fetchPlanetData: PropTypes.func
+  fetchPlanetData: PropTypes.func,
+  updateFavorites: PropTypes.func
 };
 
 export default CardContainer;
