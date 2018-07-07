@@ -9,11 +9,48 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 const CardContainer = props => {
-  const { people, planets, selected, vehicles, fetchVehicleData, fetchPeopleData, fetchPlanetData, favorites } = props;
-  const peopleCards = people.map((person, index) => <PersonCard key={index} {...person} />);
-  const planetsCards = planets.map((planet, index) => <PlanetCard key={index} {...planet} />);
-  const vehicleCards = vehicles.map(vehicle => <VehicleCard key={vehicle.name} {...vehicle} />);
-  const favoriteCards = favorites.map((favorite, index) => <FavoriteCard key={index} {...favorite} />);
+  const { people,
+    planets,
+    selected,
+    vehicles,
+    fetchVehicleData,
+    fetchPeopleData,
+    fetchPlanetData,
+    favorites,
+    updateFavorites } = props;
+
+  const peopleCards = people.map((person, index) =>
+    <PersonCard
+      key={index}
+      {...person}
+      updateFavorites={updateFavorites}
+    />
+  );
+
+  const planetsCards = planets.map((planet, index) =>
+    <PlanetCard
+      key={index}
+      {...planet}
+      updateFavorites={updateFavorites}
+    />
+  );
+
+  const vehicleCards = vehicles.map(vehicle =>
+    <VehicleCard
+      key={vehicle.name}
+      {...vehicle}
+      updateFavorites={updateFavorites}
+    />
+  );
+
+  const favoriteCards = favorites.map((favorite, index) =>
+    <FavoriteCard
+      key={index}
+      {...favorite}
+      updateFavorites={updateFavorites}
+    />
+  );
+
   const noFavorites = () => (
     <div>
       <h2>No Favorites</h2>

@@ -87,6 +87,7 @@ class App extends Component {
           fetchPeopleData={this.fetchPeopleData}
           fetchPlanetData={this.fetchPlanetData}
           fetchVehicleData={this.fetchVehicleData}
+          updateFavorites={this.updateFavorites}
         />
       </main>
     );

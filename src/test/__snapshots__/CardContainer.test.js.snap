@@ -74,6 +74,7 @@ ShallowWrapper {
         <section>
                 <FavoriteCard
                         name="Sand Crawler"
+                        updateFavorites={undefined}
                 />
         </section>
 </div>,
@@ -125,6 +126,7 @@ ShallowWrapper {
           <section>
             <FavoriteCard
                         name="Sand Crawler"
+                        updateFavorites={undefined}
             />
 </section>,
         ],
@@ -315,6 +317,7 @@ ShallowWrapper {
               Array [
                 <FavoriteCard
                   name="Sand Crawler"
+                  updateFavorites={undefined}
 />,
               ],
               false,
@@ -331,6 +334,7 @@ ShallowWrapper {
               "nodeType": "function",
               "props": Object {
                 "name": "Sand Crawler",
+                "updateFavorites": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -393,6 +397,7 @@ ShallowWrapper {
           <section>
                     <FavoriteCard
                               name="Sand Crawler"
+                              updateFavorites={undefined}
                     />
           </section>
 </div>,
@@ -444,6 +449,7 @@ ShallowWrapper {
             <section>
               <FavoriteCard
                             name="Sand Crawler"
+                            updateFavorites={undefined}
               />
 </section>,
           ],
@@ -634,6 +640,7 @@ ShallowWrapper {
                 Array [
                   <FavoriteCard
                     name="Sand Crawler"
+                    updateFavorites={undefined}
 />,
                 ],
                 false,
@@ -650,6 +657,7 @@ ShallowWrapper {
                 "nodeType": "function",
                 "props": Object {
                   "name": "Sand Crawler",
+                  "updateFavorites": undefined,
                 },
                 "ref": null,
                 "rendered": null,
@@ -1512,6 +1520,7 @@ ShallowWrapper {
                         name="Luke Skywalker"
                         population="200000"
                         species="Human"
+                        updateFavorites={undefined}
                 />
         </section>
 </div>,
@@ -1567,6 +1576,7 @@ ShallowWrapper {
                         name="Luke Skywalker"
                         population="200000"
                         species="Human"
+                        updateFavorites={undefined}
             />
 </section>,
         ],
@@ -1758,6 +1768,7 @@ ShallowWrapper {
                   name="Luke Skywalker"
                   population="200000"
                   species="Human"
+                  updateFavorites={undefined}
 />,
               ],
               false,
@@ -1778,6 +1789,7 @@ ShallowWrapper {
                 "name": "Luke Skywalker",
                 "population": "200000",
                 "species": "Human",
+                "updateFavorites": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -1847,6 +1859,7 @@ ShallowWrapper {
                               name="Luke Skywalker"
                               population="200000"
                               species="Human"
+                              updateFavorites={undefined}
                     />
           </section>
 </div>,
@@ -1902,6 +1915,7 @@ ShallowWrapper {
                             name="Luke Skywalker"
                             population="200000"
                             species="Human"
+                            updateFavorites={undefined}
               />
 </section>,
           ],
@@ -2093,6 +2107,7 @@ ShallowWrapper {
                     name="Luke Skywalker"
                     population="200000"
                     species="Human"
+                    updateFavorites={undefined}
 />,
                 ],
                 false,
@@ -2113,6 +2128,7 @@ ShallowWrapper {
                   "name": "Luke Skywalker",
                   "population": "200000",
                   "species": "Human",
+                  "updateFavorites": undefined,
                 },
                 "ref": null,
                 "rendered": null,
@@ -2236,6 +2252,7 @@ ShallowWrapper {
                                       ]
                         }
                         terrain="grasslands, mountains"
+                        updateFavorites={undefined}
                 />
         </section>
 </div>,
@@ -2298,6 +2315,7 @@ ShallowWrapper {
                                               ]
                         }
                         terrain="grasslands, mountains"
+                        updateFavorites={undefined}
             />
 </section>,
         ],
@@ -2497,6 +2515,7 @@ ShallowWrapper {
                                                     ]
                   }
                   terrain="grasslands, mountains"
+                  updateFavorites={undefined}
 />,
               ],
               false,
@@ -2522,6 +2541,7 @@ ShallowWrapper {
                   undefined,
                 ],
                 "terrain": "grasslands, mountains",
+                "updateFavorites": undefined,
               },
               "ref": null,
               "rendered": null,
@@ -2597,6 +2617,7 @@ ShallowWrapper {
                                                 ]
                               }
                               terrain="grasslands, mountains"
+                              updateFavorites={undefined}
                     />
           </section>
 </div>,
@@ -2659,6 +2680,7 @@ ShallowWrapper {
                                                       ]
                             }
                             terrain="grasslands, mountains"
+                            updateFavorites={undefined}
               />
 </section>,
           ],
@@ -2858,6 +2880,7 @@ ShallowWrapper {
                                                           ]
                     }
                     terrain="grasslands, mountains"
+                    updateFavorites={undefined}
 />,
                 ],
                 false,
@@ -2883,6 +2906,7 @@ ShallowWrapper {
                     undefined,
                   ],
                   "terrain": "grasslands, mountains",
+                  "updateFavorites": undefined,
                 },
                 "ref": null,
                 "rendered": null,
@@ -2992,6 +3016,7 @@ ShallowWrapper {
                         model="Digger Crawler"
                         name="Sand Crawler"
                         passengers="30"
+                        updateFavorites={undefined}
                         vehicleClass="wheeled"
                 />
         </section>
@@ -3047,6 +3072,7 @@ ShallowWrapper {
                         model="Digger Crawler"
                         name="Sand Crawler"
                         passengers="30"
+                        updateFavorites={undefined}
                         vehicleClass="wheeled"
             />
 </section>,
@@ -3240,6 +3266,7 @@ ShallowWrapper {
                   model="Digger Crawler"
                   name="Sand Crawler"
                   passengers="30"
+                  updateFavorites={undefined}
                   vehicleClass="wheeled"
 />,
               ],
@@ -3260,6 +3287,7 @@ ShallowWrapper {
                 "model": "Digger Crawler",
                 "name": "Sand Crawler",
                 "passengers": "30",
+                "updateFavorites": undefined,
                 "vehicleClass": "wheeled",
               },
               "ref": null,
@@ -3327,6 +3355,7 @@ ShallowWrapper {
                               model="Digger Crawler"
                               name="Sand Crawler"
                               passengers="30"
+                              updateFavorites={undefined}
                               vehicleClass="wheeled"
                     />
           </section>
@@ -3382,6 +3411,7 @@ ShallowWrapper {
                             model="Digger Crawler"
                             name="Sand Crawler"
                             passengers="30"
+                            updateFavorites={undefined}
                             vehicleClass="wheeled"
               />
 </section>,
@@ -3575,6 +3605,7 @@ ShallowWrapper {
                     model="Digger Crawler"
                     name="Sand Crawler"
                     passengers="30"
+                    updateFavorites={undefined}
                     vehicleClass="wheeled"
 />,
                 ],
@@ -3595,6 +3626,7 @@ ShallowWrapper {
                   "model": "Digger Crawler",
                   "name": "Sand Crawler",
                   "passengers": "30",
+                  "updateFavorites": undefined,
                   "vehicleClass": "wheeled",
                 },
                 "ref": null,

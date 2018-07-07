@@ -5,7 +5,14 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <PersonCard
-    fetchPeopleData={[Function]}
+    props={
+        Object {
+            "mockProps": Object {
+              "name": "Wookie",
+            },
+          }
+    }
+    updateFavorites={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -24,7 +31,10 @@ ShallowWrapper {
         <p />,
         <p />,
         <p />,
-        <span>
+        <span
+          className="person-card__favorite"
+          onClick={[Function]}
+>
           <Button
                     name="⭐"
           />
@@ -85,6 +95,8 @@ ShallowWrapper {
           "children": <Button
             name="⭐"
 />,
+          "className": "person-card__favorite",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -114,7 +126,10 @@ ShallowWrapper {
           <p />,
           <p />,
           <p />,
-          <span>
+          <span
+            className="person-card__favorite"
+            onClick={[Function]}
+>
             <Button
                         name="⭐"
             />
@@ -175,6 +190,8 @@ ShallowWrapper {
             "children": <Button
               name="⭐"
 />,
+            "className": "person-card__favorite",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": Object {
