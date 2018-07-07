@@ -2157,7 +2157,7 @@ ShallowWrapper {
             Object {
               "climate": "temperate",
               "favorite": false,
-              "planet": "Alderaan",
+              "name": "Alderaan",
               "population": "2000000000",
               "residents": Array [
                 undefined,
@@ -2226,7 +2226,7 @@ ShallowWrapper {
                 <PlanetCard
                         climate="temperate"
                         favorite={false}
-                        planet="Alderaan"
+                        name="Alderaan"
                         population="2000000000"
                         residents={
                                 Array [
@@ -2288,7 +2288,7 @@ ShallowWrapper {
             <PlanetCard
                         climate="temperate"
                         favorite={false}
-                        planet="Alderaan"
+                        name="Alderaan"
                         population="2000000000"
                         residents={
                                     Array [
@@ -2487,7 +2487,7 @@ ShallowWrapper {
                 <PlanetCard
                   climate="temperate"
                   favorite={false}
-                  planet="Alderaan"
+                  name="Alderaan"
                   population="2000000000"
                   residents={
                                     Array [
@@ -2514,7 +2514,7 @@ ShallowWrapper {
               "props": Object {
                 "climate": "temperate",
                 "favorite": false,
-                "planet": "Alderaan",
+                "name": "Alderaan",
                 "population": "2000000000",
                 "residents": Array [
                   undefined,
@@ -2587,7 +2587,7 @@ ShallowWrapper {
                     <PlanetCard
                               climate="temperate"
                               favorite={false}
-                              planet="Alderaan"
+                              name="Alderaan"
                               population="2000000000"
                               residents={
                                         Array [
@@ -2649,7 +2649,7 @@ ShallowWrapper {
               <PlanetCard
                             climate="temperate"
                             favorite={false}
-                            planet="Alderaan"
+                            name="Alderaan"
                             population="2000000000"
                             residents={
                                           Array [
@@ -2848,7 +2848,7 @@ ShallowWrapper {
                   <PlanetCard
                     climate="temperate"
                     favorite={false}
-                    planet="Alderaan"
+                    name="Alderaan"
                     population="2000000000"
                     residents={
                                         Array [
@@ -2875,7 +2875,7 @@ ShallowWrapper {
                 "props": Object {
                   "climate": "temperate",
                   "favorite": false,
-                  "planet": "Alderaan",
+                  "name": "Alderaan",
                   "population": "2000000000",
                   "residents": Array [
                     undefined,

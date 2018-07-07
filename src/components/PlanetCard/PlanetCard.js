@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
-const PlanetCard = ({ climate, planet, population, residents, terrain }) => {
+const PlanetCard = ({ climate, name, population, residents, terrain }) => {
   return (
     <div>
-      <h2>{planet}</h2>
+      <h2>{name}</h2>
       <p>{climate}</p>
       <p>{population}</p>
       <p>{residents}</p>
@@ -19,7 +19,7 @@ const PlanetCard = ({ climate, planet, population, residents, terrain }) => {
 
 PlanetCard.propTypes = {
   climate: PropTypes.string,
-  planet: PropTypes.string,
+  name: PropTypes.string,
   population: PropTypes.string,
   residents: PropTypes.array,
   terrain: PropTypes.string

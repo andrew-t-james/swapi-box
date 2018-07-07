@@ -52,7 +52,7 @@ export const cleanMovieScroll = async () => {
   const randomNum = Math.floor(Math.random() * 7) + 1;
   const movie = await fetchHelper(`https://swapi.co/api/films/${randomNum}/`);
   return {
-    title: movie.title,
+    name: movie.title,
     episode: movie.episode_id,
     crawl: movie.opening_crawl.replace(/[^a-zA-Z ]/g, ""),
     releaseDate: movie.release_date
@@ -73,7 +73,7 @@ export const cleanPlanet = planetList => {
     const cleanedResidents = await cleanResidents(residents);
 
     return {
-      planet: name,
+      name,
       population,
       climate,
       terrain,
