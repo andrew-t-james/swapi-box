@@ -12,6 +12,7 @@ describe('App', () => {
       people: [],
       movie: {},
       planets: [],
+      vehicles: [],
       isLoading: false,
       hasError: false,
       selected: null
