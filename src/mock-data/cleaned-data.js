@@ -35,3 +35,13 @@ export const mockCleanedPlanet = [
     favorite: false
   }
 ];
+
+export const mockCleanedVehicle = [
+  {
+    name: 'Sand Crawler',
+    model: 'Digger Crawler',
+    vehicleClass: 'wheeled',
+    passengers: '30',
+    favorite: false
+  }
+];

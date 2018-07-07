@@ -91,3 +91,24 @@ export const cleanResidents = async residents => {
   });
   return Promise.all(unresolvedResidents);
 };
+
+export const getVehicleData = async () => {
+  const url = 'https://swapi.co/api/vehicles/';
+  const getVehicleList = await fetchHelper(url);
+  const cleanedVehicles = await cleanVehicleData(getVehicleList.results);
+
+  return cleanedVehicles;
+};
+
+const cleanVehicleData = vehicles => {
+  const cleanedVehicles = vehicles.map(vehicle => {
+    return {
+      name: vehicle.name,
+      model: vehicle.model,
+      vehicleClass: vehicle.vehicle_class,
+      passengers: vehicle.passengers,
+      favorite: false
+    };
+  });
+  return Promise.all(cleanedVehicles);
+};

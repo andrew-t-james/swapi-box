@@ -11,7 +11,7 @@ import './CardContainer.css';
 const CardContainer = props => {
   const { people, planets, selected, fetchPeopleData, fetchPlanetData } = props;
 
-  const peopleCards = people.map(person => <PersonCard key={person.name} {...person}/>);
+  const peopleCards = people.map(person => <PersonCard key={person.name} {...person} />);
   const planetsCards = planets.map(planet => <PlanetCard key={planet.population} {...planet} />);
 
   return (
