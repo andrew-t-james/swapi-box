@@ -45,3 +45,9 @@ export const mockCleanedVehicle = [
     favorite: false
   }
 ];
+
+export const mockCleanedFavorite = [
+  {
+    name: 'Sand Crawler'
+  }
+];

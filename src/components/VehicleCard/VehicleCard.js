@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
 const VehicleCard = ({ model, name, passengers, vehicleClass }) => {
@@ -8,6 +9,9 @@ const VehicleCard = ({ model, name, passengers, vehicleClass }) => {
       <p>{name}</p>
       <p>{passengers}</p>
       <p>{vehicleClass}</p>
+      <span>
+        <Button name="⭐" />
+      </span>
     </div>
   );
 };

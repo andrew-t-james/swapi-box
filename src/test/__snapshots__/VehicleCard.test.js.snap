@@ -32,6 +32,11 @@ ShallowWrapper {
         <p />,
         <p />,
         <p />,
+        <span>
+          <Button
+                    name="⭐"
+          />
+</span>,
       ],
     },
     "ref": null,
@@ -80,6 +85,29 @@ ShallowWrapper {
         "rendered": null,
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Button
+            name="⭐"
+/>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "name": "⭐",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "span",
+      },
     ],
     "type": "div",
   },
@@ -94,6 +122,11 @@ ShallowWrapper {
           <p />,
           <p />,
           <p />,
+          <span>
+            <Button
+                        name="⭐"
+            />
+</span>,
         ],
       },
       "ref": null,
@@ -141,6 +174,29 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              name="⭐"
+/>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "name": "⭐",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "span",
         },
       ],
       "type": "div",
@@ -179,6 +235,11 @@ ShallowWrapper {
         <p />,
         <p />,
         <p />,
+        <span>
+          <Button
+                    name="⭐"
+          />
+</span>,
       ],
     },
     "ref": null,
@@ -227,6 +288,29 @@ ShallowWrapper {
         "rendered": null,
         "type": "p",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <Button
+            name="⭐"
+/>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "name": "⭐",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        "type": "span",
+      },
     ],
     "type": "div",
   },
@@ -241,6 +325,11 @@ ShallowWrapper {
           <p />,
           <p />,
           <p />,
+          <span>
+            <Button
+                        name="⭐"
+            />
+</span>,
         ],
       },
       "ref": null,
@@ -288,6 +377,29 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              name="⭐"
+/>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "name": "⭐",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "span",
         },
       ],
       "type": "div",

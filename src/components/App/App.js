@@ -15,6 +15,7 @@ class App extends Component {
       movie: {},
       planets: [],
       vehicles: [],
+      favorites: [],
       isLoading: false,
       hasError: false,
       selected: null
@@ -61,18 +62,29 @@ class App extends Component {
     }
   }
 
+  updateFavorites = favorite => {
+    const allFavorites = this.state.favorites;
+
+    this.setState({ favorites: [...allFavorites, favorite] });
+  }
+
+  updateSelection = () => {
+    return this.setState({ selected: 'favorites' });
+  }
+
   render() {
-    const { people, movie, planets, selected, vehicles } = this.state;
+    const { people, movie, planets, selected, vehicles, favorites } = this.state;
 
     return (
       <main className="grid-container">
-        <Header />
-        <SideBar movie={movie}/>
+        <Header updateSelection={this.updateSelection} />
+        <SideBar movie={movie} />
         <CardContainer
           people={people}
           planets={planets}
           selected={selected}
           vehicles={vehicles}
+          favorites={favorites}
           fetchPeopleData={this.fetchPeopleData}
           fetchPlanetData={this.fetchPlanetData}
           fetchVehicleData={this.fetchVehicleData}

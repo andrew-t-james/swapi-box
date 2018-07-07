@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
 const PlanetCard = ({climate, planet, population, residents, terrain}) => {
@@ -9,6 +10,9 @@ const PlanetCard = ({climate, planet, population, residents, terrain}) => {
       <p>{population}</p>
       <p>{residents}</p>
       <p>{terrain}</p>
+      <span>
+        <Button name="⭐" />
+      </span>
     </div>
   );
 };

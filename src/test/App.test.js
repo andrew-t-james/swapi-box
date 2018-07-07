@@ -12,6 +12,7 @@ describe('App', () => {
       people: [],
       movie: {},
       planets: [],
+      favorites: [],
       vehicles: [],
       isLoading: false,
       hasError: false,
@@ -26,10 +27,6 @@ describe('App', () => {
 
   test('should have default state', async () => {
     expect(wrapper.state()).toEqual(mockState);
-  });
-
-  test('renders without crashing', () => {
-    expect(wrapper).toMatchSnapshot();
   });
 
   describe('fetchMoveScroll', () => {
@@ -190,4 +187,15 @@ describe('App', () => {
     });
   });
 
+  describe('UpdateFavorites', () => {
+    test('should update favorites', () => {
+
+    });
+
+  });
+
+
+  test('renders without crashing', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });

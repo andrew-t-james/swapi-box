@@ -18,11 +18,14 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Header />,
+        <Header
+          updateSelection={[Function]}
+/>,
         <SideBar
           movie={Object {}}
 />,
         <CardContainer
+          favorites={Array []}
           fetchPeopleData={[Function]}
           fetchPlanetData={[Function]}
           fetchVehicleData={[Function]}
@@ -40,7 +43,9 @@ ShallowWrapper {
         "instance": null,
         "key": undefined,
         "nodeType": "function",
-        "props": Object {},
+        "props": Object {
+          "updateSelection": [Function],
+        },
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -61,6 +66,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "favorites": Array [],
           "fetchPeopleData": [Function],
           "fetchPlanetData": [Function],
           "fetchVehicleData": [Function],
@@ -83,11 +89,14 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Header />,
+          <Header
+            updateSelection={[Function]}
+/>,
           <SideBar
             movie={Object {}}
 />,
           <CardContainer
+            favorites={Array []}
             fetchPeopleData={[Function]}
             fetchPlanetData={[Function]}
             fetchVehicleData={[Function]}
@@ -105,7 +114,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "updateSelection": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -126,6 +137,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "favorites": Array [],
             "fetchPeopleData": [Function],
             "fetchPlanetData": [Function],
             "fetchVehicleData": [Function],

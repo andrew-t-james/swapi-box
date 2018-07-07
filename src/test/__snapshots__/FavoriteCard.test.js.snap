@@ -1,25 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`PlanetCard should match snapshot 1`] = `
+exports[`FavoriteCard should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <PlanetCard
-    0={
-        Object {
-            "climate": "temperate",
-            "favorite": false,
-            "planet": "Alderaan",
-            "population": "2000000000",
-            "residents": Array [
-              undefined,
-              undefined,
-              undefined,
-            ],
-            "terrain": "grasslands, mountains",
-          }
-    }
-/>,
+  Symbol(enzyme.__unrendered__): <FavoriteCard />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -34,10 +19,6 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <h2 />,
-        <p />,
-        <p />,
-        <p />,
-        <p />,
         <span>
           <Button
                     name="⭐"
@@ -57,50 +38,6 @@ ShallowWrapper {
         "ref": null,
         "rendered": null,
         "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
       },
       Object {
         "instance": null,
@@ -136,10 +73,6 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <h2 />,
-          <p />,
-          <p />,
-          <p />,
-          <p />,
           <span>
             <Button
                         name="⭐"
@@ -159,50 +92,6 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
         },
         Object {
           "instance": null,

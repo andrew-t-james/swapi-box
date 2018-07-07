@@ -4,7 +4,9 @@ exports[`Header should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__unrendered__): <Header
+    updateSelection={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -23,9 +25,15 @@ ShallowWrapper {
 >
           Header
 </h2>,
-        <Button
-          name="Favorites"
-/>,
+        <ul>
+          <li
+                    onClick={[Function]}
+          >
+                    <Button
+                              name="Favorites"
+                    />
+          </li>
+</ul>,
       ],
       "className": "header",
     },
@@ -46,13 +54,42 @@ ShallowWrapper {
       Object {
         "instance": null,
         "key": undefined,
-        "nodeType": "function",
+        "nodeType": "host",
         "props": Object {
-          "name": "Favorites",
+          "children": <li
+            onClick={[Function]}
+>
+            <Button
+                        name="Favorites"
+            />
+</li>,
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <Button
+              name="Favorites"
+/>,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "name": "Favorites",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": "li",
+        },
+        "type": "ul",
       },
     ],
     "type": "header",
@@ -69,9 +106,15 @@ ShallowWrapper {
 >
             Header
 </h2>,
-          <Button
-            name="Favorites"
-/>,
+          <ul>
+            <li
+                        onClick={[Function]}
+            >
+                        <Button
+                                    name="Favorites"
+                        />
+            </li>
+</ul>,
         ],
         "className": "header",
       },
@@ -92,13 +135,42 @@ ShallowWrapper {
         Object {
           "instance": null,
           "key": undefined,
-          "nodeType": "function",
+          "nodeType": "host",
           "props": Object {
-            "name": "Favorites",
+            "children": <li
+              onClick={[Function]}
+>
+              <Button
+                            name="Favorites"
+              />
+</li>,
           },
           "ref": null,
-          "rendered": null,
-          "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Button
+                name="Favorites"
+/>,
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "name": "Favorites",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "li",
+          },
+          "type": "ul",
         },
       ],
       "type": "header",

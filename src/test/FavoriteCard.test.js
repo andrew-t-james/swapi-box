@@ -1,11 +1,11 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Favorites from '../components/Favorites/Favorites';
+import FavoriteCard from '../components/FavoriteCard/FavoriteCard';
 
-describe('Favorites', () => {
+describe('FavoriteCard', () => {
   let wrapper;
 
-  beforeEach(() => wrapper = shallow(<Favorites />));
+  beforeEach(() => wrapper = shallow(<FavoriteCard />));
 
   afterEach(() => wrapper.unmount());
 
