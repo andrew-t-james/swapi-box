@@ -31,6 +31,7 @@ export const mockCleanedPlanet = [
     population: '2000000000',
     climate: 'temperate',
     terrain: 'grasslands, mountains',
-    "residentName": undefined
+    residents: [undefined, undefined, undefined],
+    favorite: false
   }
 ];

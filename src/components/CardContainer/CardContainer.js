@@ -1,7 +1,7 @@
 import React from 'react';
 import Button from '../Button/Button';
 import PersonCard from '../PersonCard/PersonCard';
-// import Planets from '../Planets/Planets';
+import PlanetCard from '../PlanetCard/PlanetCard';
 // import Vehicles from '../Vehicles/Vehicles';
 // import Favorites from '../Favorites/Favorites';
 import PropTypes from 'prop-types';
@@ -9,9 +9,10 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 const CardContainer = props => {
-  const { people, fetchPeopleData } = props;
+  const { people, planets, selected, fetchPeopleData, fetchPlanetData } = props;
 
   const peopleCards = people.map(person => <PersonCard key={person.name} {...person}/>);
+  const planetsCards = planets.map(planet => <PlanetCard key={planet.population} {...planet} />);
 
   return (
     <section className="main-container">
@@ -22,8 +23,8 @@ const CardContainer = props => {
             <li className="card-container__nav--button" onClick={() => fetchPeopleData()}>
               <Button name={'People'} className="people" />
             </li>
-            <li>
-              <Button name={'Planets'} />
+            <li className="card-container__nav--button"  onClick={() => fetchPlanetData()}>
+              <Button name={'Planets'} className="planets"/>
             </li>
             <li>
               <Button name={'Vehicles'} />
@@ -31,9 +32,8 @@ const CardContainer = props => {
           </ul>
         </nav>
         <section>
-          {
-            people && peopleCards
-          }
+          {selected === 'people'  && peopleCards}
+          {selected === 'planets'  && planetsCards}
         </section>
       </div>
     </section>
@@ -42,7 +42,10 @@ const CardContainer = props => {
 
 CardContainer.propTypes = {
   people: PropTypes.arrayOf(PropTypes.object),
-  fetchPeopleData: PropTypes.func
+  planets: PropTypes.arrayOf(PropTypes.object),
+  selected: PropTypes.string,
+  fetchPeopleData: PropTypes.func,
+  fetchPlanetData: PropTypes.func
 };
 
 export default CardContainer;
