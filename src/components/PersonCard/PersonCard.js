@@ -4,24 +4,19 @@ import PropTypes from 'prop-types';
 const PersonCard = ({ name, species, homeworld, population }) => {
   return (
     <div>
-      <p>
-        {name}
-      </p>
-      <p>
-        {species}
-      </p>
-      <p>
-        {population}
-      </p>
-      <p>
-        {homeworld}
-      </p>
+      <h2>{name}</h2>
+      <p>{species}</p>
+      <p>{homeworld}</p>
+      <p>{population}</p>
     </div>
   );
 };
 
 PersonCard.propTypes = {
-
+  name: PropTypes.string,
+  species: PropTypes.string,
+  homeworld: PropTypes.string,
+  population: PropTypes.string
 };
 
 export default PersonCard;

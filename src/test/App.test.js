@@ -1,8 +1,8 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import App from '../components/App/App';
-import { peopleDataWithName, mockCleanedMovie, mockCleanedPlanet } from '../mock-data/cleaned-data';
-import { mockMovieFetchResponse, mockPlanetsResponse } from '../mock-data/mock-responses';
+import { peopleDataWithName, mockCleanedMovie, mockCleanedPlanet, mockCleanedVehicle } from '../mock-data/cleaned-data';
+import { mockMovieFetchResponse, mockPlanetsResponse, mockVehicleResponse } from '../mock-data/mock-responses';
 
 describe('App', () => {
   let wrapper;
@@ -12,6 +12,7 @@ describe('App', () => {
       people: [],
       movie: {},
       planets: [],
+      vehicles: [],
       isLoading: false,
       hasError: false,
       selected: null
@@ -149,4 +150,44 @@ describe('App', () => {
       expect(wrapper.state('hasError')).toBe(true);
     });
   });
+
+  describe('FetchVehicleData', () => {
+    test('should make a fetch call', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () =>
+            Promise.resolve({
+              ok: true
+            })
+        }));
+
+      await wrapper.instance().fetchVehicleData();
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+    });
+
+    test('should update state on successfully fetch completion', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () =>
+            Promise.resolve(mockVehicleResponse)
+        }));
+
+      await wrapper.instance().fetchVehicleData();
+      expect(wrapper.state('vehicles')).toEqual(mockCleanedVehicle);
+    });
+
+    test('should handle errors when fetching data fails', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.reject({
+          ok: false
+        }));
+
+      await wrapper.instance().fetchVehicleData();
+      expect(window.fetch).toHaveBeenCalled();
+      expect(wrapper.state('hasError')).toBe(true);
+    });
+  });
+
 });

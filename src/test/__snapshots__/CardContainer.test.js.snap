@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <CardContainer
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
     people={
         Array [
             Object {
@@ -20,6 +21,7 @@ ShallowWrapper {
     }
     planets={Array []}
     selected={null}
+    vehicles={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -61,8 +63,12 @@ ShallowWrapper {
                                         name="Planets"
                                 />
                         </li>
-                        <li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
                                 <Button
+                                        className="vehicles"
                                         name="Vehicles"
                                 />
                         </li>
@@ -106,8 +112,12 @@ ShallowWrapper {
                                                 name="Planets"
                                     />
                         </li>
-                        <li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
                                     <Button
+                                                className="vehicles"
                                                 name="Vehicles"
                                     />
                         </li>
@@ -156,8 +166,12 @@ ShallowWrapper {
                                           name="Planets"
                             />
               </li>
-              <li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
                             <Button
+                                          className="vehicles"
                                           name="Vehicles"
                             />
               </li>
@@ -189,8 +203,12 @@ ShallowWrapper {
                                     name="Planets"
                   />
 </li>,
-                <li>
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
                   <Button
+                                    className="vehicles"
                                     name="Vehicles"
                   />
 </li>,
@@ -258,8 +276,11 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <Button
+                    className="vehicles"
                     name="Vehicles"
 />,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": Object {
@@ -267,6 +288,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
+                    "className": "vehicles",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -288,10 +310,12 @@ ShallowWrapper {
             "children": Array [
               false,
               false,
+              false,
             ],
           },
           "ref": null,
           "rendered": Array [
+            false,
             false,
             false,
           ],
@@ -336,8 +360,12 @@ ShallowWrapper {
                                                   name="Planets"
                                         />
                               </li>
-                              <li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
                                         <Button
+                                                  className="vehicles"
                                                   name="Vehicles"
                                         />
                               </li>
@@ -381,8 +409,12 @@ ShallowWrapper {
                                                         name="Planets"
                                           />
                             </li>
-                            <li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
                                           <Button
+                                                        className="vehicles"
                                                         name="Vehicles"
                                           />
                             </li>
@@ -431,8 +463,12 @@ ShallowWrapper {
                                                 name="Planets"
                                 />
                 </li>
-                <li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
                                 <Button
+                                                className="vehicles"
                                                 name="Vehicles"
                                 />
                 </li>
@@ -464,8 +500,12 @@ ShallowWrapper {
                                         name="Planets"
                     />
 </li>,
-                  <li>
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
                     <Button
+                                        className="vehicles"
                                         name="Vehicles"
                     />
 </li>,
@@ -533,8 +573,11 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <Button
+                      className="vehicles"
                       name="Vehicles"
 />,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Object {
@@ -542,6 +585,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
+                      "className": "vehicles",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -563,10 +607,12 @@ ShallowWrapper {
               "children": Array [
                 false,
                 false,
+                false,
               ],
             },
             "ref": null,
             "rendered": Array [
+              false,
               false,
               false,
             ],
@@ -596,6 +642,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <CardContainer
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
     people={Array []}
     planets={
         Array [
@@ -614,6 +661,7 @@ ShallowWrapper {
           ]
     }
     selected={null}
+    vehicles={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -655,8 +703,12 @@ ShallowWrapper {
                                         name="Planets"
                                 />
                         </li>
-                        <li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
                                 <Button
+                                        className="vehicles"
                                         name="Vehicles"
                                 />
                         </li>
@@ -700,8 +752,12 @@ ShallowWrapper {
                                                 name="Planets"
                                     />
                         </li>
-                        <li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
                                     <Button
+                                                className="vehicles"
                                                 name="Vehicles"
                                     />
                         </li>
@@ -750,8 +806,12 @@ ShallowWrapper {
                                           name="Planets"
                             />
               </li>
-              <li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
                             <Button
+                                          className="vehicles"
                                           name="Vehicles"
                             />
               </li>
@@ -783,8 +843,12 @@ ShallowWrapper {
                                     name="Planets"
                   />
 </li>,
-                <li>
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
                   <Button
+                                    className="vehicles"
                                     name="Vehicles"
                   />
 </li>,
@@ -852,8 +916,11 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": <Button
+                    className="vehicles"
                     name="Vehicles"
 />,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": Object {
@@ -861,6 +928,7 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "function",
                   "props": Object {
+                    "className": "vehicles",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -882,10 +950,12 @@ ShallowWrapper {
             "children": Array [
               false,
               false,
+              false,
             ],
           },
           "ref": null,
           "rendered": Array [
+            false,
             false,
             false,
           ],
@@ -930,8 +1000,12 @@ ShallowWrapper {
                                                   name="Planets"
                                         />
                               </li>
-                              <li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
                                         <Button
+                                                  className="vehicles"
                                                   name="Vehicles"
                                         />
                               </li>
@@ -975,8 +1049,12 @@ ShallowWrapper {
                                                         name="Planets"
                                           />
                             </li>
-                            <li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
                                           <Button
+                                                        className="vehicles"
                                                         name="Vehicles"
                                           />
                             </li>
@@ -1025,8 +1103,12 @@ ShallowWrapper {
                                                 name="Planets"
                                 />
                 </li>
-                <li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
                                 <Button
+                                                className="vehicles"
                                                 name="Vehicles"
                                 />
                 </li>
@@ -1058,8 +1140,12 @@ ShallowWrapper {
                                         name="Planets"
                     />
 </li>,
-                  <li>
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
                     <Button
+                                        className="vehicles"
                                         name="Vehicles"
                     />
 </li>,
@@ -1127,8 +1213,11 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": <Button
+                      className="vehicles"
                       name="Vehicles"
 />,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
                   },
                   "ref": null,
                   "rendered": Object {
@@ -1136,6 +1225,7 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "function",
                     "props": Object {
+                      "className": "vehicles",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -1157,10 +1247,647 @@ ShallowWrapper {
               "children": Array [
                 false,
                 false,
+                false,
               ],
             },
             "ref": null,
             "rendered": Array [
+              false,
+              false,
+              false,
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match shapshot when vehicle array has been populated 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    fetchPeopleData={[Function]}
+    fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
+    people={Array []}
+    planets={Array []}
+    selected={null}
+    vehicles={
+        Array [
+            Object {
+              "favorite": false,
+              "model": "Digger Crawler",
+              "name": "Sand Crawler",
+              "passengers": "30",
+              "vehicleClass": "wheeled",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card-container"
+>
+        <h1>
+                CardContainer
+        </h1>
+        <nav
+                className="card-container__nav"
+        >
+                <ul>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="people"
+                                        name="People"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="planets"
+                                        name="Planets"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                                />
+                        </li>
+                </ul>
+        </nav>
+        <section>
+                
+        </section>
+</div>,
+      "className": "main-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            CardContainer
+</h1>,
+          <nav
+            className="card-container__nav"
+>
+            <ul>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="people"
+                                                name="People"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="planets"
+                                                name="Planets"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                    />
+                        </li>
+            </ul>
+</nav>,
+          <section>
+            
+</section>,
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CardContainer",
+          },
+          "ref": null,
+          "rendered": "CardContainer",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="people"
+                                          name="People"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="planets"
+                                          name="Planets"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="vehicles"
+                                          name="Vehicles"
+                            />
+              </li>
+</ul>,
+            "className": "card-container__nav",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="people"
+                                    name="People"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="planets"
+                                    name="Planets"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="vehicles"
+                                    name="Vehicles"
+                  />
+</li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="people"
+                    name="People"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "people",
+                    "name": "People",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="planets"
+                    name="Planets"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "planets",
+                    "name": "Planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="vehicles"
+                    name="Vehicles"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "vehicles",
+                    "name": "Vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              false,
+              false,
+              false,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            false,
+            false,
+            false,
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-container"
+>
+          <h1>
+                    CardContainer
+          </h1>
+          <nav
+                    className="card-container__nav"
+          >
+                    <ul>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="people"
+                                                  name="People"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="planets"
+                                                  name="Planets"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="vehicles"
+                                                  name="Vehicles"
+                                        />
+                              </li>
+                    </ul>
+          </nav>
+          <section>
+                    
+          </section>
+</div>,
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              CardContainer
+</h1>,
+            <nav
+              className="card-container__nav"
+>
+              <ul>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="people"
+                                                        name="People"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="planets"
+                                                        name="Planets"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="vehicles"
+                                                        name="Vehicles"
+                                          />
+                            </li>
+              </ul>
+</nav>,
+            <section>
+              
+</section>,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CardContainer",
+            },
+            "ref": null,
+            "rendered": "CardContainer",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="people"
+                                                name="People"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="planets"
+                                                name="Planets"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                />
+                </li>
+</ul>,
+              "className": "card-container__nav",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="people"
+                                        name="People"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="planets"
+                                        name="Planets"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                    />
+</li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="people"
+                      name="People"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "people",
+                      "name": "People",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="planets"
+                      name="Planets"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "planets",
+                      "name": "Planets",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="vehicles"
+                      name="Vehicles"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "vehicles",
+                      "name": "Vehicles",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                false,
+                false,
+                false,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
               false,
               false,
             ],
@@ -1189,9 +1916,11 @@ ReactWrapper {
   Symbol(enzyme.__unrendered__): <CardContainer
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
     people={Array []}
     planets={Array []}
     selected={null}
+    vehicles={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -1208,9 +1937,11 @@ ReactWrapper {
     "props": Object {
       "fetchPeopleData": [Function],
       "fetchPlanetData": [Function],
+      "fetchVehicleData": [Function],
       "people": Array [],
       "planets": Array [],
       "selected": null,
+      "vehicles": Array [],
     },
     "ref": null,
     "rendered": Object {
@@ -1241,7 +1972,9 @@ ReactWrapper {
                                                 Planets
                                         </button>
                                 </li>
-                                <li>
+                                <li
+                                        class="card-container__nav--button"
+                                >
                                         <button>
                                                 Vehicles
                                         </button>
@@ -1282,8 +2015,12 @@ ReactWrapper {
                                                   name="Planets"
                                         />
                               </li>
-                              <li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
                                         <Button
+                                                  className="vehicles"
                                                   name="Vehicles"
                                         />
                               </li>
@@ -1322,7 +2059,9 @@ ReactWrapper {
                                                             Planets
                                                 </button>
                                     </li>
-                                    <li>
+                                    <li
+                                                class="card-container__nav--button"
+                                    >
                                                 <button>
                                                             Vehicles
                                                 </button>
@@ -1360,8 +2099,12 @@ ReactWrapper {
                                                                 name="Planets"
                                                 />
                                 </li>
-                                <li>
+                                <li
+                                                className="card-container__nav--button"
+                                                onClick={[Function]}
+                                >
                                                 <Button
+                                                                className="vehicles"
                                                                 name="Vehicles"
                                                 />
                                 </li>
@@ -1409,7 +2152,9 @@ ReactWrapper {
                                                                 Planets
                                                 </button>
                                 </li>
-                                <li>
+                                <li
+                                                class="card-container__nav--button"
+                                >
                                                 <button>
                                                                 Vehicles
                                                 </button>
@@ -1438,8 +2183,12 @@ ReactWrapper {
                                                       name="Planets"
                                     />
                   </li>
-                  <li>
+                  <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                  >
                                     <Button
+                                                      className="vehicles"
                                                       name="Vehicles"
                                     />
                   </li>
@@ -1464,7 +2213,9 @@ ReactWrapper {
                                                             Planets
                                         </button>
                     </li>
-                    <li>
+                    <li
+                                        class="card-container__nav--button"
+                    >
                                         <button>
                                                             Vehicles
                                         </button>
@@ -1492,8 +2243,12 @@ ReactWrapper {
                                                 name="Planets"
                         />
 </li>,
-                      <li>
+                      <li
+                        className="card-container__nav--button"
+                        onClick={[Function]}
+>
                         <Button
+                                                className="vehicles"
                                                 name="Vehicles"
                         />
 </li>,
@@ -1600,7 +2355,9 @@ ReactWrapper {
                       "type": "li",
                     },
                     Object {
-                      "instance": <li>
+                      "instance": <li
+                        class="card-container__nav--button"
+>
                         <button>
                                                 Vehicles
                         </button>
@@ -1609,8 +2366,11 @@ ReactWrapper {
                       "nodeType": "host",
                       "props": Object {
                         "children": <Button
+                          className="vehicles"
                           name="Vehicles"
 />,
+                        "className": "card-container__nav--button",
+                        "onClick": [Function],
                       },
                       "ref": null,
                       "rendered": Array [
@@ -1619,6 +2379,7 @@ ReactWrapper {
                           "key": undefined,
                           "nodeType": "function",
                           "props": Object {
+                            "className": "vehicles",
                             "name": "Vehicles",
                           },
                           "ref": null,
@@ -1656,11 +2417,13 @@ ReactWrapper {
                 "children": Array [
                   false,
                   false,
+                  false,
                 ],
               },
               "ref": null,
               "rendered": Array [
                 Array [
+                  false,
                   false,
                   false,
                 ],
@@ -1683,9 +2446,11 @@ ReactWrapper {
       "props": Object {
         "fetchPeopleData": [Function],
         "fetchPlanetData": [Function],
+        "fetchVehicleData": [Function],
         "people": Array [],
         "planets": Array [],
         "selected": null,
+        "vehicles": Array [],
       },
       "ref": null,
       "rendered": Object {
@@ -1716,7 +2481,9 @@ ReactWrapper {
                                                             Planets
                                                   </button>
                                         </li>
-                                        <li>
+                                        <li
+                                                  class="card-container__nav--button"
+                                        >
                                                   <button>
                                                             Vehicles
                                                   </button>
@@ -1757,8 +2524,12 @@ ReactWrapper {
                                                             name="Planets"
                                                 />
                                     </li>
-                                    <li>
+                                    <li
+                                                className="card-container__nav--button"
+                                                onClick={[Function]}
+                                    >
                                                 <Button
+                                                            className="vehicles"
                                                             name="Vehicles"
                                                 />
                                     </li>
@@ -1797,7 +2568,9 @@ ReactWrapper {
                                                                       Planets
                                                         </button>
                                           </li>
-                                          <li>
+                                          <li
+                                                        class="card-container__nav--button"
+                                          >
                                                         <button>
                                                                       Vehicles
                                                         </button>
@@ -1835,8 +2608,12 @@ ReactWrapper {
                                                                         name="Planets"
                                                       />
                                     </li>
-                                    <li>
+                                    <li
+                                                      className="card-container__nav--button"
+                                                      onClick={[Function]}
+                                    >
                                                       <Button
+                                                                        className="vehicles"
                                                                         name="Vehicles"
                                                       />
                                     </li>
@@ -1884,7 +2661,9 @@ ReactWrapper {
                                                                         Planets
                                                       </button>
                                     </li>
-                                    <li>
+                                    <li
+                                                      class="card-container__nav--button"
+                                    >
                                                       <button>
                                                                         Vehicles
                                                       </button>
@@ -1913,8 +2692,12 @@ ReactWrapper {
                                                             name="Planets"
                                         />
                     </li>
-                    <li>
+                    <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                    >
                                         <Button
+                                                            className="vehicles"
                                                             name="Vehicles"
                                         />
                     </li>
@@ -1939,7 +2722,9 @@ ReactWrapper {
                                                                   Planets
                                             </button>
                       </li>
-                      <li>
+                      <li
+                                            class="card-container__nav--button"
+                      >
                                             <button>
                                                                   Vehicles
                                             </button>
@@ -1967,8 +2752,12 @@ ReactWrapper {
                                                     name="Planets"
                           />
 </li>,
-                        <li>
+                        <li
+                          className="card-container__nav--button"
+                          onClick={[Function]}
+>
                           <Button
+                                                    className="vehicles"
                                                     name="Vehicles"
                           />
 </li>,
@@ -2075,7 +2864,9 @@ ReactWrapper {
                         "type": "li",
                       },
                       Object {
-                        "instance": <li>
+                        "instance": <li
+                          class="card-container__nav--button"
+>
                           <button>
                                                     Vehicles
                           </button>
@@ -2084,8 +2875,11 @@ ReactWrapper {
                         "nodeType": "host",
                         "props": Object {
                           "children": <Button
+                            className="vehicles"
                             name="Vehicles"
 />,
+                          "className": "card-container__nav--button",
+                          "onClick": [Function],
                         },
                         "ref": null,
                         "rendered": Array [
@@ -2094,6 +2888,7 @@ ReactWrapper {
                             "key": undefined,
                             "nodeType": "function",
                             "props": Object {
+                              "className": "vehicles",
                               "name": "Vehicles",
                             },
                             "ref": null,
@@ -2131,11 +2926,13 @@ ReactWrapper {
                   "children": Array [
                     false,
                     false,
+                    false,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   Array [
+                    false,
                     false,
                     false,
                   ],

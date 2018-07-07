@@ -5,18 +5,21 @@ import {
   cleanSpecies,
   fetchHelper,
   cleanMovieScroll,
-  getPlanetData
+  getPlanetData,
+  getVehicleData
 } from '../helper/helper';
 import {
   cleanedPeople,
   peopleDataWithName,
   mockCleanedMovie,
-  mockCleanedPlanet
+  mockCleanedPlanet,
+  mockCleanedVehicle
 } from '../mock-data/cleaned-data';
 import {
   mockCleanHomeWorldResponse,
   mockMovieFetchResponse,
-  mockPlanetsResponse
+  mockPlanetsResponse,
+  mockVehicleResponse
 } from '../mock-data/mock-responses';
 
 describe('Helpers', () => {
@@ -115,7 +118,7 @@ describe('Helpers', () => {
   });
 
   describe('GetPlanetData', () => {
-    test('should return data from vehicles endpoint', async () => {
+    test('should return data from planet endpoint', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
         Promise.resolve({
           ok: true,
@@ -126,7 +129,19 @@ describe('Helpers', () => {
       expect(window.fetch).toHaveBeenCalledTimes(4);
       await expect(response).toEqual(mockCleanedPlanet);
     });
-
   });
 
+  describe('GetVehicleDat', () => {
+    test('should return data from vehicles endpoint', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          ok: true,
+          json: () => Promise.resolve(mockVehicleResponse)
+        }));
+
+      const response = await getVehicleData();
+      expect(window.fetch).toHaveBeenCalledTimes(1);
+      await expect(response).toEqual(mockCleanedVehicle);
+    });
+  });
 });

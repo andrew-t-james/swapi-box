@@ -3,7 +3,7 @@ import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import SideBar from '../SideBar/SideBar';
 
-import { cleanMovieScroll, getPeopleData, getPlanetData } from '../../helper/helper';
+import { cleanMovieScroll, getPeopleData, getPlanetData, getVehicleData } from '../../helper/helper';
 
 import './App.css';
 
@@ -14,6 +14,7 @@ class App extends Component {
       people: [],
       movie: {},
       planets: [],
+      vehicles: [],
       isLoading: false,
       hasError: false,
       selected: null
@@ -51,8 +52,17 @@ class App extends Component {
     }
   }
 
+  fetchVehicleData = async () => {
+    try {
+      const vehicles = await getVehicleData();
+      this.setState({ vehicles, selected: 'vehicles' });
+    } catch (error) {
+      this.setState({ hasError: true });
+    }
+  }
+
   render() {
-    const { people, movie, planets, selected } = this.state;
+    const { people, movie, planets, selected, vehicles } = this.state;
 
     return (
       <main className="grid-container">
@@ -62,8 +72,10 @@ class App extends Component {
           people={people}
           planets={planets}
           selected={selected}
+          vehicles={vehicles}
           fetchPeopleData={this.fetchPeopleData}
           fetchPlanetData={this.fetchPlanetData}
+          fetchVehicleData={this.fetchVehicleData}
         />
       </main>
     );
