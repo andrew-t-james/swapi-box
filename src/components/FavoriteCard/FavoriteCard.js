@@ -2,10 +2,10 @@ import React from 'react';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
-const FavoriteCard = props => {
+const FavoriteCard = ({ name }) => {
   return (
     <div>
-      <h2>{props.name}</h2>
+      <h2>{name}</h2>
       <span>
         <Button name="⭐" />
       </span>
@@ -14,7 +14,7 @@ const FavoriteCard = props => {
 };
 
 FavoriteCard.propTypes = {
-
+  name: PropTypes.string
 };
 
 export default FavoriteCard;

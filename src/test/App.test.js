@@ -187,9 +187,26 @@ describe('App', () => {
     });
   });
 
-  describe('UpdateFavorites', () => {
-    test('should update favorites', () => {
+  describe('UpdateSelection', () => {
+    test('should update selection to favorites', () => {
+      wrapper.instance().updateSelection();
+      expect(wrapper.state('selected')).toEqual('favorites');
+    });
+  });
 
+  describe('UpdateFavorites', () => {
+    test('should update state with a new favorite when invoked', () => {
+      const mockFavorite = {
+        name: 'Woookie'
+      };
+      const mockFavoriteState =[
+        {
+          name: 'Woookie'
+        }
+      ];
+      expect(wrapper.state('favorites')).toEqual([]);
+      wrapper.instance().updateFavorites(mockFavorite);
+      expect(wrapper.state('favorites')).toEqual(mockFavoriteState);
     });
 
   });

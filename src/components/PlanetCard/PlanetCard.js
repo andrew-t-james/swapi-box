@@ -2,7 +2,7 @@ import React from 'react';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
-const PlanetCard = ({climate, planet, population, residents, terrain}) => {
+const PlanetCard = ({ climate, planet, population, residents, terrain }) => {
   return (
     <div>
       <h2>{planet}</h2>

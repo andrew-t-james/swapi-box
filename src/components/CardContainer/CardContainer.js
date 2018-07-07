@@ -10,10 +10,16 @@ import './CardContainer.css';
 
 const CardContainer = props => {
   const { people, planets, selected, vehicles, fetchVehicleData, fetchPeopleData, fetchPlanetData, favorites } = props;
-  const peopleCards = people.map(person => <PersonCard key={person.name} {...person} />);
-  const planetsCards = planets.map(planet => <PlanetCard key={planet.name} {...planet} />);
+  const peopleCards = people.map((person, index) => <PersonCard key={index} {...person} />);
+  const planetsCards = planets.map((planet, index) => <PlanetCard key={index} {...planet} />);
   const vehicleCards = vehicles.map(vehicle => <VehicleCard key={vehicle.name} {...vehicle} />);
   const favoriteCards = favorites.map((favorite, index) => <FavoriteCard key={index} {...favorite} />);
+  const noFavorites = () => (
+    <div>
+      <h2>No Favorites</h2>
+      <p>Please add Favorites</p>
+    </div>
+  );
 
   return (
     <section className="main-container">
@@ -37,6 +43,7 @@ const CardContainer = props => {
           {selected === 'planets'  && planetsCards}
           {selected === 'vehicles'  && vehicleCards}
           {selected === 'favorites' && favoriteCards}
+          {selected === 'favorites' && !favorites.length && noFavorites()}
         </section>
       </div>
     </section>
