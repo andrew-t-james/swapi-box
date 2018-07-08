@@ -4,6 +4,7 @@ import PersonCard from '../PersonCard/PersonCard';
 import PlanetCard from '../PlanetCard/PlanetCard';
 import VehicleCard from '../VehicleCard/VehicleCard';
 import FavoriteCard from '../FavoriteCard/FavoriteCard';
+import Loader from '../Loader/Loader';
 import PropTypes from 'prop-types';
 
 import './CardContainer.css';
@@ -13,6 +14,7 @@ const CardContainer = props => {
     planets,
     selected,
     vehicles,
+    isLoading,
     fetchVehicleData,
     fetchPeopleData,
     fetchPlanetData,
@@ -93,6 +95,7 @@ const CardContainer = props => {
           </ul>
         </nav>
         <section className="card-container">
+          {isLoading && <Loader></Loader>}
           {selected === 'people'  && peopleCards}
           {selected === 'planets'  && planetsCards}
           {selected === 'vehicles'  && vehicleCards}
@@ -110,6 +113,7 @@ CardContainer.propTypes = {
   vehicles: PropTypes.arrayOf(PropTypes.object),
   favorites: PropTypes.arrayOf(PropTypes.object),
   selected: PropTypes.string,
+  isLoading: PropTypes.bool,
   fetchPeopleData: PropTypes.func,
   fetchVehicleData: PropTypes.func,
   fetchPlanetData: PropTypes.func,

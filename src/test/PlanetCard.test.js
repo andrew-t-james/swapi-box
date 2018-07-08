@@ -1,7 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import PlanetCard from '../components/PlanetCard/PlanetCard';
-import { mockCleanedPlanet } from '../mock-data/cleaned-data';
+
 describe('PlanetCard', () => {
   let wrapper;
   const mockFunc = jest.fn();

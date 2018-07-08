@@ -30,6 +30,7 @@ ShallowWrapper {
           fetchPeopleData={[Function]}
           fetchPlanetData={[Function]}
           fetchVehicleData={[Function]}
+          isLoading={false}
           people={Array []}
           planets={Array []}
           selected={null}
@@ -74,6 +75,7 @@ ShallowWrapper {
           "fetchPeopleData": [Function],
           "fetchPlanetData": [Function],
           "fetchVehicleData": [Function],
+          "isLoading": false,
           "people": Array [],
           "planets": Array [],
           "selected": null,
@@ -115,6 +117,7 @@ ShallowWrapper {
             fetchPeopleData={[Function]}
             fetchPlanetData={[Function]}
             fetchVehicleData={[Function]}
+            isLoading={false}
             people={Array []}
             planets={Array []}
             selected={null}
@@ -159,6 +162,7 @@ ShallowWrapper {
             "fetchPeopleData": [Function],
             "fetchPlanetData": [Function],
             "fetchVehicleData": [Function],
+            "isLoading": false,
             "people": Array [],
             "planets": Array [],
             "selected": null,
