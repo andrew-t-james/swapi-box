@@ -23,9 +23,9 @@ class App extends Component {
     };
   }
 
-  componentDidMount = () => {
-    this.fetchMovieScroll();
-  }
+   componentDidMount = async () => {
+     await this.fetchMovieScroll();
+   }
 
   fetchMovieScroll = async () =>  {
     try {
