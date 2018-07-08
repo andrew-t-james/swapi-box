@@ -9,15 +9,18 @@ const PlanetCard = ({ climate, name, population, favorite, residents, terrain, u
   };
 
   return (
-    <div>
-      <h2>{name}</h2>
-      <p>{climate}</p>
-      <p>{population}</p>
-      <p>{residents}</p>
-      <p>{terrain}</p>
-      <span className="card__favorite" onClick={() => updateFavorites(planet)}>
-        <Button name="⭐" />
-      </span>
+    <div className="card-container__card">
+      <div className="card-container__card--header">
+        <h2 className="card-container__card--heading">{name}</h2>
+        <span className="card__favorite" onClick={() => updateFavorites(planet)}>
+          <Button name="⭐" customStyle={"btn favorite--button"} />
+        </span>
+      </div>
+      <p>Climate: {climate}</p>
+      <p>Population: {population}</p>
+      <p>Residents: {residents.length ? residents.slice(0, 3) : 'none'}</p>
+      <p>Terrain: {terrain}</p>
+
     </div>
   );
 };

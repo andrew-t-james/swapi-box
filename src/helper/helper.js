@@ -54,7 +54,7 @@ export const cleanMovieScroll = async () => {
   return {
     name: movie.title,
     episode: movie.episode_id,
-    crawl: movie.opening_crawl.replace(/[^a-zA-Z ]/g, ""),
+    crawl: movie.opening_crawl,
     releaseDate: movie.release_date
   };
 };

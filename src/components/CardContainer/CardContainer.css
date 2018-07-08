@@ -1,4 +1,72 @@
 .main-container {
-  border: 1px solid goldenrod;
   height: calc(100vh - 10rem);
+}
+
+.card-container {
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  overflow-y: scroll;
+  padding: 3rem 2rem;
+}
+
+.card-container__card {
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px dashed var(--primary-font);
+  display: flex;
+  flex-direction: column;
+  height: 30rem;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+
+.card-container__card p {
+  font-size: 1.4rem;
+}
+
+.card-container__card--header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card-container__card--heading {
+  font-size: 2rem;
+}
+
+.card-container__nav {
+  align-items: center;
+  display: flex;
+  height: 8rem;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.card-container__nav--button {
+  background: #000;
+  border: 1px solid goldenrod;
+  padding: 1rem 2rem;
+}
+
+.favorite--button {
+  border: none;
+}
+
+.no-favorites {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(80vh - 10rem);
+  justify-content: center;
+}
+
+.no-favorites--heading {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.no-favorites--copy {
+  font-size: 2.3rem;
 }

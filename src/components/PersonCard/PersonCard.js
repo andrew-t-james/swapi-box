@@ -10,14 +10,16 @@ const PersonCard = props => {
   };
 
   return (
-    <div>
-      <h2>{name}</h2>
-      <p>{species}</p>
-      <p>{homeworld}</p>
-      <p>{population}</p>
-      <span className="card__favorite" onClick={() => updateFavorites(person)}>
-        <Button name="⭐" />
-      </span>
+    <div className="card-container__card">
+      <div className="card-container__card--header">
+        <h2 className="card-container__card--heading">{name}</h2>
+        <span className="card__favorite" onClick={() => updateFavorites(person)}>
+          <Button name="⭐" customStyle={"btn favorite--button"}/>
+        </span>
+      </div>
+      <p>Species: {species}</p>
+      <p>Homeworld: {homeworld}</p>
+      <p>Population: {population}</p>
     </div>
   );
 };

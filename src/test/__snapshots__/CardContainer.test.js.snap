@@ -32,46 +32,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="card-container"
->
-        <h1>
-                CardContainer
-        </h1>
-        <nav
-                className="card-container__nav"
-        >
-                <ul>
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                                 />
                         </li>
                 </ul>
         </nav>
-        <section>
+        <section
+                className="card-container"
+        >
                 <FavoriteCard
                         name="Sand Crawler"
                         updateFavorites={undefined}
@@ -87,50 +87,51 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="card-container__nav"
->
-            <ul>
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                     />
                         </li>
             </ul>
 </nav>,
-          <section>
+          <section
+            className="card-container"
+>
             <FavoriteCard
                         name="Sand Crawler"
                         updateFavorites={undefined}
             />
 </section>,
         ],
-        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -139,47 +140,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ul>
+            "children": <ul
+              className="card-container__nav"
+>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="people"
+                                          customStyle="card-container__nav--button btn"
                                           name="People"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="planets"
+                                          customStyle="card-container__nav--button btn"
                                           name="Planets"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="vehicles"
+                                          customStyle="card-container__nav--button btn"
                                           name="Vehicles"
                             />
               </li>
 </ul>,
-            "className": "card-container__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -189,33 +183,37 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="people"
+                                    customStyle="card-container__nav--button btn"
                                     name="People"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="planets"
+                                    customStyle="card-container__nav--button btn"
                                     name="Planets"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="vehicles"
+                                    customStyle="card-container__nav--button btn"
                                     name="Vehicles"
                   />
 </li>,
               ],
+              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Array [
@@ -226,9 +224,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="people"
+                    customStyle="card-container__nav--button btn"
                     name="People"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -238,6 +237,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "people",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "People",
                   },
                   "ref": null,
@@ -253,9 +253,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="planets"
+                    customStyle="card-container__nav--button btn"
                     name="Planets"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -265,6 +266,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Planets",
                   },
                   "ref": null,
@@ -280,9 +282,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="vehicles"
+                    customStyle="card-container__nav--button btn"
                     name="Vehicles"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -292,6 +295,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -322,6 +326,7 @@ ShallowWrapper {
               ],
               false,
             ],
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
@@ -355,46 +360,46 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
+          <section
+                    className="card-container"
+          >
                     <FavoriteCard
                               name="Sand Crawler"
                               updateFavorites={undefined}
@@ -410,50 +415,51 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CardContainer
-</h1>,
-            <nav
-              className="card-container__nav"
->
-              <ul>
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="people"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="People"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="planets"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Planets"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Vehicles"
                                           />
                             </li>
               </ul>
 </nav>,
-            <section>
+            <section
+              className="card-container"
+>
               <FavoriteCard
                             name="Sand Crawler"
                             updateFavorites={undefined}
               />
 </section>,
           ],
-          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
@@ -462,47 +468,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CardContainer",
-            },
-            "ref": null,
-            "rendered": "CardContainer",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <ul>
+              "children": <ul
+                className="card-container__nav"
+>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                 />
                 </li>
 </ul>,
-              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Object {
@@ -512,33 +511,37 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                     />
 </li>,
                 ],
+                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
@@ -549,9 +552,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="people"
+                      customStyle="card-container__nav--button btn"
                       name="People"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -561,6 +565,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "people",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "People",
                     },
                     "ref": null,
@@ -576,9 +581,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="planets"
+                      customStyle="card-container__nav--button btn"
                       name="Planets"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -588,6 +594,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Planets",
                     },
                     "ref": null,
@@ -603,9 +610,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="vehicles"
+                      customStyle="card-container__nav--button btn"
                       name="Vehicles"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -615,6 +623,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -645,6 +654,7 @@ ShallowWrapper {
                 ],
                 false,
               ],
+              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
@@ -710,52 +720,58 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="card-container"
->
-        <h1>
-                CardContainer
-        </h1>
-        <nav
-                className="card-container__nav"
-        >
-                <ul>
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                                 />
                         </li>
                 </ul>
         </nav>
-        <section>
-                <div>
-                        <h2>
+        <section
+                className="card-container"
+        >
+                <div
+                        className="no-favorites"
+                >
+                        <h2
+                                className="no-favorites--heading"
+                        >
                                 No Favorites
                         </h2>
-                        <p>
-                                Please add Favorites
+                        <p
+                                className="no-favorites--copy"
+                        >
+                                Please select a few Favorites
                         </p>
                 </div>
         </section>
@@ -769,54 +785,61 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="card-container__nav"
->
-            <ul>
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                     />
                         </li>
             </ul>
 </nav>,
-          <section>
-            <div>
-                        <h2>
+          <section
+            className="card-container"
+>
+            <div
+                        className="no-favorites"
+            >
+                        <h2
+                                    className="no-favorites--heading"
+                        >
                                     No Favorites
                         </h2>
-                        <p>
-                                    Please add Favorites
+                        <p
+                                    className="no-favorites--copy"
+                        >
+                                    Please select a few Favorites
                         </p>
             </div>
 </section>,
         ],
-        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -825,47 +848,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ul>
+            "children": <ul
+              className="card-container__nav"
+>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="people"
+                                          customStyle="card-container__nav--button btn"
                                           name="People"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="planets"
+                                          customStyle="card-container__nav--button btn"
                                           name="Planets"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="vehicles"
+                                          customStyle="card-container__nav--button btn"
                                           name="Vehicles"
                             />
               </li>
 </ul>,
-            "className": "card-container__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -875,33 +891,37 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="people"
+                                    customStyle="card-container__nav--button btn"
                                     name="People"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="planets"
+                                    customStyle="card-container__nav--button btn"
                                     name="Planets"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="vehicles"
+                                    customStyle="card-container__nav--button btn"
                                     name="Vehicles"
                   />
 </li>,
               ],
+              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Array [
@@ -912,9 +932,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="people"
+                    customStyle="card-container__nav--button btn"
                     name="People"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -924,6 +945,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "people",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "People",
                   },
                   "ref": null,
@@ -939,9 +961,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="planets"
+                    customStyle="card-container__nav--button btn"
                     name="Planets"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -951,6 +974,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Planets",
                   },
                   "ref": null,
@@ -966,9 +990,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="vehicles"
+                    customStyle="card-container__nav--button btn"
                     name="Vehicles"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -978,6 +1003,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -1001,15 +1027,22 @@ ShallowWrapper {
               false,
               false,
               Array [],
-              <div>
-                <h2>
+              <div
+                className="no-favorites"
+>
+                <h2
+                                className="no-favorites--heading"
+                >
                                 No Favorites
                 </h2>
-                <p>
-                                Please add Favorites
+                <p
+                                className="no-favorites--copy"
+                >
+                                Please select a few Favorites
                 </p>
 </div>,
             ],
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
@@ -1022,13 +1055,18 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h2>
+                  <h2
+                    className="no-favorites--heading"
+>
                     No Favorites
 </h2>,
-                  <p>
-                    Please add Favorites
+                  <p
+                    className="no-favorites--copy"
+>
+                    Please select a few Favorites
 </p>,
                 ],
+                "className": "no-favorites",
               },
               "ref": null,
               "rendered": Array [
@@ -1038,6 +1076,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "No Favorites",
+                    "className": "no-favorites--heading",
                   },
                   "ref": null,
                   "rendered": "No Favorites",
@@ -1048,10 +1087,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Please add Favorites",
+                    "children": "Please select a few Favorites",
+                    "className": "no-favorites--copy",
                   },
                   "ref": null,
-                  "rendered": "Please add Favorites",
+                  "rendered": "Please select a few Favorites",
                   "type": "p",
                 },
               ],
@@ -1071,52 +1111,58 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
-                    <div>
-                              <h2>
+          <section
+                    className="card-container"
+          >
+                    <div
+                              className="no-favorites"
+                    >
+                              <h2
+                                        className="no-favorites--heading"
+                              >
                                         No Favorites
                               </h2>
-                              <p>
-                                        Please add Favorites
+                              <p
+                                        className="no-favorites--copy"
+                              >
+                                        Please select a few Favorites
                               </p>
                     </div>
           </section>
@@ -1130,54 +1176,61 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CardContainer
-</h1>,
-            <nav
-              className="card-container__nav"
->
-              <ul>
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="people"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="People"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="planets"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Planets"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Vehicles"
                                           />
                             </li>
               </ul>
 </nav>,
-            <section>
-              <div>
-                            <h2>
+            <section
+              className="card-container"
+>
+              <div
+                            className="no-favorites"
+              >
+                            <h2
+                                          className="no-favorites--heading"
+                            >
                                           No Favorites
                             </h2>
-                            <p>
-                                          Please add Favorites
+                            <p
+                                          className="no-favorites--copy"
+                            >
+                                          Please select a few Favorites
                             </p>
               </div>
 </section>,
           ],
-          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
@@ -1186,47 +1239,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CardContainer",
-            },
-            "ref": null,
-            "rendered": "CardContainer",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <ul>
+              "children": <ul
+                className="card-container__nav"
+>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                 />
                 </li>
 </ul>,
-              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Object {
@@ -1236,33 +1282,37 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                     />
 </li>,
                 ],
+                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
@@ -1273,9 +1323,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="people"
+                      customStyle="card-container__nav--button btn"
                       name="People"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -1285,6 +1336,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "people",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "People",
                     },
                     "ref": null,
@@ -1300,9 +1352,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="planets"
+                      customStyle="card-container__nav--button btn"
                       name="Planets"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -1312,6 +1365,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Planets",
                     },
                     "ref": null,
@@ -1327,9 +1381,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="vehicles"
+                      customStyle="card-container__nav--button btn"
                       name="Vehicles"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -1339,6 +1394,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -1362,15 +1418,22 @@ ShallowWrapper {
                 false,
                 false,
                 Array [],
-                <div>
-                  <h2>
+                <div
+                  className="no-favorites"
+>
+                  <h2
+                                    className="no-favorites--heading"
+                  >
                                     No Favorites
                   </h2>
-                  <p>
-                                    Please add Favorites
+                  <p
+                                    className="no-favorites--copy"
+                  >
+                                    Please select a few Favorites
                   </p>
 </div>,
               ],
+              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
@@ -1383,13 +1446,18 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h2>
+                    <h2
+                      className="no-favorites--heading"
+>
                       No Favorites
 </h2>,
-                    <p>
-                      Please add Favorites
+                    <p
+                      className="no-favorites--copy"
+>
+                      Please select a few Favorites
 </p>,
                   ],
+                  "className": "no-favorites",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1399,6 +1467,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "No Favorites",
+                      "className": "no-favorites--heading",
                     },
                     "ref": null,
                     "rendered": "No Favorites",
@@ -1409,10 +1478,11 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Please add Favorites",
+                      "children": "Please select a few Favorites",
+                      "className": "no-favorites--copy",
                     },
                     "ref": null,
-                    "rendered": "Please add Favorites",
+                    "rendered": "Please select a few Favorites",
                     "type": "p",
                   },
                 ],
@@ -1474,46 +1544,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="card-container"
->
-        <h1>
-                CardContainer
-        </h1>
-        <nav
-                className="card-container__nav"
-        >
-                <ul>
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
                         <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                                 />
                         </li>
                 </ul>
         </nav>
-        <section>
+        <section
+                className="card-container"
+        >
                 <PersonCard
                         favorite={false}
                         homeworld="Tatooine"
@@ -1533,43 +1603,45 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="card-container__nav"
->
-            <ul>
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
                         <li
-                                    className="card-container__nav--button"
+                                    className="btn-active"
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                     />
                         </li>
             </ul>
 </nav>,
-          <section>
+          <section
+            className="card-container"
+>
             <PersonCard
                         favorite={false}
                         homeworld="Tatooine"
@@ -1580,7 +1652,6 @@ ShallowWrapper {
             />
 </section>,
         ],
-        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -1589,47 +1660,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ul>
+            "children": <ul
+              className="card-container__nav"
+>
               <li
-                            className="card-container__nav--button"
+                            className="btn-active"
                             onClick={[Function]}
               >
                             <Button
                                           className="people"
+                                          customStyle="card-container__nav--button btn"
                                           name="People"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="planets"
+                                          customStyle="card-container__nav--button btn"
                                           name="Planets"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="vehicles"
+                                          customStyle="card-container__nav--button btn"
                                           name="Vehicles"
                             />
               </li>
 </ul>,
-            "className": "card-container__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -1639,33 +1703,37 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
-                  className="card-container__nav--button"
+                  className="btn-active"
                   onClick={[Function]}
 >
                   <Button
                                     className="people"
+                                    customStyle="card-container__nav--button btn"
                                     name="People"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="planets"
+                                    customStyle="card-container__nav--button btn"
                                     name="Planets"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="vehicles"
+                                    customStyle="card-container__nav--button btn"
                                     name="Vehicles"
                   />
 </li>,
               ],
+              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Array [
@@ -1676,9 +1744,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="people"
+                    customStyle="card-container__nav--button btn"
                     name="People"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "btn-active",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -1688,6 +1757,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "people",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "People",
                   },
                   "ref": null,
@@ -1703,9 +1773,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="planets"
+                    customStyle="card-container__nav--button btn"
                     name="Planets"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -1715,6 +1786,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Planets",
                   },
                   "ref": null,
@@ -1730,9 +1802,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="vehicles"
+                    customStyle="card-container__nav--button btn"
                     name="Vehicles"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -1742,6 +1815,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -1776,6 +1850,7 @@ ShallowWrapper {
               false,
               false,
             ],
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
@@ -1813,46 +1888,46 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className="btn-active"
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
+          <section
+                    className="card-container"
+          >
                     <PersonCard
                               favorite={false}
                               homeworld="Tatooine"
@@ -1872,43 +1947,45 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CardContainer
-</h1>,
-            <nav
-              className="card-container__nav"
->
-              <ul>
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
                             <li
-                                          className="card-container__nav--button"
+                                          className="btn-active"
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="people"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="People"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="planets"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Planets"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Vehicles"
                                           />
                             </li>
               </ul>
 </nav>,
-            <section>
+            <section
+              className="card-container"
+>
               <PersonCard
                             favorite={false}
                             homeworld="Tatooine"
@@ -1919,7 +1996,6 @@ ShallowWrapper {
               />
 </section>,
           ],
-          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
@@ -1928,47 +2004,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CardContainer",
-            },
-            "ref": null,
-            "rendered": "CardContainer",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <ul>
+              "children": <ul
+                className="card-container__nav"
+>
                 <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                 />
                 </li>
 </ul>,
-              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Object {
@@ -1978,33 +2047,37 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="card-container__nav--button"
+                    className="btn-active"
                     onClick={[Function]}
 >
                     <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                     />
 </li>,
                 ],
+                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
@@ -2015,9 +2088,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="people"
+                      customStyle="card-container__nav--button btn"
                       name="People"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "btn-active",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2027,6 +2101,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "people",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "People",
                     },
                     "ref": null,
@@ -2042,9 +2117,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="planets"
+                      customStyle="card-container__nav--button btn"
                       name="Planets"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2054,6 +2130,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Planets",
                     },
                     "ref": null,
@@ -2069,9 +2146,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="vehicles"
+                      customStyle="card-container__nav--button btn"
                       name="Vehicles"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2081,6 +2159,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -2115,6 +2194,7 @@ ShallowWrapper {
                 false,
                 false,
               ],
+              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
@@ -2199,46 +2279,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="card-container"
->
-        <h1>
-                CardContainer
-        </h1>
-        <nav
-                className="card-container__nav"
-        >
-                <ul>
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                                 />
                         </li>
                 </ul>
         </nav>
-        <section>
+        <section
+                className="card-container"
+        >
                 <PlanetCard
                         climate="temperate"
                         favorite={false}
@@ -2265,43 +2345,45 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="card-container__nav"
->
-            <ul>
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className="btn-active"
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                     />
                         </li>
             </ul>
 </nav>,
-          <section>
+          <section
+            className="card-container"
+>
             <PlanetCard
                         climate="temperate"
                         favorite={false}
@@ -2319,7 +2401,6 @@ ShallowWrapper {
             />
 </section>,
         ],
-        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -2328,47 +2409,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ul>
+            "children": <ul
+              className="card-container__nav"
+>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="people"
+                                          customStyle="card-container__nav--button btn"
                                           name="People"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className="btn-active"
                             onClick={[Function]}
               >
                             <Button
                                           className="planets"
+                                          customStyle="card-container__nav--button btn"
                                           name="Planets"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="vehicles"
+                                          customStyle="card-container__nav--button btn"
                                           name="Vehicles"
                             />
               </li>
 </ul>,
-            "className": "card-container__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -2378,33 +2452,37 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="people"
+                                    customStyle="card-container__nav--button btn"
                                     name="People"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className="btn-active"
                   onClick={[Function]}
 >
                   <Button
                                     className="planets"
+                                    customStyle="card-container__nav--button btn"
                                     name="Planets"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="vehicles"
+                                    customStyle="card-container__nav--button btn"
                                     name="Vehicles"
                   />
 </li>,
               ],
+              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Array [
@@ -2415,9 +2493,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="people"
+                    customStyle="card-container__nav--button btn"
                     name="People"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -2427,6 +2506,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "people",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "People",
                   },
                   "ref": null,
@@ -2442,9 +2522,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="planets"
+                    customStyle="card-container__nav--button btn"
                     name="Planets"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "btn-active",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -2454,6 +2535,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Planets",
                   },
                   "ref": null,
@@ -2469,9 +2551,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="vehicles"
+                    customStyle="card-container__nav--button btn"
                     name="Vehicles"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -2481,6 +2564,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -2522,6 +2606,7 @@ ShallowWrapper {
               false,
               false,
             ],
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
@@ -2564,46 +2649,46 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className="btn-active"
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
+          <section
+                    className="card-container"
+          >
                     <PlanetCard
                               climate="temperate"
                               favorite={false}
@@ -2630,43 +2715,45 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CardContainer
-</h1>,
-            <nav
-              className="card-container__nav"
->
-              <ul>
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="people"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="People"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className="btn-active"
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="planets"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Planets"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Vehicles"
                                           />
                             </li>
               </ul>
 </nav>,
-            <section>
+            <section
+              className="card-container"
+>
               <PlanetCard
                             climate="temperate"
                             favorite={false}
@@ -2684,7 +2771,6 @@ ShallowWrapper {
               />
 </section>,
           ],
-          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
@@ -2693,47 +2779,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CardContainer",
-            },
-            "ref": null,
-            "rendered": "CardContainer",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <ul>
+              "children": <ul
+                className="card-container__nav"
+>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                 />
                 </li>
 </ul>,
-              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Object {
@@ -2743,33 +2822,37 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className="btn-active"
                     onClick={[Function]}
 >
                     <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                     />
 </li>,
                 ],
+                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
@@ -2780,9 +2863,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="people"
+                      customStyle="card-container__nav--button btn"
                       name="People"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2792,6 +2876,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "people",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "People",
                     },
                     "ref": null,
@@ -2807,9 +2892,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="planets"
+                      customStyle="card-container__nav--button btn"
                       name="Planets"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "btn-active",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2819,6 +2905,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Planets",
                     },
                     "ref": null,
@@ -2834,9 +2921,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="vehicles"
+                      customStyle="card-container__nav--button btn"
                       name="Vehicles"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -2846,6 +2934,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -2887,6 +2976,7 @@ ShallowWrapper {
                 false,
                 false,
               ],
+              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
@@ -2971,46 +3061,46 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <div
-        className="card-container"
->
-        <h1>
-                CardContainer
-        </h1>
-        <nav
-                className="card-container__nav"
-        >
-                <ul>
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                                 />
                         </li>
                         <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                         >
                                 <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                                 />
                         </li>
                 </ul>
         </nav>
-        <section>
+        <section
+                className="card-container"
+        >
                 <VehicleCard
                         favorite={false}
                         model="Digger Crawler"
@@ -3030,43 +3120,45 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
-            CardContainer
-</h1>,
-          <nav
-            className="card-container__nav"
->
-            <ul>
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                     />
                         </li>
                         <li
-                                    className="card-container__nav--button"
+                                    className="btn-active"
                                     onClick={[Function]}
                         >
                                     <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                     />
                         </li>
             </ul>
 </nav>,
-          <section>
+          <section
+            className="card-container"
+>
             <VehicleCard
                         favorite={false}
                         model="Digger Crawler"
@@ -3077,7 +3169,6 @@ ShallowWrapper {
             />
 </section>,
         ],
-        "className": "card-container",
       },
       "ref": null,
       "rendered": Array [
@@ -3086,47 +3177,40 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "CardContainer",
-          },
-          "ref": null,
-          "rendered": "CardContainer",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <ul>
+            "children": <ul
+              className="card-container__nav"
+>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="people"
+                                          customStyle="card-container__nav--button btn"
                                           name="People"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className=""
                             onClick={[Function]}
               >
                             <Button
                                           className="planets"
+                                          customStyle="card-container__nav--button btn"
                                           name="Planets"
                             />
               </li>
               <li
-                            className="card-container__nav--button"
+                            className="btn-active"
                             onClick={[Function]}
               >
                             <Button
                                           className="vehicles"
+                                          customStyle="card-container__nav--button btn"
                                           name="Vehicles"
                             />
               </li>
 </ul>,
-            "className": "card-container__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -3136,33 +3220,37 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="people"
+                                    customStyle="card-container__nav--button btn"
                                     name="People"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className=""
                   onClick={[Function]}
 >
                   <Button
                                     className="planets"
+                                    customStyle="card-container__nav--button btn"
                                     name="Planets"
                   />
 </li>,
                 <li
-                  className="card-container__nav--button"
+                  className="btn-active"
                   onClick={[Function]}
 >
                   <Button
                                     className="vehicles"
+                                    customStyle="card-container__nav--button btn"
                                     name="Vehicles"
                   />
 </li>,
               ],
+              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Array [
@@ -3173,9 +3261,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="people"
+                    customStyle="card-container__nav--button btn"
                     name="People"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -3185,6 +3274,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "people",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "People",
                   },
                   "ref": null,
@@ -3200,9 +3290,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="planets"
+                    customStyle="card-container__nav--button btn"
                     name="Planets"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -3212,6 +3303,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Planets",
                   },
                   "ref": null,
@@ -3227,9 +3319,10 @@ ShallowWrapper {
                 "props": Object {
                   "children": <Button
                     className="vehicles"
+                    customStyle="card-container__nav--button btn"
                     name="Vehicles"
 />,
-                  "className": "card-container__nav--button",
+                  "className": "btn-active",
                   "onClick": [Function],
                 },
                 "ref": null,
@@ -3239,6 +3332,7 @@ ShallowWrapper {
                   "nodeType": "function",
                   "props": Object {
                     "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
                     "name": "Vehicles",
                   },
                   "ref": null,
@@ -3273,6 +3367,7 @@ ShallowWrapper {
               false,
               false,
             ],
+            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
@@ -3310,46 +3405,46 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className="btn-active"
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
+          <section
+                    className="card-container"
+          >
                     <VehicleCard
                               favorite={false}
                               model="Digger Crawler"
@@ -3369,43 +3464,45 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            <h1>
-              CardContainer
-</h1>,
-            <nav
-              className="card-container__nav"
->
-              <ul>
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="people"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="People"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className=""
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="planets"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Planets"
                                           />
                             </li>
                             <li
-                                          className="card-container__nav--button"
+                                          className="btn-active"
                                           onClick={[Function]}
                             >
                                           <Button
                                                         className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
                                                         name="Vehicles"
                                           />
                             </li>
               </ul>
 </nav>,
-            <section>
+            <section
+              className="card-container"
+>
               <VehicleCard
                             favorite={false}
                             model="Digger Crawler"
@@ -3416,7 +3513,6 @@ ShallowWrapper {
               />
 </section>,
           ],
-          "className": "card-container",
         },
         "ref": null,
         "rendered": Array [
@@ -3425,47 +3521,40 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "CardContainer",
-            },
-            "ref": null,
-            "rendered": "CardContainer",
-            "type": "h1",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": <ul>
+              "children": <ul
+                className="card-container__nav"
+>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className=""
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                                 />
                 </li>
                 <li
-                                className="card-container__nav--button"
+                                className="btn-active"
                                 onClick={[Function]}
                 >
                                 <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                                 />
                 </li>
 </ul>,
-              "className": "card-container__nav",
             },
             "ref": null,
             "rendered": Object {
@@ -3475,33 +3564,37 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="people"
+                                        customStyle="card-container__nav--button btn"
                                         name="People"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className=""
                     onClick={[Function]}
 >
                     <Button
                                         className="planets"
+                                        customStyle="card-container__nav--button btn"
                                         name="Planets"
                     />
 </li>,
                   <li
-                    className="card-container__nav--button"
+                    className="btn-active"
                     onClick={[Function]}
 >
                     <Button
                                         className="vehicles"
+                                        customStyle="card-container__nav--button btn"
                                         name="Vehicles"
                     />
 </li>,
                 ],
+                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
@@ -3512,9 +3605,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="people"
+                      customStyle="card-container__nav--button btn"
                       name="People"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -3524,6 +3618,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "people",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "People",
                     },
                     "ref": null,
@@ -3539,9 +3634,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="planets"
+                      customStyle="card-container__nav--button btn"
                       name="Planets"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -3551,6 +3647,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Planets",
                     },
                     "ref": null,
@@ -3566,9 +3663,10 @@ ShallowWrapper {
                   "props": Object {
                     "children": <Button
                       className="vehicles"
+                      customStyle="card-container__nav--button btn"
                       name="Vehicles"
 />,
-                    "className": "card-container__nav--button",
+                    "className": "btn-active",
                     "onClick": [Function],
                   },
                   "ref": null,
@@ -3578,6 +3676,7 @@ ShallowWrapper {
                     "nodeType": "function",
                     "props": Object {
                       "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
                       "name": "Vehicles",
                     },
                     "ref": null,
@@ -3612,6 +3711,7 @@ ShallowWrapper {
                 false,
                 false,
               ],
+              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
@@ -3695,85 +3795,88 @@ ReactWrapper {
       "instance": <section
         class="main-container"
 >
-        <div
-                class="card-container"
-        >
-                <h1>
-                        CardContainer
-                </h1>
-                <nav
-                        class="card-container__nav"
-                >
-                        <ul>
+        <div>
+                <nav>
+                        <ul
+                                class="card-container__nav"
+                        >
                                 <li
-                                        class="card-container__nav--button"
+                                        class=""
                                 >
-                                        <button>
+                                        <button
+                                                class="card-container__nav--button btn"
+                                        >
                                                 People
                                         </button>
                                 </li>
                                 <li
-                                        class="card-container__nav--button"
+                                        class=""
                                 >
-                                        <button>
+                                        <button
+                                                class="card-container__nav--button btn"
+                                        >
                                                 Planets
                                         </button>
                                 </li>
                                 <li
-                                        class="card-container__nav--button"
+                                        class=""
                                 >
-                                        <button>
+                                        <button
+                                                class="card-container__nav--button btn"
+                                        >
                                                 Vehicles
                                         </button>
                                 </li>
                         </ul>
                 </nav>
-                <section />
+                <section
+                        class="card-container"
+                />
         </div>
 </section>,
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <div
-          className="card-container"
->
-          <h1>
-                    CardContainer
-          </h1>
-          <nav
-                    className="card-container__nav"
-          >
-                    <ul>
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="people"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="People"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="planets"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Planets"
                                         />
                               </li>
                               <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                               >
                                         <Button
                                                   className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
                                                   name="Vehicles"
                                         />
                               </li>
                     </ul>
           </nav>
-          <section>
+          <section
+                    className="card-container"
+          >
                     
           </section>
 </div>,
@@ -3782,127 +3885,122 @@ ReactWrapper {
       "ref": null,
       "rendered": Array [
         Object {
-          "instance": <div
-            class="card-container"
->
-            <h1>
-                        CardContainer
-            </h1>
-            <nav
-                        class="card-container__nav"
-            >
-                        <ul>
+          "instance": <div>
+            <nav>
+                        <ul
+                                    class="card-container__nav"
+                        >
                                     <li
-                                                class="card-container__nav--button"
+                                                class=""
                                     >
-                                                <button>
+                                                <button
+                                                            class="card-container__nav--button btn"
+                                                >
                                                             People
                                                 </button>
                                     </li>
                                     <li
-                                                class="card-container__nav--button"
+                                                class=""
                                     >
-                                                <button>
+                                                <button
+                                                            class="card-container__nav--button btn"
+                                                >
                                                             Planets
                                                 </button>
                                     </li>
                                     <li
-                                                class="card-container__nav--button"
+                                                class=""
                                     >
-                                                <button>
+                                                <button
+                                                            class="card-container__nav--button btn"
+                                                >
                                                             Vehicles
                                                 </button>
                                     </li>
                         </ul>
             </nav>
-            <section />
+            <section
+                        class="card-container"
+            />
 </div>,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              <h1>
-                CardContainer
-</h1>,
-              <nav
-                className="card-container__nav"
->
-                <ul>
+              <nav>
+                <ul
+                                className="card-container__nav"
+                >
                                 <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                 >
                                                 <Button
                                                                 className="people"
+                                                                customStyle="card-container__nav--button btn"
                                                                 name="People"
                                                 />
                                 </li>
                                 <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                 >
                                                 <Button
                                                                 className="planets"
+                                                                customStyle="card-container__nav--button btn"
                                                                 name="Planets"
                                                 />
                                 </li>
                                 <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                 >
                                                 <Button
                                                                 className="vehicles"
+                                                                customStyle="card-container__nav--button btn"
                                                                 name="Vehicles"
                                                 />
                                 </li>
                 </ul>
 </nav>,
-              <section>
+              <section
+                className="card-container"
+>
                 
 </section>,
             ],
-            "className": "card-container",
           },
           "ref": null,
           "rendered": Array [
             Object {
-              "instance": <h1>
-                CardContainer
-</h1>,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "CardContainer",
-              },
-              "ref": null,
-              "rendered": Array [
-                "CardContainer",
-              ],
-              "type": "h1",
-            },
-            Object {
-              "instance": <nav
-                class="card-container__nav"
->
-                <ul>
+              "instance": <nav>
+                <ul
+                                class="card-container__nav"
+                >
                                 <li
-                                                class="card-container__nav--button"
+                                                class=""
                                 >
-                                                <button>
+                                                <button
+                                                                class="card-container__nav--button btn"
+                                                >
                                                                 People
                                                 </button>
                                 </li>
                                 <li
-                                                class="card-container__nav--button"
+                                                class=""
                                 >
-                                                <button>
+                                                <button
+                                                                class="card-container__nav--button btn"
+                                                >
                                                                 Planets
                                                 </button>
                                 </li>
                                 <li
-                                                class="card-container__nav--button"
+                                                class=""
                                 >
-                                                <button>
+                                                <button
+                                                                class="card-container__nav--button btn"
+                                                >
                                                                 Vehicles
                                                 </button>
                                 </li>
@@ -3911,59 +4009,71 @@ ReactWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": <ul>
+                "children": <ul
+                  className="card-container__nav"
+>
                   <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                   >
                                     <Button
                                                       className="people"
+                                                      customStyle="card-container__nav--button btn"
                                                       name="People"
                                     />
                   </li>
                   <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                   >
                                     <Button
                                                       className="planets"
+                                                      customStyle="card-container__nav--button btn"
                                                       name="Planets"
                                     />
                   </li>
                   <li
-                                    className="card-container__nav--button"
+                                    className=""
                                     onClick={[Function]}
                   >
                                     <Button
                                                       className="vehicles"
+                                                      customStyle="card-container__nav--button btn"
                                                       name="Vehicles"
                                     />
                   </li>
 </ul>,
-                "className": "card-container__nav",
               },
               "ref": null,
               "rendered": Array [
                 Object {
-                  "instance": <ul>
+                  "instance": <ul
+                    class="card-container__nav"
+>
                     <li
-                                        class="card-container__nav--button"
+                                        class=""
                     >
-                                        <button>
+                                        <button
+                                                            class="card-container__nav--button btn"
+                                        >
                                                             People
                                         </button>
                     </li>
                     <li
-                                        class="card-container__nav--button"
+                                        class=""
                     >
-                                        <button>
+                                        <button
+                                                            class="card-container__nav--button btn"
+                                        >
                                                             Planets
                                         </button>
                     </li>
                     <li
-                                        class="card-container__nav--button"
+                                        class=""
                     >
-                                        <button>
+                                        <button
+                                                            class="card-container__nav--button btn"
+                                        >
                                                             Vehicles
                                         </button>
                     </li>
@@ -3973,41 +4083,47 @@ ReactWrapper {
                   "props": Object {
                     "children": Array [
                       <li
-                        className="card-container__nav--button"
+                        className=""
                         onClick={[Function]}
 >
                         <Button
                                                 className="people"
+                                                customStyle="card-container__nav--button btn"
                                                 name="People"
                         />
 </li>,
                       <li
-                        className="card-container__nav--button"
+                        className=""
                         onClick={[Function]}
 >
                         <Button
                                                 className="planets"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Planets"
                         />
 </li>,
                       <li
-                        className="card-container__nav--button"
+                        className=""
                         onClick={[Function]}
 >
                         <Button
                                                 className="vehicles"
+                                                customStyle="card-container__nav--button btn"
                                                 name="Vehicles"
                         />
 </li>,
                     ],
+                    "className": "card-container__nav",
                   },
                   "ref": null,
                   "rendered": Array [
                     Object {
                       "instance": <li
-                        class="card-container__nav--button"
+                        class=""
 >
-                        <button>
+                        <button
+                                                class="card-container__nav--button btn"
+                        >
                                                 People
                         </button>
 </li>,
@@ -4016,9 +4132,10 @@ ReactWrapper {
                       "props": Object {
                         "children": <Button
                           className="people"
+                          customStyle="card-container__nav--button btn"
                           name="People"
 />,
-                        "className": "card-container__nav--button",
+                        "className": "",
                         "onClick": [Function],
                       },
                       "ref": null,
@@ -4029,17 +4146,21 @@ ReactWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "className": "people",
+                            "customStyle": "card-container__nav--button btn",
                             "name": "People",
                           },
                           "ref": null,
                           "rendered": Object {
-                            "instance": <button>
+                            "instance": <button
+                              class="card-container__nav--button btn"
+>
                               People
 </button>,
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
                               "children": "People",
+                              "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
@@ -4054,9 +4175,11 @@ ReactWrapper {
                     },
                     Object {
                       "instance": <li
-                        class="card-container__nav--button"
+                        class=""
 >
-                        <button>
+                        <button
+                                                class="card-container__nav--button btn"
+                        >
                                                 Planets
                         </button>
 </li>,
@@ -4065,9 +4188,10 @@ ReactWrapper {
                       "props": Object {
                         "children": <Button
                           className="planets"
+                          customStyle="card-container__nav--button btn"
                           name="Planets"
 />,
-                        "className": "card-container__nav--button",
+                        "className": "",
                         "onClick": [Function],
                       },
                       "ref": null,
@@ -4078,17 +4202,21 @@ ReactWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "className": "planets",
+                            "customStyle": "card-container__nav--button btn",
                             "name": "Planets",
                           },
                           "ref": null,
                           "rendered": Object {
-                            "instance": <button>
+                            "instance": <button
+                              class="card-container__nav--button btn"
+>
                               Planets
 </button>,
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
                               "children": "Planets",
+                              "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
@@ -4103,9 +4231,11 @@ ReactWrapper {
                     },
                     Object {
                       "instance": <li
-                        class="card-container__nav--button"
+                        class=""
 >
-                        <button>
+                        <button
+                                                class="card-container__nav--button btn"
+                        >
                                                 Vehicles
                         </button>
 </li>,
@@ -4114,9 +4244,10 @@ ReactWrapper {
                       "props": Object {
                         "children": <Button
                           className="vehicles"
+                          customStyle="card-container__nav--button btn"
                           name="Vehicles"
 />,
-                        "className": "card-container__nav--button",
+                        "className": "",
                         "onClick": [Function],
                       },
                       "ref": null,
@@ -4127,17 +4258,21 @@ ReactWrapper {
                           "nodeType": "function",
                           "props": Object {
                             "className": "vehicles",
+                            "customStyle": "card-container__nav--button btn",
                             "name": "Vehicles",
                           },
                           "ref": null,
                           "rendered": Object {
-                            "instance": <button>
+                            "instance": <button
+                              class="card-container__nav--button btn"
+>
                               Vehicles
 </button>,
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
                               "children": "Vehicles",
+                              "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
@@ -4157,7 +4292,9 @@ ReactWrapper {
               "type": "nav",
             },
             Object {
-              "instance": <section />,
+              "instance": <section
+                class="card-container"
+/>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
@@ -4168,6 +4305,7 @@ ReactWrapper {
                   false,
                   false,
                 ],
+                "className": "card-container",
               },
               "ref": null,
               "rendered": Array [
@@ -4209,85 +4347,88 @@ ReactWrapper {
         "instance": <section
           class="main-container"
 >
-          <div
-                    class="card-container"
-          >
-                    <h1>
-                              CardContainer
-                    </h1>
-                    <nav
-                              class="card-container__nav"
-                    >
-                              <ul>
+          <div>
+                    <nav>
+                              <ul
+                                        class="card-container__nav"
+                              >
                                         <li
-                                                  class="card-container__nav--button"
+                                                  class=""
                                         >
-                                                  <button>
+                                                  <button
+                                                            class="card-container__nav--button btn"
+                                                  >
                                                             People
                                                   </button>
                                         </li>
                                         <li
-                                                  class="card-container__nav--button"
+                                                  class=""
                                         >
-                                                  <button>
+                                                  <button
+                                                            class="card-container__nav--button btn"
+                                                  >
                                                             Planets
                                                   </button>
                                         </li>
                                         <li
-                                                  class="card-container__nav--button"
+                                                  class=""
                                         >
-                                                  <button>
+                                                  <button
+                                                            class="card-container__nav--button btn"
+                                                  >
                                                             Vehicles
                                                   </button>
                                         </li>
                               </ul>
                     </nav>
-                    <section />
+                    <section
+                              class="card-container"
+                    />
           </div>
 </section>,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": <div
-            className="card-container"
->
-            <h1>
-                        CardContainer
-            </h1>
-            <nav
-                        className="card-container__nav"
-            >
-                        <ul>
+          "children": <div>
+            <nav>
+                        <ul
+                                    className="card-container__nav"
+                        >
                                     <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                     >
                                                 <Button
                                                             className="people"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="People"
                                                 />
                                     </li>
                                     <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                     >
                                                 <Button
                                                             className="planets"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="Planets"
                                                 />
                                     </li>
                                     <li
-                                                className="card-container__nav--button"
+                                                className=""
                                                 onClick={[Function]}
                                     >
                                                 <Button
                                                             className="vehicles"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="Vehicles"
                                                 />
                                     </li>
                         </ul>
             </nav>
-            <section>
+            <section
+                        className="card-container"
+            >
                         
             </section>
 </div>,
@@ -4296,127 +4437,122 @@ ReactWrapper {
         "ref": null,
         "rendered": Array [
           Object {
-            "instance": <div
-              class="card-container"
->
-              <h1>
-                            CardContainer
-              </h1>
-              <nav
-                            class="card-container__nav"
-              >
-                            <ul>
+            "instance": <div>
+              <nav>
+                            <ul
+                                          class="card-container__nav"
+                            >
                                           <li
-                                                        class="card-container__nav--button"
+                                                        class=""
                                           >
-                                                        <button>
+                                                        <button
+                                                                      class="card-container__nav--button btn"
+                                                        >
                                                                       People
                                                         </button>
                                           </li>
                                           <li
-                                                        class="card-container__nav--button"
+                                                        class=""
                                           >
-                                                        <button>
+                                                        <button
+                                                                      class="card-container__nav--button btn"
+                                                        >
                                                                       Planets
                                                         </button>
                                           </li>
                                           <li
-                                                        class="card-container__nav--button"
+                                                        class=""
                                           >
-                                                        <button>
+                                                        <button
+                                                                      class="card-container__nav--button btn"
+                                                        >
                                                                       Vehicles
                                                         </button>
                                           </li>
                             </ul>
               </nav>
-              <section />
+              <section
+                            class="card-container"
+              />
 </div>,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
               "children": Array [
-                <h1>
-                  CardContainer
-</h1>,
-                <nav
-                  className="card-container__nav"
->
-                  <ul>
+                <nav>
+                  <ul
+                                    className="card-container__nav"
+                  >
                                     <li
-                                                      className="card-container__nav--button"
+                                                      className=""
                                                       onClick={[Function]}
                                     >
                                                       <Button
                                                                         className="people"
+                                                                        customStyle="card-container__nav--button btn"
                                                                         name="People"
                                                       />
                                     </li>
                                     <li
-                                                      className="card-container__nav--button"
+                                                      className=""
                                                       onClick={[Function]}
                                     >
                                                       <Button
                                                                         className="planets"
+                                                                        customStyle="card-container__nav--button btn"
                                                                         name="Planets"
                                                       />
                                     </li>
                                     <li
-                                                      className="card-container__nav--button"
+                                                      className=""
                                                       onClick={[Function]}
                                     >
                                                       <Button
                                                                         className="vehicles"
+                                                                        customStyle="card-container__nav--button btn"
                                                                         name="Vehicles"
                                                       />
                                     </li>
                   </ul>
 </nav>,
-                <section>
+                <section
+                  className="card-container"
+>
                   
 </section>,
               ],
-              "className": "card-container",
             },
             "ref": null,
             "rendered": Array [
               Object {
-                "instance": <h1>
-                  CardContainer
-</h1>,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "CardContainer",
-                },
-                "ref": null,
-                "rendered": Array [
-                  "CardContainer",
-                ],
-                "type": "h1",
-              },
-              Object {
-                "instance": <nav
-                  class="card-container__nav"
->
-                  <ul>
+                "instance": <nav>
+                  <ul
+                                    class="card-container__nav"
+                  >
                                     <li
-                                                      class="card-container__nav--button"
+                                                      class=""
                                     >
-                                                      <button>
+                                                      <button
+                                                                        class="card-container__nav--button btn"
+                                                      >
                                                                         People
                                                       </button>
                                     </li>
                                     <li
-                                                      class="card-container__nav--button"
+                                                      class=""
                                     >
-                                                      <button>
+                                                      <button
+                                                                        class="card-container__nav--button btn"
+                                                      >
                                                                         Planets
                                                       </button>
                                     </li>
                                     <li
-                                                      class="card-container__nav--button"
+                                                      class=""
                                     >
-                                                      <button>
+                                                      <button
+                                                                        class="card-container__nav--button btn"
+                                                      >
                                                                         Vehicles
                                                       </button>
                                     </li>
@@ -4425,59 +4561,71 @@ ReactWrapper {
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
-                  "children": <ul>
+                  "children": <ul
+                    className="card-container__nav"
+>
                     <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                     >
                                         <Button
                                                             className="people"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="People"
                                         />
                     </li>
                     <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                     >
                                         <Button
                                                             className="planets"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="Planets"
                                         />
                     </li>
                     <li
-                                        className="card-container__nav--button"
+                                        className=""
                                         onClick={[Function]}
                     >
                                         <Button
                                                             className="vehicles"
+                                                            customStyle="card-container__nav--button btn"
                                                             name="Vehicles"
                                         />
                     </li>
 </ul>,
-                  "className": "card-container__nav",
                 },
                 "ref": null,
                 "rendered": Array [
                   Object {
-                    "instance": <ul>
+                    "instance": <ul
+                      class="card-container__nav"
+>
                       <li
-                                            class="card-container__nav--button"
+                                            class=""
                       >
-                                            <button>
+                                            <button
+                                                                  class="card-container__nav--button btn"
+                                            >
                                                                   People
                                             </button>
                       </li>
                       <li
-                                            class="card-container__nav--button"
+                                            class=""
                       >
-                                            <button>
+                                            <button
+                                                                  class="card-container__nav--button btn"
+                                            >
                                                                   Planets
                                             </button>
                       </li>
                       <li
-                                            class="card-container__nav--button"
+                                            class=""
                       >
-                                            <button>
+                                            <button
+                                                                  class="card-container__nav--button btn"
+                                            >
                                                                   Vehicles
                                             </button>
                       </li>
@@ -4487,41 +4635,47 @@ ReactWrapper {
                     "props": Object {
                       "children": Array [
                         <li
-                          className="card-container__nav--button"
+                          className=""
                           onClick={[Function]}
 >
                           <Button
                                                     className="people"
+                                                    customStyle="card-container__nav--button btn"
                                                     name="People"
                           />
 </li>,
                         <li
-                          className="card-container__nav--button"
+                          className=""
                           onClick={[Function]}
 >
                           <Button
                                                     className="planets"
+                                                    customStyle="card-container__nav--button btn"
                                                     name="Planets"
                           />
 </li>,
                         <li
-                          className="card-container__nav--button"
+                          className=""
                           onClick={[Function]}
 >
                           <Button
                                                     className="vehicles"
+                                                    customStyle="card-container__nav--button btn"
                                                     name="Vehicles"
                           />
 </li>,
                       ],
+                      "className": "card-container__nav",
                     },
                     "ref": null,
                     "rendered": Array [
                       Object {
                         "instance": <li
-                          class="card-container__nav--button"
+                          class=""
 >
-                          <button>
+                          <button
+                                                    class="card-container__nav--button btn"
+                          >
                                                     People
                           </button>
 </li>,
@@ -4530,9 +4684,10 @@ ReactWrapper {
                         "props": Object {
                           "children": <Button
                             className="people"
+                            customStyle="card-container__nav--button btn"
                             name="People"
 />,
-                          "className": "card-container__nav--button",
+                          "className": "",
                           "onClick": [Function],
                         },
                         "ref": null,
@@ -4543,17 +4698,21 @@ ReactWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "className": "people",
+                              "customStyle": "card-container__nav--button btn",
                               "name": "People",
                             },
                             "ref": null,
                             "rendered": Object {
-                              "instance": <button>
+                              "instance": <button
+                                class="card-container__nav--button btn"
+>
                                 People
 </button>,
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
                                 "children": "People",
+                                "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
@@ -4568,9 +4727,11 @@ ReactWrapper {
                       },
                       Object {
                         "instance": <li
-                          class="card-container__nav--button"
+                          class=""
 >
-                          <button>
+                          <button
+                                                    class="card-container__nav--button btn"
+                          >
                                                     Planets
                           </button>
 </li>,
@@ -4579,9 +4740,10 @@ ReactWrapper {
                         "props": Object {
                           "children": <Button
                             className="planets"
+                            customStyle="card-container__nav--button btn"
                             name="Planets"
 />,
-                          "className": "card-container__nav--button",
+                          "className": "",
                           "onClick": [Function],
                         },
                         "ref": null,
@@ -4592,17 +4754,21 @@ ReactWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "className": "planets",
+                              "customStyle": "card-container__nav--button btn",
                               "name": "Planets",
                             },
                             "ref": null,
                             "rendered": Object {
-                              "instance": <button>
+                              "instance": <button
+                                class="card-container__nav--button btn"
+>
                                 Planets
 </button>,
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
                                 "children": "Planets",
+                                "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
@@ -4617,9 +4783,11 @@ ReactWrapper {
                       },
                       Object {
                         "instance": <li
-                          class="card-container__nav--button"
+                          class=""
 >
-                          <button>
+                          <button
+                                                    class="card-container__nav--button btn"
+                          >
                                                     Vehicles
                           </button>
 </li>,
@@ -4628,9 +4796,10 @@ ReactWrapper {
                         "props": Object {
                           "children": <Button
                             className="vehicles"
+                            customStyle="card-container__nav--button btn"
                             name="Vehicles"
 />,
-                          "className": "card-container__nav--button",
+                          "className": "",
                           "onClick": [Function],
                         },
                         "ref": null,
@@ -4641,17 +4810,21 @@ ReactWrapper {
                             "nodeType": "function",
                             "props": Object {
                               "className": "vehicles",
+                              "customStyle": "card-container__nav--button btn",
                               "name": "Vehicles",
                             },
                             "ref": null,
                             "rendered": Object {
-                              "instance": <button>
+                              "instance": <button
+                                class="card-container__nav--button btn"
+>
                                 Vehicles
 </button>,
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
                                 "children": "Vehicles",
+                                "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
@@ -4671,7 +4844,9 @@ ReactWrapper {
                 "type": "nav",
               },
               Object {
-                "instance": <section />,
+                "instance": <section
+                  class="card-container"
+/>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
@@ -4682,6 +4857,7 @@ ReactWrapper {
                     false,
                     false,
                   ],
+                  "className": "card-container",
                 },
                 "ref": null,
                 "rendered": Array [

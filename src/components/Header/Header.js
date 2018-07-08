@@ -4,13 +4,17 @@ import PropTypes from 'prop-types';
 
 import './Header.css';
 
-const Header = ({ updateSelection }) => {
+const Header = ({ updateSelection, selected }) => {
   return (
     <header className="header">
-      <h2 className="header__title">Header</h2>
-      <ul>
-        <li onClick={() => updateSelection()}>
-          <Button name="Favorites" />
+      <h2 className="header__title">SWapiBox</h2>
+      <ul className="header__nav">
+        <li className={`${selected === 'favorites' ? 'btn-active' : ''}`}
+          onClick={() => updateSelection()}>
+          <Button
+            customStyle={'card-container__nav--button btn'}
+            name="Favorites"
+          />
         </li>
       </ul>
     </header>
@@ -18,7 +22,8 @@ const Header = ({ updateSelection }) => {
 };
 
 Header.propTypes = {
-  updateSelection: PropTypes.func
+  updateSelection: PropTypes.func,
+  selected: PropTypes.string
 };
 
 export default Header;
