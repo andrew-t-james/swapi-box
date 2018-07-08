@@ -1,10 +1,10 @@
 .grid-container {
-  /* background-color: #000; */
+  background-color: #000;
   display: grid;
   grid-template-areas: "side-bar header header header" "side-bar main-container main-container main-container" "side-bar main-container main-container main-container";
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr 1fr;
-  height: 100%;
+  height: 100vh;
 }
 
 .side-bar {
@@ -17,6 +17,7 @@
 
 .main-container {
   grid-area: main-container;
+  z-index: 1;
 }
 
 @media screen and (max-width: 1345px) {
@@ -37,4 +38,19 @@
   .side-bar{
     display: none;
   }
+}
+
+.particles {
+  background-color: var(--primary-background);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
 }

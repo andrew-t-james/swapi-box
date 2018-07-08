@@ -4,13 +4,19 @@ import PropTypes from 'prop-types';
 import './SideBar.css';
 
 const SideBar = ({ movie }) => {
-  const { title, releaseDate, episode, crawl } = movie;
+  const { name, releaseDate, episode, crawl } = movie;
+
   return (
     <aside className="side-bar">
-      <h2>{title}</h2>
-      <p>{episode}</p>
-      <p>{releaseDate}</p>
-      <p>{crawl}</p>
+      <div className="side-bar__content">
+        <h2>{name}</h2>
+        <br/>
+        <p>Episode: {episode}</p>
+        <br/>
+        <p>Released: {releaseDate}</p>
+        <br/>
+        <p>{crawl}</p>
+      </div>
     </aside>
   );
 };

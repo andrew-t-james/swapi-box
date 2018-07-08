@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Header from '../Header/Header';
 import CardContainer from '../CardContainer/CardContainer';
 import SideBar from '../SideBar/SideBar';
+import ParticleBackground from '../Particles/Particles';
 
 import { cleanMovieScroll, getPeopleData, getPlanetData, getVehicleData } from '../../helper/helper';
 
@@ -23,8 +24,7 @@ class App extends Component {
   }
 
   componentDidMount = () => {
-    // TODO fetch random movie scroll here
-    // this.fetchMovieScroll();
+    this.fetchMovieScroll();
   }
 
   fetchMovieScroll = async () =>  {
@@ -86,6 +86,9 @@ class App extends Component {
 
     return (
       <main className="grid-container">
+        <div className="particles">
+          <ParticleBackground />
+        </div>
         <Header
           selected={selected}
           updateSelection={this.updateSelection}
