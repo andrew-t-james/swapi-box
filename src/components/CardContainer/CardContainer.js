@@ -60,22 +60,39 @@ const CardContainer = props => {
 
   return (
     <section className="main-container">
-      <div className="card-container">
-        <h1>CardContainer</h1>
-        <nav className="card-container__nav">
-          <ul>
-            <li className="card-container__nav--button" onClick={() => fetchPeopleData()}>
-              <Button name={'People'} className="people" />
+      <div>
+        <nav>
+          <ul className="card-container__nav">
+            <li
+              className={`${selected === 'people' ? 'btn-active' : ''}`}
+              onClick={() => fetchPeopleData()}>
+              <Button
+                customStyle={'card-container__nav--button btn'}
+                name={'People'}
+                className="people"
+              />
             </li>
-            <li className="card-container__nav--button"  onClick={() => fetchPlanetData()}>
-              <Button name={'Planets'} className="planets" />
+            <li
+              className={`${selected === 'planets' ? 'btn-active' : ''}`}
+              onClick={() => fetchPlanetData()}>
+              <Button
+                customStyle={'card-container__nav--button btn'}
+                name={'Planets'}
+                className="planets"
+              />
             </li>
-            <li className="card-container__nav--button"  onClick={() => fetchVehicleData()}>
-              <Button name={'Vehicles'} className="vehicles" />
+            <li
+              className={`${selected === 'vehicles' ? 'btn-active' : ''}`}
+              onClick={() => fetchVehicleData()}>
+              <Button
+                customStyle={'card-container__nav--button btn'}
+                name={'Vehicles'}
+                className="vehicles"
+              />
             </li>
           </ul>
         </nav>
-        <section>
+        <section className="card-container">
           {selected === 'people'  && peopleCards}
           {selected === 'planets'  && planetsCards}
           {selected === 'vehicles'  && vehicleCards}

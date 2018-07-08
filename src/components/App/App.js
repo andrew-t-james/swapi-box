@@ -24,7 +24,7 @@ class App extends Component {
 
   componentDidMount = () => {
     // TODO fetch random movie scroll here
-    this.fetchMovieScroll();
+    // this.fetchMovieScroll();
   }
 
   fetchMovieScroll = async () =>  {
@@ -86,7 +86,10 @@ class App extends Component {
 
     return (
       <main className="grid-container">
-        <Header updateSelection={this.updateSelection} />
+        <Header
+          selected={selected}
+          updateSelection={this.updateSelection}
+        />
         <SideBar movie={movie} />
         <CardContainer
           people={people}

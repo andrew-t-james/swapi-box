@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          selected={null}
           updateSelection={[Function]}
 />,
         <SideBar
@@ -45,6 +46,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "selected": null,
           "updateSelection": [Function],
         },
         "ref": null,
@@ -92,6 +94,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            selected={null}
             updateSelection={[Function]}
 />,
           <SideBar
@@ -118,6 +121,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "selected": null,
             "updateSelection": [Function],
           },
           "ref": null,

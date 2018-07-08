@@ -23,13 +23,17 @@ ShallowWrapper {
         <h2
           className="header__title"
 >
-          Header
+          SWapiBox
 </h2>,
-        <ul>
+        <ul
+          className="header__nav"
+>
           <li
+                    className=""
                     onClick={[Function]}
           >
                     <Button
+                              customStyle="card-container__nav--button btn"
                               name="Favorites"
                     />
           </li>
@@ -44,11 +48,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Header",
+          "children": "SWapiBox",
           "className": "header__title",
         },
         "ref": null,
-        "rendered": "Header",
+        "rendered": "SWapiBox",
         "type": "h2",
       },
       Object {
@@ -57,12 +61,15 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <li
+            className=""
             onClick={[Function]}
 >
             <Button
+                        customStyle="card-container__nav--button btn"
                         name="Favorites"
             />
 </li>,
+          "className": "header__nav",
         },
         "ref": null,
         "rendered": Object {
@@ -71,8 +78,10 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Button
+              customStyle="card-container__nav--button btn"
               name="Favorites"
 />,
+            "className": "",
             "onClick": [Function],
           },
           "ref": null,
@@ -81,6 +90,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "customStyle": "card-container__nav--button btn",
               "name": "Favorites",
             },
             "ref": null,
@@ -104,13 +114,17 @@ ShallowWrapper {
           <h2
             className="header__title"
 >
-            Header
+            SWapiBox
 </h2>,
-          <ul>
+          <ul
+            className="header__nav"
+>
             <li
+                        className=""
                         onClick={[Function]}
             >
                         <Button
+                                    customStyle="card-container__nav--button btn"
                                     name="Favorites"
                         />
             </li>
@@ -125,11 +139,11 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Header",
+            "children": "SWapiBox",
             "className": "header__title",
           },
           "ref": null,
-          "rendered": "Header",
+          "rendered": "SWapiBox",
           "type": "h2",
         },
         Object {
@@ -138,12 +152,15 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <li
+              className=""
               onClick={[Function]}
 >
               <Button
+                            customStyle="card-container__nav--button btn"
                             name="Favorites"
               />
 </li>,
+            "className": "header__nav",
           },
           "ref": null,
           "rendered": Object {
@@ -152,8 +169,10 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <Button
+                customStyle="card-container__nav--button btn"
                 name="Favorites"
 />,
+              "className": "",
               "onClick": [Function],
             },
             "ref": null,
@@ -162,6 +181,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "customStyle": "card-container__nav--button btn",
                 "name": "Favorites",
               },
               "ref": null,

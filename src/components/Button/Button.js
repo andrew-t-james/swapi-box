@@ -1,16 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Button = ({ name }) => {
+const Button = ({ name, customStyle }) => {
   return (
-    <button>
+    <button className={customStyle}>
       {name}
     </button>
   );
 };
 
 Button.propTypes = {
-  name: PropTypes.string.isRequired
+  name: PropTypes.string,
+  customStyle: PropTypes.string
 };
 
 export default Button;

@@ -27,19 +27,33 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2 />,
-        <p />,
-        <p />,
-        <p />,
-        <span
-          className="card__favorite"
-          onClick={[Function]}
+        <div
+          className="card-container__card--header"
 >
-          <Button
-                    name="⭐"
+          <h2
+                    className="card-container__card--heading"
           />
-</span>,
+          <span
+                    className="card__favorite"
+                    onClick={[Function]}
+          >
+                    <Button
+                              customStyle="btn favorite--button"
+                              name="⭐"
+                    />
+          </span>
+</div>,
+        <p>
+          Species: 
+</p>,
+        <p>
+          Homeworld: 
+</p>,
+        <p>
+          Population: 
+</p>,
       ],
+      "className": "card-container__card",
     },
     "ref": null,
     "rendered": Array [
@@ -48,69 +62,116 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "h2",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": undefined,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <Button
-            name="⭐"
+          "children": Array [
+            <h2
+              className="card-container__card--heading"
 />,
-          "className": "card__favorite",
-          "onClick": [Function],
+            <span
+              className="card__favorite"
+              onClick={[Function]}
+>
+              <Button
+                            customStyle="btn favorite--button"
+                            name="⭐"
+              />
+</span>,
+          ],
+          "className": "card-container__card--header",
         },
         "ref": null,
-        "rendered": Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "name": "⭐",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "card-container__card--heading",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h2",
           },
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <Button
+                customStyle="btn favorite--button"
+                name="⭐"
+/>,
+              "className": "card__favorite",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "customStyle": "btn favorite--button",
+                "name": "⭐",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "span",
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Species: ",
+            undefined,
+          ],
         },
-        "type": "span",
+        "ref": null,
+        "rendered": Array [
+          "Species: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Homeworld: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Homeworld: ",
+          undefined,
+        ],
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Population: ",
+            undefined,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Population: ",
+          undefined,
+        ],
+        "type": "p",
       },
     ],
     "type": "div",
@@ -122,19 +183,33 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2 />,
-          <p />,
-          <p />,
-          <p />,
-          <span
-            className="card__favorite"
-            onClick={[Function]}
+          <div
+            className="card-container__card--header"
 >
-            <Button
-                        name="⭐"
+            <h2
+                        className="card-container__card--heading"
             />
-</span>,
+            <span
+                        className="card__favorite"
+                        onClick={[Function]}
+            >
+                        <Button
+                                    customStyle="btn favorite--button"
+                                    name="⭐"
+                        />
+            </span>
+</div>,
+          <p>
+            Species: 
+</p>,
+          <p>
+            Homeworld: 
+</p>,
+          <p>
+            Population: 
+</p>,
         ],
+        "className": "card-container__card",
       },
       "ref": null,
       "rendered": Array [
@@ -143,69 +218,116 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "h2",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": undefined,
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": <Button
-              name="⭐"
+            "children": Array [
+              <h2
+                className="card-container__card--heading"
 />,
-            "className": "card__favorite",
-            "onClick": [Function],
+              <span
+                className="card__favorite"
+                onClick={[Function]}
+>
+                <Button
+                                customStyle="btn favorite--button"
+                                name="⭐"
+                />
+</span>,
+            ],
+            "className": "card-container__card--header",
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "name": "⭐",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "card-container__card--heading",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h2",
             },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <Button
+                  customStyle="btn favorite--button"
+                  name="⭐"
+/>,
+                "className": "card__favorite",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "customStyle": "btn favorite--button",
+                  "name": "⭐",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "span",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Species: ",
+              undefined,
+            ],
           },
-          "type": "span",
+          "ref": null,
+          "rendered": Array [
+            "Species: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Homeworld: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Homeworld: ",
+            undefined,
+          ],
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Population: ",
+              undefined,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Population: ",
+            undefined,
+          ],
+          "type": "p",
         },
       ],
       "type": "div",
