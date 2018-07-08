@@ -1,22 +1,17 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import PlanetCard from '../components/PlanetCard/PlanetCard';
-import { mockCleanedPlanet } from '../mock-data/cleaned-data';
-describe('PlanetCard', () => {
+import PersonCard from '../components/PersonCard/PersonCard';
+
+describe('PersonCard', () => {
   let wrapper;
   const mockFunc = jest.fn();
   const mockProps = {
-    name: 'Alderaan',
-    population: '2000000000',
-    climate: 'temperate',
-    terrain: 'grasslands, mountains',
-    residents: [undefined, undefined, undefined],
-    favorite: false
+    name: 'Wookie'
   };
 
   beforeEach(() => wrapper = shallow(
-    <PlanetCard
-      {...mockProps}
+    <PersonCard
+      props={{mockProps}}
       updateFavorites={mockFunc}
     />
   ));

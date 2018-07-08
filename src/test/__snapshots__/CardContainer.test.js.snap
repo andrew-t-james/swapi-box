@@ -1,26 +1,23 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CardContainer should match shapshot when people array has been populated 1`] = `
+exports[`CardContainer should match shapshot when favorite array has been populated 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
-    fetchPeopleData={[Function]}
-    fetchPlanetData={[Function]}
-    fetchVehicleData={[Function]}
-    people={
+    favorites={
         Array [
             Object {
-              "favorite": false,
-              "homeworld": "Tatooine",
-              "name": "Luke Skywalker",
-              "population": "200000",
-              "species": "Human",
+              "name": "Sand Crawler",
             },
           ]
     }
+    fetchPeopleData={[Function]}
+    fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
+    people={Array []}
     planets={Array []}
-    selected={null}
+    selected="favorites"
     vehicles={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -75,7 +72,10 @@ ShallowWrapper {
                 </ul>
         </nav>
         <section>
-                
+                <FavoriteCard
+                        name="Sand Crawler"
+                        updateFavorites={undefined}
+                />
         </section>
 </div>,
       "className": "main-container",
@@ -124,7 +124,10 @@ ShallowWrapper {
             </ul>
 </nav>,
           <section>
-            
+            <FavoriteCard
+                        name="Sand Crawler"
+                        updateFavorites={undefined}
+            />
 </section>,
         ],
         "className": "card-container",
@@ -311,12 +314,32 @@ ShallowWrapper {
               false,
               false,
               false,
+              Array [
+                <FavoriteCard
+                  name="Sand Crawler"
+                  updateFavorites={undefined}
+/>,
+              ],
+              false,
             ],
           },
           "ref": null,
           "rendered": Array [
             false,
             false,
+            false,
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "name": "Sand Crawler",
+                "updateFavorites": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             false,
           ],
           "type": "section",
@@ -372,7 +395,10 @@ ShallowWrapper {
                     </ul>
           </nav>
           <section>
-                    
+                    <FavoriteCard
+                              name="Sand Crawler"
+                              updateFavorites={undefined}
+                    />
           </section>
 </div>,
         "className": "main-container",
@@ -421,7 +447,10 @@ ShallowWrapper {
               </ul>
 </nav>,
             <section>
-              
+              <FavoriteCard
+                            name="Sand Crawler"
+                            updateFavorites={undefined}
+              />
 </section>,
           ],
           "className": "card-container",
@@ -608,10 +637,1504 @@ ShallowWrapper {
                 false,
                 false,
                 false,
+                Array [
+                  <FavoriteCard
+                    name="Sand Crawler"
+                    updateFavorites={undefined}
+/>,
+                ],
+                false,
               ],
             },
             "ref": null,
             "rendered": Array [
+              false,
+              false,
+              false,
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "name": "Sand Crawler",
+                  "updateFavorites": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              false,
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match shapshot when favorite array is empty 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
+    fetchPeopleData={[Function]}
+    fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
+    people={Array []}
+    planets={Array []}
+    selected="favorites"
+    vehicles={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card-container"
+>
+        <h1>
+                CardContainer
+        </h1>
+        <nav
+                className="card-container__nav"
+        >
+                <ul>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="people"
+                                        name="People"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="planets"
+                                        name="Planets"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                                />
+                        </li>
+                </ul>
+        </nav>
+        <section>
+                <div>
+                        <h2>
+                                No Favorites
+                        </h2>
+                        <p>
+                                Please add Favorites
+                        </p>
+                </div>
+        </section>
+</div>,
+      "className": "main-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            CardContainer
+</h1>,
+          <nav
+            className="card-container__nav"
+>
+            <ul>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="people"
+                                                name="People"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="planets"
+                                                name="Planets"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                    />
+                        </li>
+            </ul>
+</nav>,
+          <section>
+            <div>
+                        <h2>
+                                    No Favorites
+                        </h2>
+                        <p>
+                                    Please add Favorites
+                        </p>
+            </div>
+</section>,
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CardContainer",
+          },
+          "ref": null,
+          "rendered": "CardContainer",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="people"
+                                          name="People"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="planets"
+                                          name="Planets"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="vehicles"
+                                          name="Vehicles"
+                            />
+              </li>
+</ul>,
+            "className": "card-container__nav",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="people"
+                                    name="People"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="planets"
+                                    name="Planets"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="vehicles"
+                                    name="Vehicles"
+                  />
+</li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="people"
+                    name="People"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "people",
+                    "name": "People",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="planets"
+                    name="Planets"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "planets",
+                    "name": "Planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="vehicles"
+                    name="Vehicles"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "vehicles",
+                    "name": "Vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              false,
+              false,
+              false,
+              Array [],
+              <div>
+                <h2>
+                                No Favorites
+                </h2>
+                <p>
+                                Please add Favorites
+                </p>
+</div>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            false,
+            false,
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <h2>
+                    No Favorites
+</h2>,
+                  <p>
+                    Please add Favorites
+</p>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "No Favorites",
+                  },
+                  "ref": null,
+                  "rendered": "No Favorites",
+                  "type": "h2",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Please add Favorites",
+                  },
+                  "ref": null,
+                  "rendered": "Please add Favorites",
+                  "type": "p",
+                },
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-container"
+>
+          <h1>
+                    CardContainer
+          </h1>
+          <nav
+                    className="card-container__nav"
+          >
+                    <ul>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="people"
+                                                  name="People"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="planets"
+                                                  name="Planets"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="vehicles"
+                                                  name="Vehicles"
+                                        />
+                              </li>
+                    </ul>
+          </nav>
+          <section>
+                    <div>
+                              <h2>
+                                        No Favorites
+                              </h2>
+                              <p>
+                                        Please add Favorites
+                              </p>
+                    </div>
+          </section>
+</div>,
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              CardContainer
+</h1>,
+            <nav
+              className="card-container__nav"
+>
+              <ul>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="people"
+                                                        name="People"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="planets"
+                                                        name="Planets"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="vehicles"
+                                                        name="Vehicles"
+                                          />
+                            </li>
+              </ul>
+</nav>,
+            <section>
+              <div>
+                            <h2>
+                                          No Favorites
+                            </h2>
+                            <p>
+                                          Please add Favorites
+                            </p>
+              </div>
+</section>,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CardContainer",
+            },
+            "ref": null,
+            "rendered": "CardContainer",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="people"
+                                                name="People"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="planets"
+                                                name="Planets"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                />
+                </li>
+</ul>,
+              "className": "card-container__nav",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="people"
+                                        name="People"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="planets"
+                                        name="Planets"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                    />
+</li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="people"
+                      name="People"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "people",
+                      "name": "People",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="planets"
+                      name="Planets"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "planets",
+                      "name": "Planets",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="vehicles"
+                      name="Vehicles"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "vehicles",
+                      "name": "Vehicles",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                false,
+                false,
+                false,
+                Array [],
+                <div>
+                  <h2>
+                                    No Favorites
+                  </h2>
+                  <p>
+                                    Please add Favorites
+                  </p>
+</div>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              false,
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <h2>
+                      No Favorites
+</h2>,
+                    <p>
+                      Please add Favorites
+</p>,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "No Favorites",
+                    },
+                    "ref": null,
+                    "rendered": "No Favorites",
+                    "type": "h2",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Please add Favorites",
+                    },
+                    "ref": null,
+                    "rendered": "Please add Favorites",
+                    "type": "p",
+                  },
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match shapshot when people array has been populated 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
+    fetchPeopleData={[Function]}
+    fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
+    people={
+        Array [
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "name": "Luke Skywalker",
+              "population": "200000",
+              "species": "Human",
+            },
+          ]
+    }
+    planets={Array []}
+    selected="people"
+    vehicles={Array []}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="card-container"
+>
+        <h1>
+                CardContainer
+        </h1>
+        <nav
+                className="card-container__nav"
+        >
+                <ul>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="people"
+                                        name="People"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="planets"
+                                        name="Planets"
+                                />
+                        </li>
+                        <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                                />
+                        </li>
+                </ul>
+        </nav>
+        <section>
+                <PersonCard
+                        favorite={false}
+                        homeworld="Tatooine"
+                        name="Luke Skywalker"
+                        population="200000"
+                        species="Human"
+                        updateFavorites={undefined}
+                />
+        </section>
+</div>,
+      "className": "main-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            CardContainer
+</h1>,
+          <nav
+            className="card-container__nav"
+>
+            <ul>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="people"
+                                                name="People"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="planets"
+                                                name="Planets"
+                                    />
+                        </li>
+                        <li
+                                    className="card-container__nav--button"
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                    />
+                        </li>
+            </ul>
+</nav>,
+          <section>
+            <PersonCard
+                        favorite={false}
+                        homeworld="Tatooine"
+                        name="Luke Skywalker"
+                        population="200000"
+                        species="Human"
+                        updateFavorites={undefined}
+            />
+</section>,
+        ],
+        "className": "card-container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "CardContainer",
+          },
+          "ref": null,
+          "rendered": "CardContainer",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="people"
+                                          name="People"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="planets"
+                                          name="Planets"
+                            />
+              </li>
+              <li
+                            className="card-container__nav--button"
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="vehicles"
+                                          name="Vehicles"
+                            />
+              </li>
+</ul>,
+            "className": "card-container__nav",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="people"
+                                    name="People"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="planets"
+                                    name="Planets"
+                  />
+</li>,
+                <li
+                  className="card-container__nav--button"
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="vehicles"
+                                    name="Vehicles"
+                  />
+</li>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="people"
+                    name="People"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "people",
+                    "name": "People",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="planets"
+                    name="Planets"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "planets",
+                    "name": "Planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="vehicles"
+                    name="Vehicles"
+/>,
+                  "className": "card-container__nav--button",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "vehicles",
+                    "name": "Vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              Array [
+                <PersonCard
+                  favorite={false}
+                  homeworld="Tatooine"
+                  name="Luke Skywalker"
+                  population="200000"
+                  species="Human"
+                  updateFavorites={undefined}
+/>,
+              ],
+              false,
+              false,
+              false,
+              false,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "name": "Luke Skywalker",
+                "population": "200000",
+                "species": "Human",
+                "updateFavorites": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+            false,
+            false,
+            false,
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="card-container"
+>
+          <h1>
+                    CardContainer
+          </h1>
+          <nav
+                    className="card-container__nav"
+          >
+                    <ul>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="people"
+                                                  name="People"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="planets"
+                                                  name="Planets"
+                                        />
+                              </li>
+                              <li
+                                        className="card-container__nav--button"
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="vehicles"
+                                                  name="Vehicles"
+                                        />
+                              </li>
+                    </ul>
+          </nav>
+          <section>
+                    <PersonCard
+                              favorite={false}
+                              homeworld="Tatooine"
+                              name="Luke Skywalker"
+                              population="200000"
+                              species="Human"
+                              updateFavorites={undefined}
+                    />
+          </section>
+</div>,
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              CardContainer
+</h1>,
+            <nav
+              className="card-container__nav"
+>
+              <ul>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="people"
+                                                        name="People"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="planets"
+                                                        name="Planets"
+                                          />
+                            </li>
+                            <li
+                                          className="card-container__nav--button"
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="vehicles"
+                                                        name="Vehicles"
+                                          />
+                            </li>
+              </ul>
+</nav>,
+            <section>
+              <PersonCard
+                            favorite={false}
+                            homeworld="Tatooine"
+                            name="Luke Skywalker"
+                            population="200000"
+                            species="Human"
+                            updateFavorites={undefined}
+              />
+</section>,
+          ],
+          "className": "card-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "CardContainer",
+            },
+            "ref": null,
+            "rendered": "CardContainer",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="people"
+                                                name="People"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="planets"
+                                                name="Planets"
+                                />
+                </li>
+                <li
+                                className="card-container__nav--button"
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="vehicles"
+                                                name="Vehicles"
+                                />
+                </li>
+</ul>,
+              "className": "card-container__nav",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="people"
+                                        name="People"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="planets"
+                                        name="Planets"
+                    />
+</li>,
+                  <li
+                    className="card-container__nav--button"
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="vehicles"
+                                        name="Vehicles"
+                    />
+</li>,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="people"
+                      name="People"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "people",
+                      "name": "People",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="planets"
+                      name="Planets"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "planets",
+                      "name": "Planets",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="vehicles"
+                      name="Vehicles"
+/>,
+                    "className": "card-container__nav--button",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "vehicles",
+                      "name": "Vehicles",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                Array [
+                  <PersonCard
+                    favorite={false}
+                    homeworld="Tatooine"
+                    name="Luke Skywalker"
+                    population="200000"
+                    species="Human"
+                    updateFavorites={undefined}
+/>,
+                ],
+                false,
+                false,
+                false,
+                false,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "favorite": false,
+                  "homeworld": "Tatooine",
+                  "name": "Luke Skywalker",
+                  "population": "200000",
+                  "species": "Human",
+                  "updateFavorites": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              false,
               false,
               false,
               false,
@@ -640,6 +2163,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
     fetchVehicleData={[Function]}
@@ -649,7 +2173,7 @@ ShallowWrapper {
             Object {
               "climate": "temperate",
               "favorite": false,
-              "planet": "Alderaan",
+              "name": "Alderaan",
               "population": "2000000000",
               "residents": Array [
                 undefined,
@@ -660,7 +2184,7 @@ ShallowWrapper {
             },
           ]
     }
-    selected={null}
+    selected="planets"
     vehicles={Array []}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -715,7 +2239,21 @@ ShallowWrapper {
                 </ul>
         </nav>
         <section>
-                
+                <PlanetCard
+                        climate="temperate"
+                        favorite={false}
+                        name="Alderaan"
+                        population="2000000000"
+                        residents={
+                                Array [
+                                        undefined,
+                                        undefined,
+                                        undefined,
+                                      ]
+                        }
+                        terrain="grasslands, mountains"
+                        updateFavorites={undefined}
+                />
         </section>
 </div>,
       "className": "main-container",
@@ -764,7 +2302,21 @@ ShallowWrapper {
             </ul>
 </nav>,
           <section>
-            
+            <PlanetCard
+                        climate="temperate"
+                        favorite={false}
+                        name="Alderaan"
+                        population="2000000000"
+                        residents={
+                                    Array [
+                                                undefined,
+                                                undefined,
+                                                undefined,
+                                              ]
+                        }
+                        terrain="grasslands, mountains"
+                        updateFavorites={undefined}
+            />
 </section>,
         ],
         "className": "card-container",
@@ -949,12 +2501,52 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
+              Array [
+                <PlanetCard
+                  climate="temperate"
+                  favorite={false}
+                  name="Alderaan"
+                  population="2000000000"
+                  residents={
+                                    Array [
+                                                      undefined,
+                                                      undefined,
+                                                      undefined,
+                                                    ]
+                  }
+                  terrain="grasslands, mountains"
+                  updateFavorites={undefined}
+/>,
+              ],
+              false,
               false,
               false,
             ],
           },
           "ref": null,
           "rendered": Array [
+            false,
+            Object {
+              "instance": null,
+              "key": "0",
+              "nodeType": "function",
+              "props": Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Alderaan",
+                "population": "2000000000",
+                "residents": Array [
+                  undefined,
+                  undefined,
+                  undefined,
+                ],
+                "terrain": "grasslands, mountains",
+                "updateFavorites": undefined,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             false,
             false,
             false,
@@ -1012,7 +2604,21 @@ ShallowWrapper {
                     </ul>
           </nav>
           <section>
-                    
+                    <PlanetCard
+                              climate="temperate"
+                              favorite={false}
+                              name="Alderaan"
+                              population="2000000000"
+                              residents={
+                                        Array [
+                                                  undefined,
+                                                  undefined,
+                                                  undefined,
+                                                ]
+                              }
+                              terrain="grasslands, mountains"
+                              updateFavorites={undefined}
+                    />
           </section>
 </div>,
         "className": "main-container",
@@ -1061,7 +2667,21 @@ ShallowWrapper {
               </ul>
 </nav>,
             <section>
-              
+              <PlanetCard
+                            climate="temperate"
+                            favorite={false}
+                            name="Alderaan"
+                            population="2000000000"
+                            residents={
+                                          Array [
+                                                        undefined,
+                                                        undefined,
+                                                        undefined,
+                                                      ]
+                            }
+                            terrain="grasslands, mountains"
+                            updateFavorites={undefined}
+              />
 </section>,
           ],
           "className": "card-container",
@@ -1246,12 +2866,52 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 false,
+                Array [
+                  <PlanetCard
+                    climate="temperate"
+                    favorite={false}
+                    name="Alderaan"
+                    population="2000000000"
+                    residents={
+                                        Array [
+                                                            undefined,
+                                                            undefined,
+                                                            undefined,
+                                                          ]
+                    }
+                    terrain="grasslands, mountains"
+                    updateFavorites={undefined}
+/>,
+                ],
+                false,
                 false,
                 false,
               ],
             },
             "ref": null,
             "rendered": Array [
+              false,
+              Object {
+                "instance": null,
+                "key": "0",
+                "nodeType": "function",
+                "props": Object {
+                  "climate": "temperate",
+                  "favorite": false,
+                  "name": "Alderaan",
+                  "population": "2000000000",
+                  "residents": Array [
+                    undefined,
+                    undefined,
+                    undefined,
+                  ],
+                  "terrain": "grasslands, mountains",
+                  "updateFavorites": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               false,
               false,
               false,
@@ -1280,12 +2940,13 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
     fetchVehicleData={[Function]}
     people={Array []}
     planets={Array []}
-    selected={null}
+    selected="vehicles"
     vehicles={
         Array [
             Object {
@@ -1350,7 +3011,14 @@ ShallowWrapper {
                 </ul>
         </nav>
         <section>
-                
+                <VehicleCard
+                        favorite={false}
+                        model="Digger Crawler"
+                        name="Sand Crawler"
+                        passengers="30"
+                        updateFavorites={undefined}
+                        vehicleClass="wheeled"
+                />
         </section>
 </div>,
       "className": "main-container",
@@ -1399,7 +3067,14 @@ ShallowWrapper {
             </ul>
 </nav>,
           <section>
-            
+            <VehicleCard
+                        favorite={false}
+                        model="Digger Crawler"
+                        name="Sand Crawler"
+                        passengers="30"
+                        updateFavorites={undefined}
+                        vehicleClass="wheeled"
+            />
 </section>,
         ],
         "className": "card-container",
@@ -1585,12 +3260,40 @@ ShallowWrapper {
             "children": Array [
               false,
               false,
+              Array [
+                <VehicleCard
+                  favorite={false}
+                  model="Digger Crawler"
+                  name="Sand Crawler"
+                  passengers="30"
+                  updateFavorites={undefined}
+                  vehicleClass="wheeled"
+/>,
+              ],
+              false,
               false,
             ],
           },
           "ref": null,
           "rendered": Array [
             false,
+            false,
+            Object {
+              "instance": null,
+              "key": "Sand Crawler",
+              "nodeType": "function",
+              "props": Object {
+                "favorite": false,
+                "model": "Digger Crawler",
+                "name": "Sand Crawler",
+                "passengers": "30",
+                "updateFavorites": undefined,
+                "vehicleClass": "wheeled",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             false,
             false,
           ],
@@ -1647,7 +3350,14 @@ ShallowWrapper {
                     </ul>
           </nav>
           <section>
-                    
+                    <VehicleCard
+                              favorite={false}
+                              model="Digger Crawler"
+                              name="Sand Crawler"
+                              passengers="30"
+                              updateFavorites={undefined}
+                              vehicleClass="wheeled"
+                    />
           </section>
 </div>,
         "className": "main-container",
@@ -1696,7 +3406,14 @@ ShallowWrapper {
               </ul>
 </nav>,
             <section>
-              
+              <VehicleCard
+                            favorite={false}
+                            model="Digger Crawler"
+                            name="Sand Crawler"
+                            passengers="30"
+                            updateFavorites={undefined}
+                            vehicleClass="wheeled"
+              />
 </section>,
           ],
           "className": "card-container",
@@ -1882,12 +3599,40 @@ ShallowWrapper {
               "children": Array [
                 false,
                 false,
+                Array [
+                  <VehicleCard
+                    favorite={false}
+                    model="Digger Crawler"
+                    name="Sand Crawler"
+                    passengers="30"
+                    updateFavorites={undefined}
+                    vehicleClass="wheeled"
+/>,
+                ],
+                false,
                 false,
               ],
             },
             "ref": null,
             "rendered": Array [
               false,
+              false,
+              Object {
+                "instance": null,
+                "key": "Sand Crawler",
+                "nodeType": "function",
+                "props": Object {
+                  "favorite": false,
+                  "model": "Digger Crawler",
+                  "name": "Sand Crawler",
+                  "passengers": "30",
+                  "updateFavorites": undefined,
+                  "vehicleClass": "wheeled",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
               false,
               false,
             ],
@@ -1914,6 +3659,7 @@ exports[`CardContainer should match snapshot 1`] = `
 ReactWrapper {
   "length": 1,
   Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
     fetchPeopleData={[Function]}
     fetchPlanetData={[Function]}
     fetchVehicleData={[Function]}
@@ -1935,6 +3681,7 @@ ReactWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
+      "favorites": Array [],
       "fetchPeopleData": [Function],
       "fetchPlanetData": [Function],
       "fetchVehicleData": [Function],
@@ -2418,11 +4165,15 @@ ReactWrapper {
                   false,
                   false,
                   false,
+                  false,
+                  false,
                 ],
               },
               "ref": null,
               "rendered": Array [
                 Array [
+                  false,
+                  false,
                   false,
                   false,
                   false,
@@ -2444,6 +4195,7 @@ ReactWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "favorites": Array [],
         "fetchPeopleData": [Function],
         "fetchPlanetData": [Function],
         "fetchVehicleData": [Function],
@@ -2927,11 +4679,15 @@ ReactWrapper {
                     false,
                     false,
                     false,
+                    false,
+                    false,
                   ],
                 },
                 "ref": null,
                 "rendered": Array [
                   Array [
+                    false,
+                    false,
                     false,
                     false,
                     false,

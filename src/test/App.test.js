@@ -12,6 +12,7 @@ describe('App', () => {
       people: [],
       movie: {},
       planets: [],
+      favorites: [],
       vehicles: [],
       isLoading: false,
       hasError: false,
@@ -26,10 +27,6 @@ describe('App', () => {
 
   test('should have default state', async () => {
     expect(wrapper.state()).toEqual(mockState);
-  });
-
-  test('renders without crashing', () => {
-    expect(wrapper).toMatchSnapshot();
   });
 
   describe('fetchMoveScroll', () => {
@@ -190,4 +187,43 @@ describe('App', () => {
     });
   });
 
+  describe('UpdateSelection', () => {
+    test('should update selection to favorites', () => {
+      wrapper.instance().updateSelection();
+      expect(wrapper.state('selected')).toEqual('favorites');
+    });
+  });
+
+  describe('UpdateFavorites', () => {
+    test('should update state with a new favorite when invoked', () => {
+      const mockFavorite = {
+        name: 'Woookie'
+      };
+      const mockFavoriteState =[
+        {
+          name: 'Woookie'
+        }
+      ];
+      expect(wrapper.state('favorites')).toEqual([]);
+      wrapper.instance().updateFavorites(mockFavorite);
+      expect(wrapper.state('favorites')).toEqual(mockFavoriteState);
+    });
+
+    test('should remove items from state if they exist already', () => {
+      const mockFavoriteState =[];
+      const mockFavorite = {
+        name: 'Woookie'
+      };
+      expect(wrapper.state('favorites')).toEqual([]);
+      wrapper.instance().updateFavorites(mockFavorite);
+      wrapper.instance().updateFavorites(mockFavorite);
+      expect(wrapper.state('favorites')).toEqual(mockFavoriteState);
+    });
+
+  });
+
+
+  test('renders without crashing', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 });

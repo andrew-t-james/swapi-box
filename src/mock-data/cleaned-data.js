@@ -22,12 +22,12 @@ export const mockCleanedMovie = {
   crawl: "It is a period of civil warRebel spaceships strikingfrom a hidden base have wontheir first victory againstthe evil Galactic EmpireDuring the battle Rebelspies managed to steal secretplans to the Empiresultimate weapon the DEATHSTAR an armored spacestation with enough powerto destroy an entire planetPursued by the Empiressinister agents PrincessLeia races home aboard herstarship custodian of thestolen plans that can save herpeople and restorefreedom to the galaxy",
   episode: 4,
   releaseDate: "1977-05-25",
-  title: "A New Hope"
+  name: "A New Hope"
 };
 
 export const mockCleanedPlanet = [
   {
-    planet: 'Alderaan',
+    name: 'Alderaan',
     population: '2000000000',
     climate: 'temperate',
     terrain: 'grasslands, mountains',
@@ -43,5 +43,11 @@ export const mockCleanedVehicle = [
     vehicleClass: 'wheeled',
     passengers: '30',
     favorite: false
+  }
+];
+
+export const mockCleanedFavorite = [
+  {
+    name: 'Sand Crawler'
   }
 ];
