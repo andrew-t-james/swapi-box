@@ -6,10 +6,7 @@ const PersonCard = props => {
   const { name, species, homeworld, population, favorite, updateFavorites } = props;
   const person = {
     name,
-    species,
-    homeworld,
-    population,
-    favorite: true
+    favorite
   };
 
   return (

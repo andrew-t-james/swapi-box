@@ -2,9 +2,10 @@ import React from 'react';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
-const PlanetCard = ({ climate, name, population, residents, terrain, updateFavorites }) => {
+const PlanetCard = ({ climate, name, population, favorite, residents, terrain, updateFavorites }) => {
   const planet = {
-    name
+    name,
+    favorite
   };
 
   return (
@@ -27,6 +28,7 @@ PlanetCard.propTypes = {
   population: PropTypes.string,
   residents: PropTypes.array,
   terrain: PropTypes.string,
+  favorite: PropTypes.bool,
   updateFavorites: PropTypes.func
 };
 
