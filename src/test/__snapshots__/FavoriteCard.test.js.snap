@@ -4,7 +4,10 @@ exports[`FavoriteCard should match snapshot 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <FavoriteCard />,
+  Symbol(enzyme.__unrendered__): <FavoriteCard
+    name="Wookie"
+    updateFavorites={[Function]}
+/>,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -18,8 +21,13 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2 />,
-        <span>
+        <h2>
+          Wookie
+</h2>,
+        <span
+          className="favorite__card--button"
+          onClick={[Function]}
+>
           <Button
                     name="⭐"
           />
@@ -33,10 +41,10 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": "Wookie",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": "Wookie",
         "type": "h2",
       },
       Object {
@@ -47,6 +55,8 @@ ShallowWrapper {
           "children": <Button
             name="⭐"
 />,
+          "className": "favorite__card--button",
+          "onClick": [Function],
         },
         "ref": null,
         "rendered": Object {
@@ -72,8 +82,13 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2 />,
-          <span>
+          <h2>
+            Wookie
+</h2>,
+          <span
+            className="favorite__card--button"
+            onClick={[Function]}
+>
             <Button
                         name="⭐"
             />
@@ -87,10 +102,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": "Wookie",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": "Wookie",
           "type": "h2",
         },
         Object {
@@ -101,6 +116,8 @@ ShallowWrapper {
             "children": <Button
               name="⭐"
 />,
+            "className": "favorite__card--button",
+            "onClick": [Function],
           },
           "ref": null,
           "rendered": Object {

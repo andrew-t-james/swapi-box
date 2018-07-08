@@ -209,6 +209,17 @@ describe('App', () => {
       expect(wrapper.state('favorites')).toEqual(mockFavoriteState);
     });
 
+    test('should remove items from state if they exist already', () => {
+      const mockFavoriteState =[];
+      const mockFavorite = {
+        name: 'Woookie'
+      };
+      expect(wrapper.state('favorites')).toEqual([]);
+      wrapper.instance().updateFavorites(mockFavorite);
+      wrapper.instance().updateFavorites(mockFavorite);
+      expect(wrapper.state('favorites')).toEqual(mockFavoriteState);
+    });
+
   });
 
 

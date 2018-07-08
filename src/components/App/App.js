@@ -63,9 +63,17 @@ class App extends Component {
   }
 
   updateFavorites = newFavorite => {
-    const allFavorites = this.state.favorites;
+    let allFavorites = this.state.favorites;
+    const foundInFavorites = allFavorites.find(item => item.name === newFavorite.name);
+    const removeFromFavorites = allFavorites.filter(item => item.name !== newFavorite.name);
 
-    this.setState({ favorites: [...allFavorites, newFavorite] });
+    if (!foundInFavorites) {
+      allFavorites = [...allFavorites, newFavorite];
+    } else {
+      allFavorites = removeFromFavorites;
+    }
+
+    this.setState({ favorites: [...allFavorites] });
   }
 
   updateSelection = () => {

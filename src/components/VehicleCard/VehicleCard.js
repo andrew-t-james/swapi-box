@@ -2,10 +2,9 @@ import React from 'react';
 import Button from '../Button/Button';
 import PropTypes from 'prop-types';
 
-const VehicleCard = ({ model, name, passengers, favorite, vehicleClass, updateFavorites }) => {
+const VehicleCard = ({ model, name, passengers, vehicleClass, updateFavorites }) => {
   const vehicle = {
-    name,
-    favorite
+    name
   };
 
   return (
@@ -24,7 +23,6 @@ const VehicleCard = ({ model, name, passengers, favorite, vehicleClass, updateFa
 VehicleCard.propTypes = {
   model: PropTypes.string,
   name: PropTypes.string,
-  favorite: PropTypes.bool,
   updateFavorites: PropTypes.func,
   passengers: PropTypes.string,
   vehicleClass: PropTypes.string
