@@ -95,6 +95,7 @@ class App extends Component {
       <main className="grid-container">
         <Header
           selected={selected}
+          favorites={favorites}
           updateSelection={this.updateSelection}
         />
         <SideBar movie={movie} />

@@ -6,7 +6,7 @@ describe('Header', () => {
   let wrapper;
   const mockFunc = jest.fn();
 
-  beforeEach(() => wrapper = shallow(<Header updateSelection={mockFunc} />));
+  beforeEach(() => wrapper = shallow(<Header updateSelection={mockFunc} favorites={[{}, {}]}/>));
 
   afterEach(() => wrapper.unmount());
 

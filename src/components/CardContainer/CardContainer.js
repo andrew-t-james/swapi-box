@@ -60,6 +60,10 @@ const CardContainer = props => {
     </div>
   );
 
+  const loader = () => (
+    <Loader />
+  );
+
   return (
     <section className="main-container">
       <div>
@@ -95,12 +99,12 @@ const CardContainer = props => {
           </ul>
         </nav>
         <section className="card-container">
-          {isLoading && <Loader></Loader>}
-          {selected === 'people'  && peopleCards}
-          {selected === 'planets'  && planetsCards}
-          {selected === 'vehicles'  && vehicleCards}
-          {selected === 'favorites' && favoriteCards}
-          {selected === 'favorites' && !favorites.length && noFavorites()}
+          {isLoading && loader()}
+          {selected === 'people' && !isLoading && peopleCards}
+          {selected === 'planets' && !isLoading  && planetsCards}
+          {selected === 'vehicles'  && !isLoading && vehicleCards}
+          {selected === 'favorites' && !isLoading && favoriteCards}
+          {selected === 'favorites' && !favorites.length && !isLoading && noFavorites()}
         </section>
       </div>
     </section>

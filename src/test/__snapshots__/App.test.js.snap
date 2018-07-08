@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          favorites={Array []}
           selected={null}
           updateSelection={[Function]}
 />,
@@ -48,6 +49,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "favorites": Array [],
           "selected": null,
           "updateSelection": [Function],
         },
@@ -106,6 +108,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            favorites={Array []}
             selected={null}
             updateSelection={[Function]}
 />,
@@ -135,6 +138,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "favorites": Array [],
             "selected": null,
             "updateSelection": [Function],
           },

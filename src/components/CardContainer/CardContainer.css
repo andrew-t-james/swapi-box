@@ -54,7 +54,8 @@
   border: none;
 }
 
-.no-favorites {
+.no-favorites,
+.loader {
   align-items: center;
   display: flex;
   flex-direction: column;

@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Button
+    amount={2}
     name="button"
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -19,11 +20,19 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": "button",
+      "children": Array [
+        "button",
+        " ",
+        2,
+      ],
       "className": undefined,
     },
     "ref": null,
-    "rendered": "button",
+    "rendered": Array [
+      "button",
+      " ",
+      2,
+    ],
     "type": "button",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -32,11 +41,19 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": "button",
+        "children": Array [
+          "button",
+          " ",
+          2,
+        ],
         "className": undefined,
       },
       "ref": null,
-      "rendered": "button",
+      "rendered": Array [
+        "button",
+        " ",
+        2,
+      ],
       "type": "button",
     },
   ],
