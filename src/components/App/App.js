@@ -86,9 +86,6 @@ class App extends Component {
 
     return (
       <main className="grid-container">
-        <div className="particles">
-          <ParticleBackground />
-        </div>
         <Header
           selected={selected}
           updateSelection={this.updateSelection}
@@ -105,6 +102,7 @@ class App extends Component {
           fetchVehicleData={this.fetchVehicleData}
           updateFavorites={this.updateFavorites}
         />
+        <ParticleBackground />
       </main>
     );
   }

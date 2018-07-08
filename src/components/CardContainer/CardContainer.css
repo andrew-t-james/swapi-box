@@ -13,6 +13,7 @@
 
 .card-container__card {
   align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.8);
   border: 1px dashed var(--primary-font);
   display: flex;
   flex-direction: column;
@@ -44,10 +45,28 @@
 }
 
 .card-container__nav--button {
+  background: #000;
   border: 1px solid goldenrod;
   padding: 1rem 2rem;
 }
 
 .favorite--button {
   border: none;
+}
+
+.no-favorites {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: calc(80vh - 10rem);
+  justify-content: center;
+}
+
+.no-favorites--heading {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.no-favorites--copy {
+  font-size: 2.3rem;
 }

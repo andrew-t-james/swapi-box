@@ -52,9 +52,9 @@ const CardContainer = props => {
   );
 
   const noFavorites = () => (
-    <div>
-      <h2>No Favorites</h2>
-      <p>Please add Favorites</p>
+    <div className="no-favorites">
+      <h2 className="no-favorites--heading">No Favorites</h2>
+      <p className="no-favorites--copy">Please select a few Favorites</p>
     </div>
   );
 

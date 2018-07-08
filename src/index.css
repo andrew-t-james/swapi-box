@@ -27,8 +27,8 @@ body {
 }
 
 .btn {
-  background: none;
-  color: inherit;
+  background: var(--primary-background);
+  color: var(--primary-font);
   cursor: pointer;
   font: inherit;
   font-size: 1.4rem;
@@ -37,5 +37,11 @@ body {
 }
 
 .btn-active {
-  background-color: red;
+  background-color: var(--primary-font);
+  color: #000;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
 }

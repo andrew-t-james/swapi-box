@@ -760,12 +760,18 @@ ShallowWrapper {
         <section
                 className="card-container"
         >
-                <div>
-                        <h2>
+                <div
+                        className="no-favorites"
+                >
+                        <h2
+                                className="no-favorites--heading"
+                        >
                                 No Favorites
                         </h2>
-                        <p>
-                                Please add Favorites
+                        <p
+                                className="no-favorites--copy"
+                        >
+                                Please select a few Favorites
                         </p>
                 </div>
         </section>
@@ -818,12 +824,18 @@ ShallowWrapper {
           <section
             className="card-container"
 >
-            <div>
-                        <h2>
+            <div
+                        className="no-favorites"
+            >
+                        <h2
+                                    className="no-favorites--heading"
+                        >
                                     No Favorites
                         </h2>
-                        <p>
-                                    Please add Favorites
+                        <p
+                                    className="no-favorites--copy"
+                        >
+                                    Please select a few Favorites
                         </p>
             </div>
 </section>,
@@ -1015,12 +1027,18 @@ ShallowWrapper {
               false,
               false,
               Array [],
-              <div>
-                <h2>
+              <div
+                className="no-favorites"
+>
+                <h2
+                                className="no-favorites--heading"
+                >
                                 No Favorites
                 </h2>
-                <p>
-                                Please add Favorites
+                <p
+                                className="no-favorites--copy"
+                >
+                                Please select a few Favorites
                 </p>
 </div>,
             ],
@@ -1037,13 +1055,18 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "children": Array [
-                  <h2>
+                  <h2
+                    className="no-favorites--heading"
+>
                     No Favorites
 </h2>,
-                  <p>
-                    Please add Favorites
+                  <p
+                    className="no-favorites--copy"
+>
+                    Please select a few Favorites
 </p>,
                 ],
+                "className": "no-favorites",
               },
               "ref": null,
               "rendered": Array [
@@ -1053,6 +1076,7 @@ ShallowWrapper {
                   "nodeType": "host",
                   "props": Object {
                     "children": "No Favorites",
+                    "className": "no-favorites--heading",
                   },
                   "ref": null,
                   "rendered": "No Favorites",
@@ -1063,10 +1087,11 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Please add Favorites",
+                    "children": "Please select a few Favorites",
+                    "className": "no-favorites--copy",
                   },
                   "ref": null,
-                  "rendered": "Please add Favorites",
+                  "rendered": "Please select a few Favorites",
                   "type": "p",
                 },
               ],
@@ -1126,12 +1151,18 @@ ShallowWrapper {
           <section
                     className="card-container"
           >
-                    <div>
-                              <h2>
+                    <div
+                              className="no-favorites"
+                    >
+                              <h2
+                                        className="no-favorites--heading"
+                              >
                                         No Favorites
                               </h2>
-                              <p>
-                                        Please add Favorites
+                              <p
+                                        className="no-favorites--copy"
+                              >
+                                        Please select a few Favorites
                               </p>
                     </div>
           </section>
@@ -1184,12 +1215,18 @@ ShallowWrapper {
             <section
               className="card-container"
 >
-              <div>
-                            <h2>
+              <div
+                            className="no-favorites"
+              >
+                            <h2
+                                          className="no-favorites--heading"
+                            >
                                           No Favorites
                             </h2>
-                            <p>
-                                          Please add Favorites
+                            <p
+                                          className="no-favorites--copy"
+                            >
+                                          Please select a few Favorites
                             </p>
               </div>
 </section>,
@@ -1381,12 +1418,18 @@ ShallowWrapper {
                 false,
                 false,
                 Array [],
-                <div>
-                  <h2>
+                <div
+                  className="no-favorites"
+>
+                  <h2
+                                    className="no-favorites--heading"
+                  >
                                     No Favorites
                   </h2>
-                  <p>
-                                    Please add Favorites
+                  <p
+                                    className="no-favorites--copy"
+                  >
+                                    Please select a few Favorites
                   </p>
 </div>,
               ],
@@ -1403,13 +1446,18 @@ ShallowWrapper {
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
-                    <h2>
+                    <h2
+                      className="no-favorites--heading"
+>
                       No Favorites
 </h2>,
-                    <p>
-                      Please add Favorites
+                    <p
+                      className="no-favorites--copy"
+>
+                      Please select a few Favorites
 </p>,
                   ],
+                  "className": "no-favorites",
                 },
                 "ref": null,
                 "rendered": Array [
@@ -1419,6 +1467,7 @@ ShallowWrapper {
                     "nodeType": "host",
                     "props": Object {
                       "children": "No Favorites",
+                      "className": "no-favorites--heading",
                     },
                     "ref": null,
                     "rendered": "No Favorites",
@@ -1429,10 +1478,11 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Please add Favorites",
+                      "children": "Please select a few Favorites",
+                      "className": "no-favorites--copy",
                     },
                     "ref": null,
-                    "rendered": "Please add Favorites",
+                    "rendered": "Please select a few Favorites",
                     "type": "p",
                   },
                 ],
