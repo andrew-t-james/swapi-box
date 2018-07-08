@@ -24,6 +24,7 @@ class App extends Component {
 
   componentDidMount = () => {
     // TODO fetch random movie scroll here
+    this.fetchMovieScroll();
   }
 
   fetchMovieScroll = async () =>  {
