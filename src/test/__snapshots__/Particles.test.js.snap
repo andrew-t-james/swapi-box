@@ -1,0 +1,387 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Particles should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ParticleBackground
+    params={
+        Object {
+            "interactivity": Object {
+              "detect_on": "canvas",
+              "events": Object {
+                "onclick": Object {
+                  "enable": false,
+                  "mode": "push",
+                },
+                "onhover": Object {
+                  "enable": false,
+                  "mode": "repulse",
+                },
+                "resize": true,
+              },
+              "modes": Object {
+                "bubble": Object {
+                  "distance": 400,
+                  "duration": 2,
+                  "opacity": 8,
+                  "size": 40,
+                  "speed": 3,
+                },
+                "grab": Object {
+                  "distance": 400,
+                  "line_linked": Object {
+                    "opacity": 1,
+                  },
+                },
+                "push": Object {
+                  "particles_nb": 4,
+                },
+                "remove": Object {
+                  "particles_nb": 2,
+                },
+                "repulse": Object {
+                  "distance": 200,
+                  "duration": 0.4,
+                },
+              },
+            },
+            "particles": Object {
+              "color": Object {
+                "value": "#ffffff",
+              },
+              "line_linked": Object {
+                "color": "#ffffff",
+                "distance": 150,
+                "enable": false,
+                "opacity": 0.4,
+                "width": 1,
+              },
+              "move": Object {
+                "attract": Object {
+                  "enable": false,
+                  "rotateX": 600,
+                  "rotateY": 868.0624057955,
+                },
+                "bounce": false,
+                "direction": "none",
+                "enable": true,
+                "out_mode": "out",
+                "random": false,
+                "speed": 3.1565905665290903,
+                "straight": false,
+              },
+              "number": Object {
+                "density": Object {
+                  "enable": true,
+                  "value_area": 800,
+                },
+                "value": 80,
+              },
+              "opacity": Object {
+                "anim": Object {
+                  "enable": false,
+                  "opacity_min": 0.1,
+                  "speed": 1,
+                  "sync": false,
+                },
+                "random": false,
+                "value": 0.5,
+              },
+              "shape": Object {
+                "image": Object {
+                  "height": 100,
+                  "src": "img/github.svg",
+                  "width": 100,
+                },
+                "polygon": Object {
+                  "nb_sides": 5,
+                },
+                "stroke": Object {
+                  "color": "#000000",
+                  "width": 0,
+                },
+                "type": "circle",
+              },
+              "size": Object {
+                "anim": Object {
+                  "enable": false,
+                  "size_min": 0.1,
+                  "speed": 40,
+                  "sync": false,
+                },
+                "random": true,
+                "value": 3,
+              },
+            },
+            "retina_detect": true,
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "className": "particles",
+      "height": "100%",
+      "params": Object {
+        "interactivity": Object {
+          "detect_on": "canvas",
+          "events": Object {
+            "onclick": Object {
+              "enable": false,
+              "mode": "push",
+            },
+            "onhover": Object {
+              "enable": false,
+              "mode": "repulse",
+            },
+            "resize": true,
+          },
+          "modes": Object {
+            "bubble": Object {
+              "distance": 400,
+              "duration": 2,
+              "opacity": 8,
+              "size": 40,
+              "speed": 3,
+            },
+            "grab": Object {
+              "distance": 400,
+              "line_linked": Object {
+                "opacity": 1,
+              },
+            },
+            "push": Object {
+              "particles_nb": 4,
+            },
+            "remove": Object {
+              "particles_nb": 2,
+            },
+            "repulse": Object {
+              "distance": 200,
+              "duration": 0.4,
+            },
+          },
+        },
+        "particles": Object {
+          "color": Object {
+            "value": "#ffffff",
+          },
+          "line_linked": Object {
+            "color": "#ffffff",
+            "distance": 150,
+            "enable": false,
+            "opacity": 0.4,
+            "width": 1,
+          },
+          "move": Object {
+            "attract": Object {
+              "enable": false,
+              "rotateX": 600,
+              "rotateY": 868.0624057955,
+            },
+            "bounce": false,
+            "direction": "none",
+            "enable": true,
+            "out_mode": "out",
+            "random": false,
+            "speed": 3.1565905665290903,
+            "straight": false,
+          },
+          "number": Object {
+            "density": Object {
+              "enable": true,
+              "value_area": 800,
+            },
+            "value": 80,
+          },
+          "opacity": Object {
+            "anim": Object {
+              "enable": false,
+              "opacity_min": 0.1,
+              "speed": 1,
+              "sync": false,
+            },
+            "random": false,
+            "value": 0.5,
+          },
+          "shape": Object {
+            "image": Object {
+              "height": 100,
+              "src": "img/github.svg",
+              "width": 100,
+            },
+            "polygon": Object {
+              "nb_sides": 5,
+            },
+            "stroke": Object {
+              "color": "#000000",
+              "width": 0,
+            },
+            "type": "circle",
+          },
+          "size": Object {
+            "anim": Object {
+              "enable": false,
+              "size_min": 0.1,
+              "speed": 40,
+              "sync": false,
+            },
+            "random": true,
+            "value": 3,
+          },
+        },
+        "retina_detect": true,
+      },
+      "style": Object {},
+      "width": "100%",
+    },
+    "ref": null,
+    "rendered": null,
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "className": "particles",
+        "height": "100%",
+        "params": Object {
+          "interactivity": Object {
+            "detect_on": "canvas",
+            "events": Object {
+              "onclick": Object {
+                "enable": false,
+                "mode": "push",
+              },
+              "onhover": Object {
+                "enable": false,
+                "mode": "repulse",
+              },
+              "resize": true,
+            },
+            "modes": Object {
+              "bubble": Object {
+                "distance": 400,
+                "duration": 2,
+                "opacity": 8,
+                "size": 40,
+                "speed": 3,
+              },
+              "grab": Object {
+                "distance": 400,
+                "line_linked": Object {
+                  "opacity": 1,
+                },
+              },
+              "push": Object {
+                "particles_nb": 4,
+              },
+              "remove": Object {
+                "particles_nb": 2,
+              },
+              "repulse": Object {
+                "distance": 200,
+                "duration": 0.4,
+              },
+            },
+          },
+          "particles": Object {
+            "color": Object {
+              "value": "#ffffff",
+            },
+            "line_linked": Object {
+              "color": "#ffffff",
+              "distance": 150,
+              "enable": false,
+              "opacity": 0.4,
+              "width": 1,
+            },
+            "move": Object {
+              "attract": Object {
+                "enable": false,
+                "rotateX": 600,
+                "rotateY": 868.0624057955,
+              },
+              "bounce": false,
+              "direction": "none",
+              "enable": true,
+              "out_mode": "out",
+              "random": false,
+              "speed": 3.1565905665290903,
+              "straight": false,
+            },
+            "number": Object {
+              "density": Object {
+                "enable": true,
+                "value_area": 800,
+              },
+              "value": 80,
+            },
+            "opacity": Object {
+              "anim": Object {
+                "enable": false,
+                "opacity_min": 0.1,
+                "speed": 1,
+                "sync": false,
+              },
+              "random": false,
+              "value": 0.5,
+            },
+            "shape": Object {
+              "image": Object {
+                "height": 100,
+                "src": "img/github.svg",
+                "width": 100,
+              },
+              "polygon": Object {
+                "nb_sides": 5,
+              },
+              "stroke": Object {
+                "color": "#000000",
+                "width": 0,
+              },
+              "type": "circle",
+            },
+            "size": Object {
+              "anim": Object {
+                "enable": false,
+                "size_min": 0.1,
+                "speed": 40,
+                "sync": false,
+              },
+              "random": true,
+              "value": 3,
+            },
+          },
+          "retina_detect": true,
+        },
+        "style": Object {},
+        "width": "100%",
+      },
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
