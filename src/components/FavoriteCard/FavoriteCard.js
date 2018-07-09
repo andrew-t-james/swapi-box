@@ -12,7 +12,7 @@ const FavoriteCard = ({ name, updateFavorites }) => {
   return (
     <div className="favorite__card">
       <h2 className="favorite__card--heading">{name}</h2>
-      <span onClick={() => updateFavorites(favorite)}>
+      <span className="favorite__card--button" onClick={() => updateFavorites(favorite)}>
         <Button name="⭐" customStyle={'btn favorite--button'}/>
       </span>
     </div>

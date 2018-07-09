@@ -21,7 +21,9 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h2>
+        <h2
+          className="favorite__card--heading"
+>
           Wookie
 </h2>,
         <span
@@ -29,10 +31,12 @@ ShallowWrapper {
           onClick={[Function]}
 >
           <Button
+                    customStyle="btn favorite--button"
                     name="⭐"
           />
 </span>,
       ],
+      "className": "favorite__card",
     },
     "ref": null,
     "rendered": Array [
@@ -42,6 +46,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Wookie",
+          "className": "favorite__card--heading",
         },
         "ref": null,
         "rendered": "Wookie",
@@ -53,6 +58,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": <Button
+            customStyle="btn favorite--button"
             name="⭐"
 />,
           "className": "favorite__card--button",
@@ -64,6 +70,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "customStyle": "btn favorite--button",
             "name": "⭐",
           },
           "ref": null,
@@ -82,7 +89,9 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h2>
+          <h2
+            className="favorite__card--heading"
+>
             Wookie
 </h2>,
           <span
@@ -90,10 +99,12 @@ ShallowWrapper {
             onClick={[Function]}
 >
             <Button
+                        customStyle="btn favorite--button"
                         name="⭐"
             />
 </span>,
         ],
+        "className": "favorite__card",
       },
       "ref": null,
       "rendered": Array [
@@ -103,6 +114,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Wookie",
+            "className": "favorite__card--heading",
           },
           "ref": null,
           "rendered": "Wookie",
@@ -114,6 +126,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Button
+              customStyle="btn favorite--button"
               name="⭐"
 />,
             "className": "favorite__card--button",
@@ -125,6 +138,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "customStyle": "btn favorite--button",
               "name": "⭐",
             },
             "ref": null,
