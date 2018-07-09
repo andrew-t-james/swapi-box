@@ -2,8 +2,11 @@
 ## About this project
 This project was created with `create-react-app`, Start Wars API, and was exercise in learning to test asynchronous JavaScript.
 
-[Demo](https://swapibox-react.surge.sh)
-[Reop](https://github.com/andrew-t-james/swapi-box)
+### View Demo App
+View App [Here](https://swapibox-react.surge.sh)
+
+### Repo
+View [Repo](https://github.com/andrew-t-james/swapi-box)
 
 ## Installation and Setup Instructions
 
