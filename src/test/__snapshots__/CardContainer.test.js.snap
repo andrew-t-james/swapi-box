@@ -316,6 +316,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
+              undefined,
+              false,
               false,
               false,
               Array [
@@ -330,6 +332,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
+            undefined,
             false,
             false,
             false,
@@ -644,6 +648,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 false,
+                undefined,
+                false,
                 false,
                 false,
                 Array [
@@ -658,6 +664,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
+              undefined,
               false,
               false,
               false,
@@ -1024,6 +1032,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
+              undefined,
+              false,
               false,
               false,
               Array [],
@@ -1046,6 +1056,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
+            undefined,
             false,
             false,
             false,
@@ -1415,6 +1427,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 false,
+                undefined,
+                false,
                 false,
                 false,
                 Array [],
@@ -1437,6 +1451,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
+              undefined,
               false,
               false,
               false,
@@ -1835,6 +1851,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
+              undefined,
               Array [
                 <PersonCard
                   favorite={false}
@@ -1854,6 +1872,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
+            undefined,
             Object {
               "instance": null,
               "key": "0",
@@ -2179,6 +2199,8 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
+                undefined,
                 Array [
                   <PersonCard
                     favorite={false}
@@ -2198,6 +2220,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
+              undefined,
               Object {
                 "instance": null,
                 "key": "0",
@@ -2585,6 +2609,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
+              undefined,
+              false,
               Array [
                 <PlanetCard
                   climate="temperate"
@@ -2610,6 +2636,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
+            undefined,
             false,
             Object {
               "instance": null,
@@ -2955,6 +2983,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 false,
+                undefined,
+                false,
                 Array [
                   <PlanetCard
                     climate="temperate"
@@ -2980,6 +3010,8 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
+              undefined,
               false,
               Object {
                 "instance": null,
@@ -3353,6 +3385,8 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               false,
+              undefined,
+              false,
               false,
               Array [
                 <VehicleCard
@@ -3371,6 +3405,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
+            undefined,
             false,
             false,
             Object {
@@ -3697,6 +3733,8 @@ ShallowWrapper {
             "props": Object {
               "children": Array [
                 false,
+                undefined,
+                false,
                 false,
                 Array [
                   <VehicleCard
@@ -3716,6 +3754,8 @@ ShallowWrapper {
             "ref": null,
             "rendered": Array [
               false,
+              undefined,
+              false,
               false,
               Object {
                 "instance": null,
@@ -3733,6 +3773,685 @@ ShallowWrapper {
                 "rendered": null,
                 "type": [Function],
               },
+              false,
+              false,
+            ],
+            "type": "section",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "section",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
+
+exports[`CardContainer should match shapshot when vehicle isLoading is true 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <CardContainer
+    favorites={Array []}
+    fetchPeopleData={[Function]}
+    fetchPlanetData={[Function]}
+    fetchVehicleData={[Function]}
+    isLoading={true}
+    people={Array []}
+    planets={Array []}
+    selected={null}
+    vehicles={
+        Array [
+            Object {
+              "favorite": false,
+              "model": "Digger Crawler",
+              "name": "Sand Crawler",
+              "passengers": "30",
+              "vehicleClass": "wheeled",
+            },
+          ]
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div>
+        <nav>
+                <ul
+                        className="card-container__nav"
+                >
+                        <li
+                                className=""
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="people"
+                                        customStyle="card-container__nav--button btn"
+                                        name="People"
+                                />
+                        </li>
+                        <li
+                                className=""
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="planets"
+                                        customStyle="card-container__nav--button btn"
+                                        name="Planets"
+                                />
+                        </li>
+                        <li
+                                className=""
+                                onClick={[Function]}
+                        >
+                                <Button
+                                        className="vehicles"
+                                        customStyle="card-container__nav--button btn"
+                                        name="Vehicles"
+                                />
+                        </li>
+                </ul>
+        </nav>
+        <section
+                className="card-container"
+        >
+                <Loader />
+        </section>
+</div>,
+      "className": "main-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <nav>
+            <ul
+                        className="card-container__nav"
+            >
+                        <li
+                                    className=""
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="people"
+                                                customStyle="card-container__nav--button btn"
+                                                name="People"
+                                    />
+                        </li>
+                        <li
+                                    className=""
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="planets"
+                                                customStyle="card-container__nav--button btn"
+                                                name="Planets"
+                                    />
+                        </li>
+                        <li
+                                    className=""
+                                    onClick={[Function]}
+                        >
+                                    <Button
+                                                className="vehicles"
+                                                customStyle="card-container__nav--button btn"
+                                                name="Vehicles"
+                                    />
+                        </li>
+            </ul>
+</nav>,
+          <section
+            className="card-container"
+>
+            <Loader />
+</section>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <ul
+              className="card-container__nav"
+>
+              <li
+                            className=""
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="people"
+                                          customStyle="card-container__nav--button btn"
+                                          name="People"
+                            />
+              </li>
+              <li
+                            className=""
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="planets"
+                                          customStyle="card-container__nav--button btn"
+                                          name="Planets"
+                            />
+              </li>
+              <li
+                            className=""
+                            onClick={[Function]}
+              >
+                            <Button
+                                          className="vehicles"
+                                          customStyle="card-container__nav--button btn"
+                                          name="Vehicles"
+                            />
+              </li>
+</ul>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <li
+                  className=""
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="people"
+                                    customStyle="card-container__nav--button btn"
+                                    name="People"
+                  />
+</li>,
+                <li
+                  className=""
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="planets"
+                                    customStyle="card-container__nav--button btn"
+                                    name="Planets"
+                  />
+</li>,
+                <li
+                  className=""
+                  onClick={[Function]}
+>
+                  <Button
+                                    className="vehicles"
+                                    customStyle="card-container__nav--button btn"
+                                    name="Vehicles"
+                  />
+</li>,
+              ],
+              "className": "card-container__nav",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="people"
+                    customStyle="card-container__nav--button btn"
+                    name="People"
+/>,
+                  "className": "",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "people",
+                    "customStyle": "card-container__nav--button btn",
+                    "name": "People",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="planets"
+                    customStyle="card-container__nav--button btn"
+                    name="Planets"
+/>,
+                  "className": "",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "planets",
+                    "customStyle": "card-container__nav--button btn",
+                    "name": "Planets",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": <Button
+                    className="vehicles"
+                    customStyle="card-container__nav--button btn"
+                    name="Vehicles"
+/>,
+                  "className": "",
+                  "onClick": [Function],
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "className": "vehicles",
+                    "customStyle": "card-container__nav--button btn",
+                    "name": "Vehicles",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": "li",
+              },
+            ],
+            "type": "ul",
+          },
+          "type": "nav",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              false,
+              <Loader />,
+              false,
+              false,
+              false,
+              false,
+              false,
+            ],
+            "className": "card-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            false,
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            false,
+            false,
+            false,
+            false,
+            false,
+          ],
+          "type": "section",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "section",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
+          <nav>
+                    <ul
+                              className="card-container__nav"
+                    >
+                              <li
+                                        className=""
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="people"
+                                                  customStyle="card-container__nav--button btn"
+                                                  name="People"
+                                        />
+                              </li>
+                              <li
+                                        className=""
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="planets"
+                                                  customStyle="card-container__nav--button btn"
+                                                  name="Planets"
+                                        />
+                              </li>
+                              <li
+                                        className=""
+                                        onClick={[Function]}
+                              >
+                                        <Button
+                                                  className="vehicles"
+                                                  customStyle="card-container__nav--button btn"
+                                                  name="Vehicles"
+                                        />
+                              </li>
+                    </ul>
+          </nav>
+          <section
+                    className="card-container"
+          >
+                    <Loader />
+          </section>
+</div>,
+        "className": "main-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <nav>
+              <ul
+                            className="card-container__nav"
+              >
+                            <li
+                                          className=""
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="people"
+                                                        customStyle="card-container__nav--button btn"
+                                                        name="People"
+                                          />
+                            </li>
+                            <li
+                                          className=""
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="planets"
+                                                        customStyle="card-container__nav--button btn"
+                                                        name="Planets"
+                                          />
+                            </li>
+                            <li
+                                          className=""
+                                          onClick={[Function]}
+                            >
+                                          <Button
+                                                        className="vehicles"
+                                                        customStyle="card-container__nav--button btn"
+                                                        name="Vehicles"
+                                          />
+                            </li>
+              </ul>
+</nav>,
+            <section
+              className="card-container"
+>
+              <Loader />
+</section>,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="card-container__nav"
+>
+                <li
+                                className=""
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="people"
+                                                customStyle="card-container__nav--button btn"
+                                                name="People"
+                                />
+                </li>
+                <li
+                                className=""
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="planets"
+                                                customStyle="card-container__nav--button btn"
+                                                name="Planets"
+                                />
+                </li>
+                <li
+                                className=""
+                                onClick={[Function]}
+                >
+                                <Button
+                                                className="vehicles"
+                                                customStyle="card-container__nav--button btn"
+                                                name="Vehicles"
+                                />
+                </li>
+</ul>,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className=""
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="people"
+                                        customStyle="card-container__nav--button btn"
+                                        name="People"
+                    />
+</li>,
+                  <li
+                    className=""
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="planets"
+                                        customStyle="card-container__nav--button btn"
+                                        name="Planets"
+                    />
+</li>,
+                  <li
+                    className=""
+                    onClick={[Function]}
+>
+                    <Button
+                                        className="vehicles"
+                                        customStyle="card-container__nav--button btn"
+                                        name="Vehicles"
+                    />
+</li>,
+                ],
+                "className": "card-container__nav",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="people"
+                      customStyle="card-container__nav--button btn"
+                      name="People"
+/>,
+                    "className": "",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "people",
+                      "customStyle": "card-container__nav--button btn",
+                      "name": "People",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="planets"
+                      customStyle="card-container__nav--button btn"
+                      name="Planets"
+/>,
+                    "className": "",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "planets",
+                      "customStyle": "card-container__nav--button btn",
+                      "name": "Planets",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <Button
+                      className="vehicles"
+                      customStyle="card-container__nav--button btn"
+                      name="Vehicles"
+/>,
+                    "className": "",
+                    "onClick": [Function],
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "className": "vehicles",
+                      "customStyle": "card-container__nav--button btn",
+                      "name": "Vehicles",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "nav",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                false,
+                <Loader />,
+                false,
+                false,
+                false,
+                false,
+                false,
+              ],
+              "className": "card-container",
+            },
+            "ref": null,
+            "rendered": Array [
+              false,
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              false,
+              false,
+              false,
               false,
               false,
             ],
@@ -3831,7 +4550,17 @@ ReactWrapper {
                 </nav>
                 <section
                         class="card-container"
-                />
+                >
+                        <div
+                                class="no-selection"
+                        >
+                                <h2
+                                        class="no-selection--heading"
+                                >
+                                        Please Make a Selection
+                                </h2>
+                        </div>
+                </section>
         </div>
 </section>,
       "key": undefined,
@@ -3877,7 +4606,15 @@ ReactWrapper {
           <section
                     className="card-container"
           >
-                    
+                    <div
+                              className="no-selection"
+                    >
+                              <h2
+                                        className="no-selection--heading"
+                              >
+                                        Please Make a Selection
+                              </h2>
+                    </div>
           </section>
 </div>,
         "className": "main-container",
@@ -3921,7 +4658,17 @@ ReactWrapper {
             </nav>
             <section
                         class="card-container"
-            />
+            >
+                        <div
+                                    class="no-selection"
+                        >
+                                    <h2
+                                                class="no-selection--heading"
+                                    >
+                                                Please Make a Selection
+                                    </h2>
+                        </div>
+            </section>
 </div>,
           "key": undefined,
           "nodeType": "host",
@@ -3966,7 +4713,15 @@ ReactWrapper {
               <section
                 className="card-container"
 >
-                
+                <div
+                                className="no-selection"
+                >
+                                <h2
+                                                className="no-selection--heading"
+                                >
+                                                Please Make a Selection
+                                </h2>
+                </div>
 </section>,
             ],
           },
@@ -4159,12 +4914,17 @@ ReactWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "People",
+                              "children": Array [
+                                "People",
+                                " ",
+                                undefined,
+                              ],
                               "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
                               "People",
+                              " ",
                             ],
                             "type": "button",
                           },
@@ -4215,12 +4975,17 @@ ReactWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "Planets",
+                              "children": Array [
+                                "Planets",
+                                " ",
+                                undefined,
+                              ],
                               "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
                               "Planets",
+                              " ",
                             ],
                             "type": "button",
                           },
@@ -4271,12 +5036,17 @@ ReactWrapper {
                             "key": undefined,
                             "nodeType": "host",
                             "props": Object {
-                              "children": "Vehicles",
+                              "children": Array [
+                                "Vehicles",
+                                " ",
+                                undefined,
+                              ],
                               "className": "card-container__nav--button btn",
                             },
                             "ref": null,
                             "rendered": Array [
                               "Vehicles",
+                              " ",
                             ],
                             "type": "button",
                           },
@@ -4294,11 +5064,31 @@ ReactWrapper {
             Object {
               "instance": <section
                 class="card-container"
-/>,
+>
+                <div
+                                class="no-selection"
+                >
+                                <h2
+                                                class="no-selection--heading"
+                                >
+                                                Please Make a Selection
+                                </h2>
+                </div>
+</section>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <div
+                    className="no-selection"
+>
+                    <h2
+                                        className="no-selection--heading"
+                    >
+                                        Please Make a Selection
+                    </h2>
+</div>,
+                  undefined,
                   false,
                   false,
                   false,
@@ -4309,13 +5099,49 @@ ReactWrapper {
               },
               "ref": null,
               "rendered": Array [
-                Array [
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                ],
+                Object {
+                  "instance": <div
+                    class="no-selection"
+>
+                    <h2
+                                        class="no-selection--heading"
+                    >
+                                        Please Make a Selection
+                    </h2>
+</div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h2
+                      className="no-selection--heading"
+>
+                      Please Make a Selection
+</h2>,
+                    "className": "no-selection",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <h2
+                        class="no-selection--heading"
+>
+                        Please Make a Selection
+</h2>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Please Make a Selection",
+                        "className": "no-selection--heading",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Please Make a Selection",
+                      ],
+                      "type": "h2",
+                    },
+                  ],
+                  "type": "div",
+                },
               ],
               "type": "section",
             },
@@ -4383,7 +5209,17 @@ ReactWrapper {
                     </nav>
                     <section
                               class="card-container"
-                    />
+                    >
+                              <div
+                                        class="no-selection"
+                              >
+                                        <h2
+                                                  class="no-selection--heading"
+                                        >
+                                                  Please Make a Selection
+                                        </h2>
+                              </div>
+                    </section>
           </div>
 </section>,
         "key": undefined,
@@ -4429,7 +5265,15 @@ ReactWrapper {
             <section
                         className="card-container"
             >
-                        
+                        <div
+                                    className="no-selection"
+                        >
+                                    <h2
+                                                className="no-selection--heading"
+                                    >
+                                                Please Make a Selection
+                                    </h2>
+                        </div>
             </section>
 </div>,
           "className": "main-container",
@@ -4473,7 +5317,17 @@ ReactWrapper {
               </nav>
               <section
                             class="card-container"
-              />
+              >
+                            <div
+                                          class="no-selection"
+                            >
+                                          <h2
+                                                        class="no-selection--heading"
+                                          >
+                                                        Please Make a Selection
+                                          </h2>
+                            </div>
+              </section>
 </div>,
             "key": undefined,
             "nodeType": "host",
@@ -4518,7 +5372,15 @@ ReactWrapper {
                 <section
                   className="card-container"
 >
-                  
+                  <div
+                                    className="no-selection"
+                  >
+                                    <h2
+                                                      className="no-selection--heading"
+                                    >
+                                                      Please Make a Selection
+                                    </h2>
+                  </div>
 </section>,
               ],
             },
@@ -4711,12 +5573,17 @@ ReactWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "People",
+                                "children": Array [
+                                  "People",
+                                  " ",
+                                  undefined,
+                                ],
                                 "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
                                 "People",
+                                " ",
                               ],
                               "type": "button",
                             },
@@ -4767,12 +5634,17 @@ ReactWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "Planets",
+                                "children": Array [
+                                  "Planets",
+                                  " ",
+                                  undefined,
+                                ],
                                 "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
                                 "Planets",
+                                " ",
                               ],
                               "type": "button",
                             },
@@ -4823,12 +5695,17 @@ ReactWrapper {
                               "key": undefined,
                               "nodeType": "host",
                               "props": Object {
-                                "children": "Vehicles",
+                                "children": Array [
+                                  "Vehicles",
+                                  " ",
+                                  undefined,
+                                ],
                                 "className": "card-container__nav--button btn",
                               },
                               "ref": null,
                               "rendered": Array [
                                 "Vehicles",
+                                " ",
                               ],
                               "type": "button",
                             },
@@ -4846,11 +5723,31 @@ ReactWrapper {
               Object {
                 "instance": <section
                   class="card-container"
-/>,
+>
+                  <div
+                                    class="no-selection"
+                  >
+                                    <h2
+                                                      class="no-selection--heading"
+                                    >
+                                                      Please Make a Selection
+                                    </h2>
+                  </div>
+</section>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
+                    <div
+                      className="no-selection"
+>
+                      <h2
+                                            className="no-selection--heading"
+                      >
+                                            Please Make a Selection
+                      </h2>
+</div>,
+                    undefined,
                     false,
                     false,
                     false,
@@ -4861,13 +5758,49 @@ ReactWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  Array [
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                  ],
+                  Object {
+                    "instance": <div
+                      class="no-selection"
+>
+                      <h2
+                                            class="no-selection--heading"
+                      >
+                                            Please Make a Selection
+                      </h2>
+</div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <h2
+                        className="no-selection--heading"
+>
+                        Please Make a Selection
+</h2>,
+                      "className": "no-selection",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <h2
+                          class="no-selection--heading"
+>
+                          Please Make a Selection
+</h2>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Please Make a Selection",
+                          "className": "no-selection--heading",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Please Make a Selection",
+                        ],
+                        "type": "h2",
+                      },
+                    ],
+                    "type": "div",
+                  },
                 ],
                 "type": "section",
               },

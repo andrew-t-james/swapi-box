@@ -52,9 +52,12 @@
 
 .favorite--button {
   border: none;
+  font-size: 1.4rem;
 }
 
-.no-favorites {
+.no-favorites,
+.no-selection,
+.loader {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -62,7 +65,8 @@
   justify-content: center;
 }
 
-.no-favorites--heading {
+.no-favorites--heading,
+.no-selection--heading {
   font-size: 4rem;
   font-weight: 100;
 }

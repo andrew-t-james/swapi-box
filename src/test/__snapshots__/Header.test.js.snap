@@ -5,6 +5,12 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Header
+    favorites={
+        Array [
+            Object {},
+            Object {},
+          ]
+    }
     updateSelection={[Function]}
 />,
   Symbol(enzyme.__renderer__): Object {
@@ -33,6 +39,7 @@ ShallowWrapper {
                     onClick={[Function]}
           >
                     <Button
+                              amount={2}
                               customStyle="card-container__nav--button btn"
                               name="Favorites"
                     />
@@ -65,6 +72,7 @@ ShallowWrapper {
             onClick={[Function]}
 >
             <Button
+                        amount={2}
                         customStyle="card-container__nav--button btn"
                         name="Favorites"
             />
@@ -78,6 +86,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": <Button
+              amount={2}
               customStyle="card-container__nav--button btn"
               name="Favorites"
 />,
@@ -90,6 +99,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
+              "amount": 2,
               "customStyle": "card-container__nav--button btn",
               "name": "Favorites",
             },
@@ -124,6 +134,7 @@ ShallowWrapper {
                         onClick={[Function]}
             >
                         <Button
+                                    amount={2}
                                     customStyle="card-container__nav--button btn"
                                     name="Favorites"
                         />
@@ -156,6 +167,7 @@ ShallowWrapper {
               onClick={[Function]}
 >
               <Button
+                            amount={2}
                             customStyle="card-container__nav--button btn"
                             name="Favorites"
               />
@@ -169,6 +181,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": <Button
+                amount={2}
                 customStyle="card-container__nav--button btn"
                 name="Favorites"
 />,
@@ -181,6 +194,7 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "function",
               "props": Object {
+                "amount": 2,
                 "customStyle": "card-container__nav--button btn",
                 "name": "Favorites",
               },

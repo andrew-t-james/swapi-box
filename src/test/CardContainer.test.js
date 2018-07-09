@@ -125,6 +125,23 @@ describe('CardContainer', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
+  test('should match shapshot when vehicle isLoading is true', async () => {
+    wrapper = shallow(
+      <CardContainer
+        people={mockPeople}
+        planets={mockPlanets}
+        vehicles={mockCleanedVehicle}
+        selected={null}
+        isLoading={true}
+        favorites={mockFavorites}
+        fetchPeopleData={mockFunc}
+        fetchPlanetData={mockFunc}
+        fetchVehicleData={mockFunc}
+      />
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
   test('should match snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });

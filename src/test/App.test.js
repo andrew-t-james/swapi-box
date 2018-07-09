@@ -222,6 +222,11 @@ describe('App', () => {
 
   });
 
+  test('should invoke fetchMovieScroll on mount', async () => {
+    const spy =  jest.spyOn(wrapper.instance(), 'fetchMovieScroll');
+    await wrapper.instance().componentDidMount();
+    expect(spy).toHaveBeenCalled();
+  });
 
   test('renders without crashing', () => {
     expect(wrapper).toMatchSnapshot();

@@ -23,9 +23,13 @@ class App extends Component {
     };
   }
 
-  componentDidMount = () => {
-    this.fetchMovieScroll();
-  }
+   componentDidMount = async () => {
+     await this.fetchMovieScroll();
+   }
+
+   updateLoadingState = () => {
+     this.setState({ isLoading: !this.state.isLoading });
+   }
 
   fetchMovieScroll = async () =>  {
     try {
@@ -37,27 +41,30 @@ class App extends Component {
   }
 
   fetchPeopleData = async () => {
+    this.updateLoadingState();
     try {
       const people = await getPeopleData();
-      this.setState({ people, selected: 'people' });
+      this.setState({ people, selected: 'people', isLoading: this.updateLoadingState() });
     } catch (error) {
       this.setState({ hasError: true });
     }
   }
 
   fetchPlanetData = async () => {
+    this.updateLoadingState();
     try {
       const planets = await getPlanetData();
-      this.setState({ planets, selected: 'planets' });
+      this.setState({ planets, selected: 'planets', isLoading: this.updateLoadingState() });
     } catch (error) {
       this.setState({ hasError: true });
     }
   }
 
   fetchVehicleData = async () => {
+    this.updateLoadingState();
     try {
       const vehicles = await getVehicleData();
-      this.setState({ vehicles, selected: 'vehicles' });
+      this.setState({ vehicles, selected: 'vehicles', isLoading: this.updateLoadingState() });
     } catch (error) {
       this.setState({ hasError: true });
     }
@@ -82,12 +89,13 @@ class App extends Component {
   }
 
   render() {
-    const { people, movie, planets, selected, vehicles, favorites } = this.state;
+    const { people, movie, planets, selected, vehicles, isLoading, favorites } = this.state;
 
     return (
       <main className="grid-container">
         <Header
           selected={selected}
+          favorites={favorites}
           updateSelection={this.updateSelection}
         />
         <SideBar movie={movie} />
@@ -97,6 +105,7 @@ class App extends Component {
           selected={selected}
           vehicles={vehicles}
           favorites={favorites}
+          isLoading={isLoading}
           fetchPeopleData={this.fetchPeopleData}
           fetchPlanetData={this.fetchPlanetData}
           fetchVehicleData={this.fetchVehicleData}

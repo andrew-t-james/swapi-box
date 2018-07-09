@@ -19,6 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header
+          favorites={Array []}
           selected={null}
           updateSelection={[Function]}
 />,
@@ -30,6 +31,7 @@ ShallowWrapper {
           fetchPeopleData={[Function]}
           fetchPlanetData={[Function]}
           fetchVehicleData={[Function]}
+          isLoading={false}
           people={Array []}
           planets={Array []}
           selected={null}
@@ -47,6 +49,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "favorites": Array [],
           "selected": null,
           "updateSelection": [Function],
         },
@@ -74,6 +77,7 @@ ShallowWrapper {
           "fetchPeopleData": [Function],
           "fetchPlanetData": [Function],
           "fetchVehicleData": [Function],
+          "isLoading": false,
           "people": Array [],
           "planets": Array [],
           "selected": null,
@@ -104,6 +108,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header
+            favorites={Array []}
             selected={null}
             updateSelection={[Function]}
 />,
@@ -115,6 +120,7 @@ ShallowWrapper {
             fetchPeopleData={[Function]}
             fetchPlanetData={[Function]}
             fetchVehicleData={[Function]}
+            isLoading={false}
             people={Array []}
             planets={Array []}
             selected={null}
@@ -132,6 +138,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
+            "favorites": Array [],
             "selected": null,
             "updateSelection": [Function],
           },
@@ -159,6 +166,7 @@ ShallowWrapper {
             "fetchPeopleData": [Function],
             "fetchPlanetData": [Function],
             "fetchVehicleData": [Function],
+            "isLoading": false,
             "people": Array [],
             "planets": Array [],
             "selected": null,

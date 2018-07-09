@@ -1,11 +1,13 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Button from '../components/Button/Button';
+import Loader from '../components/Loader/Loader';
 
-describe('Button', () => {
+describe('Loader', () => {
   let wrapper;
 
-  beforeEach(() => wrapper = shallow(<Button name="button" amount={2}/>));
+  beforeEach(() => wrapper = shallow(
+    <Loader />
+  ));
 
   afterEach(() => wrapper.unmount());
 

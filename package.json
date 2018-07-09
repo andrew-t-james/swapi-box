@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "eslint-plugin-react": "7.10.0",
+    "halogenium": "2.2.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-particles-js": "2.2.0",
@@ -37,7 +38,7 @@
     ]
   },
   "lint-staged": {
-    "src/*.js": [
+    "src/**/**/*.js": [
       "npm run eslint",
       "git add"
     ]
