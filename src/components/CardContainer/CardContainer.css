@@ -55,6 +55,7 @@
 }
 
 .no-favorites,
+.no-selection,
 .loader {
   align-items: center;
   display: flex;
@@ -63,7 +64,8 @@
   justify-content: center;
 }
 
-.no-favorites--heading {
+.no-favorites--heading,
+.no-selection--heading {
   font-size: 4rem;
   font-weight: 100;
 }

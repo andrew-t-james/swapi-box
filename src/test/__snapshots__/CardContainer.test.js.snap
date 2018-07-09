@@ -315,6 +315,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               undefined,
               false,
               false,
@@ -331,6 +332,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             undefined,
             false,
             false,
@@ -645,6 +647,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 undefined,
                 false,
                 false,
@@ -661,6 +664,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               undefined,
               false,
               false,
@@ -1027,6 +1031,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               undefined,
               false,
               false,
@@ -1051,6 +1056,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             undefined,
             false,
             false,
@@ -1420,6 +1426,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 undefined,
                 false,
                 false,
@@ -1444,6 +1451,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               undefined,
               false,
               false,
@@ -1843,6 +1851,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               undefined,
               Array [
                 <PersonCard
@@ -1863,6 +1872,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             undefined,
             Object {
               "instance": null,
@@ -2189,6 +2199,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 undefined,
                 Array [
                   <PersonCard
@@ -2209,6 +2220,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               undefined,
               Object {
                 "instance": null,
@@ -2596,6 +2608,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               undefined,
               false,
               Array [
@@ -2623,6 +2636,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             undefined,
             false,
             Object {
@@ -2968,6 +2982,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 undefined,
                 false,
                 Array [
@@ -2995,6 +3010,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               undefined,
               false,
               Object {
@@ -3368,6 +3384,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               undefined,
               false,
               false,
@@ -3388,6 +3405,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             undefined,
             false,
             false,
@@ -3714,6 +3732,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 undefined,
                 false,
                 false,
@@ -3734,6 +3753,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               undefined,
               false,
               false,
@@ -4089,6 +4109,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
+              false,
               <Loader />,
               false,
               false,
@@ -4100,6 +4121,7 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
+            false,
             Object {
               "instance": null,
               "key": undefined,
@@ -4405,6 +4427,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "children": Array [
+                false,
                 <Loader />,
                 false,
                 false,
@@ -4416,6 +4439,7 @@ ShallowWrapper {
             },
             "ref": null,
             "rendered": Array [
+              false,
               Object {
                 "instance": null,
                 "key": undefined,
@@ -4526,7 +4550,17 @@ ReactWrapper {
                 </nav>
                 <section
                         class="card-container"
-                />
+                >
+                        <div
+                                class="no-selection"
+                        >
+                                <h2
+                                        class="no-selection--heading"
+                                >
+                                        Please Make a Selection
+                                </h2>
+                        </div>
+                </section>
         </div>
 </section>,
       "key": undefined,
@@ -4572,7 +4606,15 @@ ReactWrapper {
           <section
                     className="card-container"
           >
-                    
+                    <div
+                              className="no-selection"
+                    >
+                              <h2
+                                        className="no-selection--heading"
+                              >
+                                        Please Make a Selection
+                              </h2>
+                    </div>
           </section>
 </div>,
         "className": "main-container",
@@ -4616,7 +4658,17 @@ ReactWrapper {
             </nav>
             <section
                         class="card-container"
-            />
+            >
+                        <div
+                                    class="no-selection"
+                        >
+                                    <h2
+                                                class="no-selection--heading"
+                                    >
+                                                Please Make a Selection
+                                    </h2>
+                        </div>
+            </section>
 </div>,
           "key": undefined,
           "nodeType": "host",
@@ -4661,7 +4713,15 @@ ReactWrapper {
               <section
                 className="card-container"
 >
-                
+                <div
+                                className="no-selection"
+                >
+                                <h2
+                                                className="no-selection--heading"
+                                >
+                                                Please Make a Selection
+                                </h2>
+                </div>
 </section>,
             ],
           },
@@ -5004,11 +5064,30 @@ ReactWrapper {
             Object {
               "instance": <section
                 class="card-container"
-/>,
+>
+                <div
+                                class="no-selection"
+                >
+                                <h2
+                                                class="no-selection--heading"
+                                >
+                                                Please Make a Selection
+                                </h2>
+                </div>
+</section>,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
                 "children": Array [
+                  <div
+                    className="no-selection"
+>
+                    <h2
+                                        className="no-selection--heading"
+                    >
+                                        Please Make a Selection
+                    </h2>
+</div>,
                   undefined,
                   false,
                   false,
@@ -5020,14 +5099,49 @@ ReactWrapper {
               },
               "ref": null,
               "rendered": Array [
-                Array [
-                  undefined,
-                  false,
-                  false,
-                  false,
-                  false,
-                  false,
-                ],
+                Object {
+                  "instance": <div
+                    class="no-selection"
+>
+                    <h2
+                                        class="no-selection--heading"
+                    >
+                                        Please Make a Selection
+                    </h2>
+</div>,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": <h2
+                      className="no-selection--heading"
+>
+                      Please Make a Selection
+</h2>,
+                    "className": "no-selection",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": <h2
+                        class="no-selection--heading"
+>
+                        Please Make a Selection
+</h2>,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Please Make a Selection",
+                        "className": "no-selection--heading",
+                      },
+                      "ref": null,
+                      "rendered": Array [
+                        "Please Make a Selection",
+                      ],
+                      "type": "h2",
+                    },
+                  ],
+                  "type": "div",
+                },
               ],
               "type": "section",
             },
@@ -5095,7 +5209,17 @@ ReactWrapper {
                     </nav>
                     <section
                               class="card-container"
-                    />
+                    >
+                              <div
+                                        class="no-selection"
+                              >
+                                        <h2
+                                                  class="no-selection--heading"
+                                        >
+                                                  Please Make a Selection
+                                        </h2>
+                              </div>
+                    </section>
           </div>
 </section>,
         "key": undefined,
@@ -5141,7 +5265,15 @@ ReactWrapper {
             <section
                         className="card-container"
             >
-                        
+                        <div
+                                    className="no-selection"
+                        >
+                                    <h2
+                                                className="no-selection--heading"
+                                    >
+                                                Please Make a Selection
+                                    </h2>
+                        </div>
             </section>
 </div>,
           "className": "main-container",
@@ -5185,7 +5317,17 @@ ReactWrapper {
               </nav>
               <section
                             class="card-container"
-              />
+              >
+                            <div
+                                          class="no-selection"
+                            >
+                                          <h2
+                                                        class="no-selection--heading"
+                                          >
+                                                        Please Make a Selection
+                                          </h2>
+                            </div>
+              </section>
 </div>,
             "key": undefined,
             "nodeType": "host",
@@ -5230,7 +5372,15 @@ ReactWrapper {
                 <section
                   className="card-container"
 >
-                  
+                  <div
+                                    className="no-selection"
+                  >
+                                    <h2
+                                                      className="no-selection--heading"
+                                    >
+                                                      Please Make a Selection
+                                    </h2>
+                  </div>
 </section>,
               ],
             },
@@ -5573,11 +5723,30 @@ ReactWrapper {
               Object {
                 "instance": <section
                   class="card-container"
-/>,
+>
+                  <div
+                                    class="no-selection"
+                  >
+                                    <h2
+                                                      class="no-selection--heading"
+                                    >
+                                                      Please Make a Selection
+                                    </h2>
+                  </div>
+</section>,
                 "key": undefined,
                 "nodeType": "host",
                 "props": Object {
                   "children": Array [
+                    <div
+                      className="no-selection"
+>
+                      <h2
+                                            className="no-selection--heading"
+                      >
+                                            Please Make a Selection
+                      </h2>
+</div>,
                     undefined,
                     false,
                     false,
@@ -5589,14 +5758,49 @@ ReactWrapper {
                 },
                 "ref": null,
                 "rendered": Array [
-                  Array [
-                    undefined,
-                    false,
-                    false,
-                    false,
-                    false,
-                    false,
-                  ],
+                  Object {
+                    "instance": <div
+                      class="no-selection"
+>
+                      <h2
+                                            class="no-selection--heading"
+                      >
+                                            Please Make a Selection
+                      </h2>
+</div>,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": <h2
+                        className="no-selection--heading"
+>
+                        Please Make a Selection
+</h2>,
+                      "className": "no-selection",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": <h2
+                          class="no-selection--heading"
+>
+                          Please Make a Selection
+</h2>,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "Please Make a Selection",
+                          "className": "no-selection--heading",
+                        },
+                        "ref": null,
+                        "rendered": Array [
+                          "Please Make a Selection",
+                        ],
+                        "type": "h2",
+                      },
+                    ],
+                    "type": "div",
+                  },
                 ],
                 "type": "section",
               },

@@ -99,6 +99,11 @@ const CardContainer = props => {
           </ul>
         </nav>
         <section className="card-container">
+          {!selected && !isLoading &&
+          <div className="no-selection">
+            <h2 className="no-selection--heading">Please Make a Selection</h2>
+          </div>
+          }
           {isLoading && loader()}
           {selected === 'people' && !isLoading && peopleCards}
           {selected === 'planets' && !isLoading  && planetsCards}
