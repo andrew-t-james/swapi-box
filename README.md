@@ -20,3 +20,12 @@ To Start Server:
 To Visit App:
 
 `localhost:3000`
+
+## Application
+
+**Desktop**
+
+![desktop](./src/images/desktop.png)
+
+**Mobile**
+![mobile](./src/images/mobile.png)
