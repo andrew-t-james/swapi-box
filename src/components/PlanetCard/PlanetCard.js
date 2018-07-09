@@ -13,7 +13,7 @@ const PlanetCard = ({ climate, name, population, favorite, residents, terrain, u
       <div className="card-container__card--header">
         <h2 className="card-container__card--heading">{name}</h2>
         <span className="card__favorite" onClick={() => updateFavorites(planet)}>
-          <Button name="⭐" customStyle={"btn favorite--button"} />
+          <Button name="⭐" customStyle={'btn favorite--button'} />
         </span>
       </div>
       <p>Climate: {climate}</p>
