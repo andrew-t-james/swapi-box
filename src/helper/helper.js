@@ -1,3 +1,5 @@
+const API_ENDPOINT = 'https://swapi.dev/api';
+
 export const fetchHelper = async url => {
   const response = await fetch(url);
 
@@ -5,16 +7,22 @@ export const fetchHelper = async url => {
     throw Error('failed fetch request');
   }
 
-  return await response.json();
+  const data = await response.json();
+  return data;
 };
 
 export const getPeopleData = async () => {
-  const url = 'https://swapi.co/api/people';
-  const getPeopleList = await fetchHelper(url);
-  const cleanedHomeworld = await cleanHomeWord(getPeopleList.results);
-  const cleanedSpecies = await cleanSpecies(cleanedHomeworld);
+  try {
+    const url = `${API_ENDPOINT}/people`;
+    const getPeopleList = await fetchHelper(url);
+    const cleanedHomeworld = await cleanHomeWord(getPeopleList.results);
+    const cleanedSpecies = await cleanSpecies(cleanedHomeworld);
 
-  return cleanedSpecies;
+    return cleanedSpecies;
+  } catch (error) {
+    // eslint-disable-next-line no-console
+    console.log(error);
+  }
 };
 
 export const cleanHomeWord = async peopleList => {
@@ -33,24 +41,37 @@ export const cleanHomeWord = async peopleList => {
 
 export const cleanSpecies = async peopleList => {
   const unresolvedPeopleList = await peopleList.map(async person => {
-    const species = await fetchHelper(person.species);
-    const { homeworld, population, name } = person;
-
-    return {
-      name,
-      homeworld,
-      population,
-      species: species.name,
-      favorite: false
-    };
+    try {
+      if (person.species.length > 0) {
+        const species = await fetchHelper(person.species[0]);
+        const { name,  homeworld, population } = species;
+        return {
+          ...person,
+          species: name,
+          name,
+          homeworld,
+          population,
+          favorite: false
+        };
+      } else {
+        return {
+          ...person,
+          species: 'unknown',
+          favorite: false
+        };
+      }
+    } catch (error) {
+    // eslint-disable-next-line no-console
+      console.log(error);
+    }
   });
   return Promise.all(unresolvedPeopleList);
 };
 
 
 export const cleanMovieScroll = async () => {
-  const randomNum = Math.floor(Math.random() * 7) + 1;
-  const movie = await fetchHelper(`https://swapi.co/api/films/${randomNum}/`);
+  const randomNum = Math.floor(Math.random() * 6) + 1;
+  const movie = await fetchHelper(`${API_ENDPOINT}/films/${randomNum}/`);
   return {
     name: movie.title,
     episode: movie.episode_id,
@@ -60,7 +81,7 @@ export const cleanMovieScroll = async () => {
 };
 
 export const getPlanetData = async () => {
-  const url = 'https://swapi.co/api/planets';
+  const url = `${API_ENDPOINT}/planets`;
   const getPlanetList = await fetchHelper(url);
   const cleanedPlanets = await cleanPlanet(getPlanetList.results);
 
@@ -93,7 +114,7 @@ export const cleanResidents = async residents => {
 };
 
 export const getVehicleData = async () => {
-  const url = 'https://swapi.co/api/vehicles/';
+  const url = `${API_ENDPOINT}/vehicles/`;
   const getVehicleList = await fetchHelper(url);
   const cleanedVehicles = await cleanVehicleData(getVehicleList.results);
 

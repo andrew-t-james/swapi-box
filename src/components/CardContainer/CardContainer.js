@@ -10,7 +10,8 @@ import PropTypes from 'prop-types';
 import './CardContainer.css';
 
 const CardContainer = props => {
-  const { people,
+  const { 
+    people,
     planets,
     selected,
     vehicles,
@@ -19,9 +20,10 @@ const CardContainer = props => {
     fetchPeopleData,
     fetchPlanetData,
     favorites,
-    updateFavorites } = props;
+    updateFavorites 
+  } = props;
 
-  const peopleCards = people.map((person, index) =>
+  const peopleCards = people && people.map((person, index) =>
     <PersonCard
       key={index}
       {...person}
